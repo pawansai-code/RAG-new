@@ -1,0 +1,1576 @@
+id,document,component_name,schema_name
+ReverseCA_amountinlocalcurrency_0,"Schema Name: ReverseCA
+        Component Name: amountinlocalcurrency
+        Component Type: MATH
+        Business Purpose: This row represents a component in the 'ReverseCA' schema that calculates the 'amountinlocalcurrency' based on the 'COST' component type, likely used for financial calculations.
+        Technical Logic: The 'amountinlocalcurrency' component is a mathematical operation (MATH) that retrieves its value from the 'amountinlocalcurrency' expression, and is associated with a single criteria, indicating a straightforward calculation.",amountinlocalcurrency,ReverseCA
+ReverseCA_costallocationparameterperc_1,"Schema Name: ReverseCA
+        Component Name: costallocationparameterperc
+        Component Type: MATH
+        Business Purpose: This row defines a cost allocation parameter percentage component in the ReverseCA schema, used to allocate costs in the MATH model.
+        Technical Logic: The component_expr 'costallocationparameterperc' is a reference to the component itself, indicating a self-referential relationship. The component_type 'MATH' and value 'COST' specify the mathematical operation and cost type, respectively. The criteria_count of 1 suggests a single criteria is associated with this component.",costallocationparameterperc,ReverseCA
+Bill_I_invoiceqty_2,"Schema Name: Bill_I
+        Component Name: invoiceqty
+        Component Type: MATH
+        Business Purpose: This row defines a component in the 'Bill_I' schema that calculates the invoice quantity based on the 'Qty' expression, with a criteria count of 1, and is used for cost calculation.
+        Technical Logic: This component uses a mathematical model (MATH) to calculate the invoice quantity, where the component type is also MATH and the component type value is COST, indicating a cost-based calculation.",invoiceqty,Bill_I
+Bill_H_ExchangeRate_3,"Schema Name: Bill_H
+        Component Name: ExchangeRate
+        Component Type: MATH
+        Business Purpose: This row represents a component in the 'Bill_H' schema that calculates the exchange rate for the 'MATH' model, specifically for cost-based calculations.
+        Technical Logic: The 'ExchangeRate' component is a mathematical component of type 'MATH' with a value of 'COST', which is evaluated using the expression 'ExchangeRate'. It is used once in the criteria count.",ExchangeRate,Bill_H
+Bill_H_AddlCharge_4,"Schema Name: Bill_H
+        Component Name: AddlCharge
+        Component Type: MATH
+        Business Purpose: This row represents a component in the 'Bill_H' schema that calculates an additional charge based on the 'MATH' model, specifically for cost-related calculations.
+        Technical Logic: The 'AddlCharge' component is a mathematical operation (component_type: 'MATH') with a value of 'COST' (component_type_value) that is evaluated using the expression 'AddlCharge'. It is used once (criteria_count: 1) in the criteria set.",AddlCharge,Bill_H
+Bill_H_RoundOffValue_5,"Schema Name: Bill_H
+        Component Name: RoundOffValue
+        Component Type: MATH
+        Business Purpose: This row defines a 'RoundOffValue' component in the 'Bill_H' schema, used to calculate the cost of a mathematical model 'MATH' based on a single criteria.
+        Technical Logic: The 'RoundOffValue' component applies a mathematical operation to calculate the cost of the 'MATH' model, utilizing a single criteria and rounding off the result.",RoundOffValue,Bill_H
+PrevBill_Qty_6,"Schema Name: PrevBill
+        Component Name: Qty
+        Component Type: MATH
+        Business Purpose: This row defines a component in the PrevBill schema that calculates the quantity based on the cost, likely for billing purposes.
+        Technical Logic: The component 'Qty' in the 'PrevBill' schema uses the 'MATH' model with a type of 'MATH' and a value of 'COST' to perform calculations, specifically referencing the 'Qty' expression, and is used in 1 criteria.",Qty,PrevBill
+PrevBill_Rate_7,"Schema Name: PrevBill
+        Component Name: Rate
+        Component Type: MATH
+        Business Purpose: This row defines a 'Rate' component within the 'PrevBill' schema, which is used to calculate the cost of a bill based on a mathematical model.
+        Technical Logic: The 'Rate' component is a mathematical component of type 'MATH' with a value of 'COST', utilizing the 'Rate' expression and associated with a single criteria, as indicated by the 'criteria_count' value of 1.",Rate,PrevBill
+PrevBill_AddlCharge_8,"Schema Name: PrevBill
+        Component Name: AddlCharge
+        Component Type: MATH
+        Business Purpose: This row represents a component in the PrevBill schema that adds an additional charge to the bill, based on a mathematical calculation.
+        Technical Logic: The 'AddlCharge' component in the 'PrevBill' schema uses a mathematical model (MATH) to calculate the additional charge, which is of type 'COST', and is based on the expression 'AddlCharge'. This component has a single criteria and is likely used to calculate extra fees or charges in a billing system.",AddlCharge,PrevBill
+PrevBill_DiscountAmt_9,"Schema Name: PrevBill
+        Component Name: DiscountAmt
+        Component Type: MATH
+        Business Purpose: This row defines a component in the PrevBill schema that calculates the Discount Amount based on the Cost, using a mathematical formula.
+        Technical Logic: The component 'DiscountAmt' in the 'PrevBill' schema uses a mathematical model 'MATH' to calculate the 'Discount' amount from the 'Cost', with a single criteria and a component type value of 'COST'.",DiscountAmt,PrevBill
+PrevBill_TaxPercentage_10,"Schema Name: PrevBill
+        Component Name: TaxPercentage
+        Component Type: MATH
+        Business Purpose: This row defines a component named 'TaxPercentage' in the 'PrevBill' schema, which calculates the tax percentage based on the 'COST' component type.
+        Technical Logic: The 'TaxPercentage' component is a mathematical calculation (MATH) that retrieves its value from the 'COST' component type, and is used as a criteria in the model with a count of 1.",TaxPercentage,PrevBill
+PrevBill_Basevalue_11,"Schema Name: PrevBill
+        Component Name: Basevalue
+        Component Type: MATH
+        Business Purpose: This row defines a component in the PrevBill schema that calculates the base value of a bill based on the COST component type.
+        Technical Logic: The component_expr 'Basevalue' references the component itself, indicating a self-referential calculation. The component_type 'MATH' and value 'COST' suggest a mathematical operation involving cost data, likely used to derive the base value of a bill.",Basevalue,PrevBill
+PrevBill_TaxValue_12,"Schema Name: PrevBill
+        Component Name: TaxValue
+        Component Type: MATH
+        Business Purpose: This row defines a component named 'TaxValue' in the 'PrevBill' schema, which calculates the cost of a bill based on a mathematical model.
+        Technical Logic: The 'TaxValue' component is a mathematical model (MATH) that evaluates to the 'COST' value, using the expression 'TaxValue' and is used in 1 criteria.",TaxValue,PrevBill
+PrevBill_DocumentValue_13,"Schema Name: PrevBill
+        Component Name: DocumentValue
+        Component Type: MATH
+        Business Purpose: This row defines a component in the 'PrevBill' schema that calculates the 'COST' value based on the 'DocumentValue' model, used for mathematical calculations.
+        Technical Logic: The 'DocumentValue' component is a mathematical component of type 'MATH' that uses the 'COST' value from the 'DocumentValue' model, with a criteria count of 1, to perform calculations.",DocumentValue,PrevBill
+PO&IP_Status_AwaitingApprovalQty_14,"Schema Name: PO&IP_Status
+        Component Name: AwaitingApprovalQty
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row represents a component in the PO&IP_Status schema that calculates the sum of awaiting approval quantities from the PrevBill model, specifically for items with a status of 'Waiting For Approval'.
+        Technical Logic: The component_expr field uses a JSON object to filter items based on their status, and the component_type is set to SUMFROMSCHEMA to calculate the sum of the COST value for matching items.",AwaitingApprovalQty,PO&IP_Status
+PO&IP_Status_ActiveQty_15,"Schema Name: PO&IP_Status
+        Component Name: ActiveQty
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of active items from the 'PrevBill' model in the 'PO&IP_Status' schema, and stores the result in the 'ActiveQty' component.
+        Technical Logic: The 'SUMFROMSCHEMA' component type with 'COST' value is used to aggregate data from the 'PrevBill' model in the 'PO&IP_Status' schema. The component expression filters the data to include only items with a 'status' of 'Active'. The result is then stored in the 'ActiveQty' component.",ActiveQty,PO&IP_Status
+PO&IP_Status_ActualQty_16,"Schema Name: PO&IP_Status
+        Component Name: ActualQty
+        Component Type: MATH
+        Business Purpose: This row represents a calculation component in the PO&IP_Status schema, specifically calculating the ActualQty by subtracting ActiveQty and AwaitingApprovalQty from Qty.
+        Technical Logic: The component_expr 'Qty-(ActiveQty + AwaitingApprovalQty)' is evaluated as a mathematical expression, where 'Qty', 'ActiveQty', and 'AwaitingApprovalQty' are likely columns in the underlying data model, and the result is stored as the ActualQty value.",ActualQty,PO&IP_Status
+PO&IP_Status_Rate_17,"Schema Name: PO&IP_Status
+        Component Name: Rate
+        Component Type: MATH
+        Business Purpose: This row defines a 'Rate' component within the 'PO&IP_Status' schema, which is used to calculate the cost of a mathematical model 'MATH'.
+        Technical Logic: The 'Rate' component is a mathematical function of type 'COST' that is evaluated using the expression 'Rate'. It is used once in the criteria count, indicating its singular application within the model.",Rate,PO&IP_Status
+PO&IP_Status_AwaitingApprovalAddlCharge_18,"Schema Name: PO&IP_Status
+        Component Name: AwaitingApprovalAddlCharge
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row represents a component in the PO&IP_Status schema that calculates the sum of costs for 'AwaitingApprovalAddlCharge' in the PrevBill model, filtered by items with a status of 'Waiting For Approval'.
+        Technical Logic: The component_expr field uses a JSON object to specify a filter criteria, where 'ItemID' and 'LinkRef' are used to identify relevant data, and the 'status' object applies an equality check to the 'status' field, only including records with a value of 'Waiting For Approval'. The component_type is set to 'SUMFROMSCHEMA', indicating that the component will sum the 'COST' value from the schema.",AwaitingApprovalAddlCharge,PO&IP_Status
+PO&IP_Status_ActiveAddlCharge_19,"Schema Name: PO&IP_Status
+        Component Name: ActiveAddlCharge
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component in the PO&IP_Status schema that calculates the sum of costs for 'ActiveAddlCharge' in the PrevBill model, filtered by the status being 'Active'.
+        Technical Logic: The component_expr uses a JSON object to specify a filter criteria, where 'ItemID' and 'LinkRef' are used to link the data, and the 'status' object is used to filter the data based on the 'equality' operator 'EQ' with the value 'Active'.",ActiveAddlCharge,PO&IP_Status
+PO&IP_Status_ActualAddlCharge_20,"Schema Name: PO&IP_Status
+        Component Name: ActualAddlCharge
+        Component Type: MATH
+        Business Purpose: This row calculates the 'ActualAddlCharge' by subtracting the sum of 'AwaitingApprovalAddlCharge' and 'ActiveAddlCharge' from 'AddlCharge', providing a cost-based value for the 'PO&IP_Status' schema.
+        Technical Logic: The component_expr 'AddlCharge-(AwaitingApprovalAddlCharge + ActiveAddlCharge)' is evaluated as a mathematical expression, where 'AddlCharge' is subtracted by the sum of 'AwaitingApprovalAddlCharge' and 'ActiveAddlCharge', resulting in a component_type_value of 'COST' for the 'MATH' model.",ActualAddlCharge,PO&IP_Status
+PO&IP_Status_AwaitingApprovalDiscountAmt_21,"Schema Name: PO&IP_Status
+        Component Name: AwaitingApprovalDiscountAmt
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of items awaiting approval for a previous bill, based on the document number.
+        Technical Logic: The component_expr uses a JSON object to filter items by status, which is then used to calculate the sum of costs from the PO&IP_Status schema.",AwaitingApprovalDiscountAmt,PO&IP_Status
+PO&IP_Status_ActiveDiscountAmt_22,"Schema Name: PO&IP_Status
+        Component Name: ActiveDiscountAmt
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component named ActiveDiscountAmt in the PO&IP_Status schema, which calculates the sum of the COST from the PrevBill model, filtered by items with an 'Active' status.
+        Technical Logic: The component_expr JSON object is used to filter items based on their status, where the equality operator (EQ) is used to match the 'status' field with the value 'Active'. The component_type is set to SUMFROMSCHEMA, indicating that the component will sum up the COST values from the PrevBill model.",ActiveDiscountAmt,PO&IP_Status
+PO&IP_Status_ActualDiscountAmt_23,"Schema Name: PO&IP_Status
+        Component Name: ActualDiscountAmt
+        Component Type: MATH
+        Business Purpose: This row calculates the ActualDiscountAmt for the PO&IP_Status model by subtracting the sum of AwaitingApprovalDiscountAmt and ActiveDiscountAmt from the Discount amount.
+        Technical Logic: The component_expr 'Discount-(AwaitingApprovalDiscountAmt + ActiveDiscountAmt)' is evaluated to calculate the ActualDiscountAmt, where the model_id 'MATH' indicates that a mathematical operation is performed.",ActualDiscountAmt,PO&IP_Status
+PO&IP_Status_Basevalue_24,"Schema Name: PO&IP_Status
+        Component Name: Basevalue
+        Component Type: MATH
+        Business Purpose: This row defines a base value component in the PO&IP_Status schema, used to calculate the cost of a mathematical model.
+        Technical Logic: The component_expr 'Basevalue' references the component itself, indicating a self-referential calculation. The component_type 'MATH' and type_value 'COST' specify the mathematical operation and its purpose, respectively.",Basevalue,PO&IP_Status
+PO&IP_Status_AwaitingApprovalBaseValue_25,"Schema Name: PO&IP_Status
+        Component Name: AwaitingApprovalBaseValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row represents a component in a PO&IP_Status model, specifically 'AwaitingApprovalBaseValue', which calculates the sum of 'COST' from the 'PrevBill' schema, filtered by items with a 'documentnumber' status of 'Waiting For Approval'.
+        Technical Logic: The component_expr JSON field is evaluated to filter items, and the component_type 'SUMFROMSCHEMA' is used to calculate the sum of 'COST' from the 'PrevBill' schema, based on the filtered items.",AwaitingApprovalBaseValue,PO&IP_Status
+PO&IP_Status_ActiveBaseValue_26,"Schema Name: PO&IP_Status
+        Component Name: ActiveBaseValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row represents a component in the PO&IP_Status schema that calculates the sum of costs from the PrevBill model, specifically for items with an 'Active' status.
+        Technical Logic: The component_expr field uses a JSON object to filter items based on their status, which is then used to calculate the sum of costs from the PrevBill model, utilizing the SUMFROMSCHEMA component type.",ActiveBaseValue,PO&IP_Status
+PO&IP_Status_ActualBaseValue_27,"Schema Name: PO&IP_Status
+        Component Name: ActualBaseValue
+        Component Type: MATH
+        Business Purpose: This row calculates the ActualBaseValue for the PO&IP_Status schema by subtracting the sum of AwaitingApprovalBaseValue and ActiveBaseValue from the BaseValue.
+        Technical Logic: The ActualBaseValue is computed using a mathematical expression: BaseValue - (AwaitingApprovalBaseValue + ActiveBaseValue). This operation is performed on the MATH model with a component type of MATH and a value of COST.",ActualBaseValue,PO&IP_Status
+PO&IP_Status_AwaitingApprovalTaxValue_28,"Schema Name: PO&IP_Status
+        Component Name: AwaitingApprovalTaxValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component that calculates the sum of 'COST' from the 'PrevBill' model in the 'PO&IP_Status' schema, specifically for items with a status of 'Waiting For Approval'.
+        Technical Logic: The component uses a SUMFROMSCHEMA operation to aggregate 'COST' values from the 'PrevBill' model, filtered by a JSON-based criteria expression that checks the 'status' field for equality with 'Waiting For Approval'.",AwaitingApprovalTaxValue,PO&IP_Status
+PO&IP_Status_ActiveTaxValue_29,"Schema Name: PO&IP_Status
+        Component Name: ActiveTaxValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component in the 'PO&IP_Status' schema that calculates the sum of 'COST' from the 'PrevBill' model, filtered by items with an 'Active' status.
+        Technical Logic: The component uses a SUMFROMSCHEMA operation, which aggregates 'COST' values from the 'PrevBill' model. The aggregation is filtered by a JSON-based criteria expression that checks for an 'ItemID' match and a 'documentnumber' link reference, with an additional status filter that requires an 'Active' status.",ActiveTaxValue,PO&IP_Status
+PO&IP_Status_ActualTaxValue_30,"Schema Name: PO&IP_Status
+        Component Name: ActualTaxValue
+        Component Type: MATH
+        Business Purpose: This row calculates the ActualTaxValue by subtracting the sum of AwaitingApprovalTaxValue and ActiveTaxValue from TaxValue, and is used in the PO&IP_Status schema.
+        Technical Logic: The ActualTaxValue is computed using a mathematical expression: TaxValue - (AwaitingApprovalTaxValue + ActiveTaxValue), where TaxValue is the base value, and the sum of AwaitingApprovalTaxValue and ActiveTaxValue is subtracted from it.",ActualTaxValue,PO&IP_Status
+PO&IP_Status_AwaitingApprovalDocumentValue_31,"Schema Name: PO&IP_Status
+        Component Name: AwaitingApprovalDocumentValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of documents awaiting approval for the previous bill in the PO&IP_Status schema.
+        Technical Logic: The component_expr JSON object filters documents with a status of 'Waiting For Approval' and sums their costs, which is then stored in the 'AwaitingApprovalDocumentValue' component of the 'PrevBill' model.",AwaitingApprovalDocumentValue,PO&IP_Status
+PO&IP_Status_ActiveDocumentValue_32,"Schema Name: PO&IP_Status
+        Component Name: ActiveDocumentValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of active documents for the previous bill in the PO&IP_Status schema.
+        Technical Logic: The component_expr uses a JSON object to filter documents by status, then the SUMFROMSCHEMA component_type aggregates the COST component_type_value from the filtered documents.",ActiveDocumentValue,PO&IP_Status
+PO&IP_Status_ActualDocumentValue_33,"Schema Name: PO&IP_Status
+        Component Name: ActualDocumentValue
+        Component Type: MATH
+        Business Purpose: This row calculates the ActualDocumentValue by subtracting the sum of AwaitingApprovalDocumentValue and ActiveDocumentValue from DocumentValue, which is used in the PO&IP_Status schema.
+        Technical Logic: The component_expr 'DocumentValue-(AwaitingApprovalDocumentValue + ActiveDocumentValue)' is evaluated to calculate the ActualDocumentValue, where DocumentValue is the base value, AwaitingApprovalDocumentValue and ActiveDocumentValue are added together and then subtracted from DocumentValue.",ActualDocumentValue,PO&IP_Status
+PO&IP_Status_amountinlocalcurrency_34,"Schema Name: PO&IP_Status
+        Component Name: amountinlocalcurrency
+        Component Type: MATH
+        Business Purpose: This row represents a component in the PO&IP_Status schema that calculates the amount in local currency, specifically for the MATH model, using a mathematical operation to determine the cost.
+        Technical Logic: The component_expr 'amountinlocalcurrency' is used to calculate the cost, which is a mathematical operation, and it has a criteria_count of 1, indicating a single condition is applied to determine the cost.",amountinlocalcurrency,PO&IP_Status
+PO&IP_Status_TaxPercentage_35,"Schema Name: PO&IP_Status
+        Component Name: TaxPercentage
+        Component Type: MATH
+        Business Purpose: This row defines a TaxPercentage component within the PO&IP_Status schema, used to calculate cost-based tax percentages.
+        Technical Logic: The TaxPercentage component is a mathematical function (MATH) that evaluates to a COST value, based on the expression 'TaxPercentage', and is used in a decision-making process that involves 1 criteria.",TaxPercentage,PO&IP_Status
+Bill_Item_headaddlcharge_36,"Schema Name: Bill_Item
+        Component Name: headaddlcharge
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: Unknown purpose
+        Technical Logic: Unknown logic",headaddlcharge,Bill_Item
+Bill_Item_TotalQty_37,"Schema Name: Bill_Item
+        Component Name: TotalQty
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of items in a bill by summing the cost of each item.
+        Technical Logic: The component 'TotalQty' uses the 'SUMFROMSCHEMA' component type to sum the 'COST' value from the 'Bill_Item' schema, with a criteria count of 1, and stores the result in the 'interimid' intermediate variable.",TotalQty,Bill_Item
+Bill_Item_ExchangeRate_38,"Schema Name: Bill_Item
+        Component Name: ExchangeRate
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: This row fetches the exchange rate for a bill item from the 'COST' schema, using the document number as a criteria.
+        Technical Logic: The 'FETCHFROMSCHEMA' component retrieves data from the 'COST' schema based on the 'documentnumber' criteria, which is passed as a JSON expression.",ExchangeRate,Bill_Item
+Bill_Item_Qty_39,"Schema Name: Bill_Item
+        Component Name: Qty
+        Component Type: MATH
+        Business Purpose: This row defines a Bill_Item component named 'Qty' that calculates the cost based on mathematical operations, specifically 'COST' for the 'MATH' model.
+        Technical Logic: The 'Qty' component uses a mathematical operation (MATH) with a value of 'COST' to perform calculations, and it has a single criteria associated with it.",Qty,Bill_Item
+Bill_Item_Rate_40,"Schema Name: Bill_Item
+        Component Name: Rate
+        Component Type: MATH
+        Business Purpose: This row defines a 'Rate' component within the 'Bill_Item' schema, which is used to calculate the cost of an item.
+        Technical Logic: The 'Rate' component is a mathematical function (MATH) that takes a single criteria (criteria_count = 1) and returns a value based on the 'COST' component type value, with the expression 'Rate' being used to calculate the rate.",Rate,Bill_Item
+Bill_Item_AddlCharge_41,"Schema Name: Bill_Item
+        Component Name: AddlCharge
+        Component Type: MATH
+        Business Purpose: This row represents a component in the 'Bill_Item' schema that calculates an additional charge based on the 'COST' value, using the 'MATH' model.
+        Technical Logic: The 'AddlCharge' component is a mathematical operation that retrieves the 'COST' value from the 'MATH' model, and applies it to the 'Bill_Item' schema, with a criteria count of 1.",AddlCharge,Bill_Item
+Bill_Item_AddlCharge1_42,"Schema Name: Bill_Item
+        Component Name: AddlCharge1
+        Component Type: MATH
+        Business Purpose: This row represents a component in the 'Bill_Item' schema that calculates an additional charge based on the quantity and head additional charge, with the result being a cost.
+        Technical Logic: The component 'AddlCharge1' uses a mathematical expression to calculate the additional charge, where the quantity is multiplied by the head additional charge and then divided by the total quantity, resulting in a cost value.",AddlCharge1,Bill_Item
+Bill_Item_DiscountAmt_43,"Schema Name: Bill_Item
+        Component Name: DiscountAmt
+        Component Type: MATH
+        Business Purpose: This row defines a discount amount calculation for the Bill_Item model, specifically applying a discount to the cost.
+        Technical Logic: The DiscountAmt component uses a MATH component type with a value of COST, referencing the 'Discount' expression, and is applied to the Bill_Item model with a single criteria.",DiscountAmt,Bill_Item
+Bill_Item_TaxPercentage_44,"Schema Name: Bill_Item
+        Component Name: TaxPercentage
+        Component Type: MATH
+        Business Purpose: This row defines a tax percentage calculation for the 'Bill_Item' schema, specifically for the 'TaxPercentage' component, which is based on the 'COST' value and uses a mathematical operation.
+        Technical Logic: The 'TaxPercentage' component is a mathematical operation (component_type: 'MATH') that takes the 'COST' value as input (component_type_value: 'COST') and applies a tax percentage calculation, with a single criteria (criteria_count: 1) defined by the 'TaxPercentage' expression.",TaxPercentage,Bill_Item
+Bill_Item_Basevalue_45,"Schema Name: Bill_Item
+        Component Name: Basevalue
+        Component Type: MATH
+        Business Purpose: This row defines a base value component for the 'Bill_Item' schema, which calculates the cost of an item based on mathematical operations.
+        Technical Logic: The 'Basevalue' component, of type 'MATH' with value 'COST', uses the expression 'Basevalue' to calculate its value, and is used in 1 criteria.",Basevalue,Bill_Item
+Bill_Item_BillBasevalue_46,"Schema Name: Bill_Item
+        Component Name: BillBasevalue
+        Component Type: MATH
+        Business Purpose: This row calculates the total bill value by adding base value, additional charges, and subtracting discount amount, then multiplying by the exchange rate.
+        Technical Logic: The component_expr '(Basevalue+AddlCharge+AddlCharge1-DiscountAmt)*ExchangeRate' is evaluated as a mathematical expression, where 'Basevalue', 'AddlCharge', 'AddlCharge1', 'DiscountAmt', and 'ExchangeRate' are likely other components or values in the system, and the result is used as the value for the 'BillBasevalue' component in the 'Bill_Item' schema.",BillBasevalue,Bill_Item
+Bill_Item_POorIPActualBaseValue_47,"Schema Name: Bill_Item
+        Component Name: POorIPActualBaseValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of items in the Bill_Item schema, specifically for PO&IP_Status model, by summing the cost from the schema.
+        Technical Logic: The component_expr uses a JSON object to link the document number and item ID from the current document to the ItemID in the schema, then sums the COST value from the schema for each matching item.",POorIPActualBaseValue,Bill_Item
+Bill_Item_RefBasevalue_48,"Schema Name: Bill_Item
+        Component Name: RefBasevalue
+        Component Type: ROWWISE-MINVALUE
+        Business Purpose: This row identifies the minimum cost value for the Bill_Item schema, using the RefBasevalue component, and applies a criteria count of 1.
+        Technical Logic: The ROWWISE-MINVALUE component type with value 'COST' is used to find the minimum cost value in the Bill_Item schema, based on the expression 'BillBasevalue <> POorIPActualBaseValue'.",RefBasevalue,Bill_Item
+Bill_Item_TaxValue_49,"Schema Name: Bill_Item
+        Component Name: TaxValue
+        Component Type: MATH
+        Business Purpose: This row defines a component named 'TaxValue' in the 'Bill_Item' schema, which calculates the tax value based on the cost, and it is used as a criteria once.
+        Technical Logic: The 'TaxValue' component is a mathematical calculation (component_type: MATH) that uses the 'COST' value as its input (component_type_value: COST), and its expression is simply 'TaxValue' which implies it's a self-referential calculation. It is used as a criteria once in the model.",TaxValue,Bill_Item
+Bill_Item_DocumentValue_50,"Schema Name: Bill_Item
+        Component Name: DocumentValue
+        Component Type: MATH
+        Business Purpose: This row defines a component in the 'Bill_Item' schema that calculates the cost of a document, based on the 'DocumentValue' component.
+        Technical Logic: The 'DocumentValue' component is used to calculate the cost of a document, with a criteria count of 1, indicating a single calculation is performed. The component type is 'MATH' with a value of 'COST', suggesting a mathematical operation is applied to determine the cost.",DocumentValue,Bill_Item
+Bill_Item_AmountinLocalCurrency_51,"Schema Name: Bill_Item
+        Component Name: AmountinLocalCurrency
+        Component Type: MATH
+        Business Purpose: This row defines a component in the 'Bill_Item' schema that calculates the amount in local currency based on the base value and exchange rate.
+        Technical Logic: The 'AmountinLocalCurrency' component uses a mathematical operation (MATH) to calculate the result by multiplying the 'Basevalue' with the 'ExchangeRate', and it is used as a criteria in the model.",AmountinLocalCurrency,Bill_Item
+Bill_Item_AmountinTransactionCurrency_52,"Schema Name: Bill_Item
+        Component Name: AmountinTransactionCurrency
+        Component Type: MATH
+        Business Purpose: This row defines a component in the 'Bill_Item' schema that calculates the 'Amount in Transaction Currency' based on the 'Base value' and is used as a criteria in the 'MATH' model.
+        Technical Logic: The 'Amount in Transaction Currency' component is a mathematical calculation (component_type: MATH) that uses the 'COST' component_type_value to determine the base value for the calculation, which is then used as a criteria in the 'MATH' model with a count of 1.",AmountinTransactionCurrency,Bill_Item
+Bill_Item_AccountBaseValue_53,"Schema Name: Bill_Item
+        Component Name: AccountBaseValue
+        Component Type: ACCOUNTING-VALUE
+        Business Purpose: This row represents a component in the 'Bill_Item' schema that calculates the cost of an account, with a criteria count of 1.
+        Technical Logic: The 'AccountBaseValue' component, of type 'ACCOUNTING-VALUE' and value 'COST', is likely used to extract the base cost value from an account, with no model ID or expression provided.",AccountBaseValue,Bill_Item
+Bill_Item_NAccBaseValue_54,"Schema Name: Bill_Item
+        Component Name: NAccBaseValue
+        Component Type: MATH
+        Business Purpose: This row defines a component in the 'Bill_Item' schema that calculates the 'COST' of the 'AccountBaseValue' with a negative multiplier of 1, used as a criteria in a mathematical model.
+        Technical Logic: The component_expr '-1*AccountBaseValue' is evaluated to calculate the 'COST' of the 'AccountBaseValue' by applying a negative multiplier of 1, which is then used as a criteria in the 'MATH' model.",NAccBaseValue,Bill_Item
+Bill_Item_PAccBaseValue_55,"Schema Name: Bill_Item
+        Component Name: PAccBaseValue
+        Component Type: MATH
+        Business Purpose: This row defines a component in the 'Bill_Item' schema that calculates the 'COST' of the 'AccountBaseValue' for the 'MATH' model, used as a criteria in a decision-making process.
+        Technical Logic: The 'PAccBaseValue' component is a mathematical calculation that retrieves the 'COST' value from the 'AccountBaseValue' expression for the 'MATH' model, utilizing a single criteria.",PAccBaseValue,Bill_Item
+Bill_Item_SignWAccBaseValue_56,"Schema Name: Bill_Item
+        Component Name: SignWAccBaseValue
+        Component Type: MATH
+        Business Purpose: This row defines a component in the 'Bill_Item' schema that calculates the total cost of a bill item by summing the 'PAccBaseValue' and 'NAccBaseValue' values.
+        Technical Logic: The 'SignWAccBaseValue' component is a mathematical operation that adds the 'PAccBaseValue' and 'NAccBaseValue' values, with a component type of 'MATH' and a value of 'COST'. It is used in a model with an ID of 'MATH' and has a single criteria.",SignWAccBaseValue,Bill_Item
+Bill_Item_PercentageofTDS_57,"Schema Name: Bill_Item
+        Component Name: PercentageofTDS
+        Component Type: MATH
+        Business Purpose: This row defines a component in the 'Bill_Item' schema that calculates the percentage of TDS (Tax Deducted at Source) in the 'MATH' model, specifically for the 'COST' component.
+        Technical Logic: The 'PercentageofTDS' component is a mathematical calculation that retrieves the 'COST' component from the 'MATH' model and applies a percentage-based formula to determine the TDS percentage, with a criteria count of 1.",PercentageofTDS,Bill_Item
+Bill_Item_cgstvalue_58,"Schema Name: Bill_Item
+        Component Name: cgstvalue
+        Component Type: MATH
+        Business Purpose: This row defines a calculation for the CGST value in the Bill_Item schema, specifically for the 'MATH' model, where the CGST value is directly used as the component expression.
+        Technical Logic: The backend operation involves retrieving the CGST value from the 'cgstvalue' component, which is of type 'MATH' and has a value of 'COST', and then applying it as a criteria in the Bill_Item schema for the 'MATH' model.",cgstvalue,Bill_Item
+Bill_Item_sgstvalue_59,"Schema Name: Bill_Item
+        Component Name: sgstvalue
+        Component Type: MATH
+        Business Purpose: This row defines a component named 'sgstvalue' in the 'Bill_Item' schema, which calculates the cost-based sales tax value.
+        Technical Logic: The 'sgstvalue' component is a mathematical calculation (component_type='MATH') that retrieves its value from the 'sgstvalue' expression, and is used as a criteria in the 'Bill_Item' model (model_id='MATH').",sgstvalue,Bill_Item
+Bill_Item_igstvalue_60,"Schema Name: Bill_Item
+        Component Name: igstvalue
+        Component Type: MATH
+        Business Purpose: This row defines a component 'igstvalue' in the 'Bill_Item' schema, which calculates the cost-based IGST value.
+        Technical Logic: The component 'igstvalue' is a mathematical calculation (component_type: MATH) with a value of 'COST' (component_type_value), based on the expression 'igstvalue' (component_expr). It is used in 1 criteria.",igstvalue,Bill_Item
+CostAllocationMaster_CNT_CostAllocationValue_61,"Schema Name: CostAllocationMaster
+        Component Name: CNT_CostAllocationValue
+        Component Type: MATH
+        Business Purpose: This row defines a cost allocation component in the CostAllocationMaster schema, specifically 'CNT_CostAllocationValue', which is a mathematical component that calculates the cost allocation value.
+        Technical Logic: The component 'CNT_CostAllocationValue' is a mathematical component of type 'MATH' with a value of 'COST' and an expression of 'CostAllocationValue'. It is used in the 'MATH' model and has a single criteria associated with it.",CNT_CostAllocationValue,CostAllocationMaster
+CostAllocationMaster_PERC_CostAllocationValue_62,"Schema Name: CostAllocationMaster
+        Component Name: PERC_CostAllocationValue
+        Component Type: MATH
+        Business Purpose: This row defines a component in the CostAllocationMaster schema that calculates the cost allocation value using a mathematical model (MATH) with a single criterion.
+        Technical Logic: The component 'PERC_CostAllocationValue' in the 'CostAllocationMaster' schema uses a mathematical model (MATH) with a component type of 'COST' and a component expression of 'CostAllocationValue'. It has a single criterion and is likely used to calculate the cost allocation value based on the specified model and criteria.",PERC_CostAllocationValue,CostAllocationMaster
+CostAllocationMaster_CostAllocationParameterValue_63,"Schema Name: CostAllocationMaster
+        Component Name: CostAllocationParameterValue
+        Component Type: MATH
+        Business Purpose: This row defines a cost allocation parameter value component in the CostAllocationMaster schema, used to calculate the total cost allocation value by adding the percentage and count values.
+        Technical Logic: The component_expr 'PERC_CostAllocationValue + CNT_CostAllocationValue' is evaluated as a mathematical expression, where PERC_CostAllocationValue and CNT_CostAllocationValue are likely other components in the schema, and the result is used to determine the cost allocation value.",CostAllocationParameterValue,CostAllocationMaster
+CostAllocationMaster_costallocationamount_64,"Schema Name: CostAllocationMaster
+        Component Name: costallocationamount
+        Component Type: MATH
+        Business Purpose: This row defines a cost allocation component in the CostAllocationMaster schema, used to calculate the cost allocation amount.
+        Technical Logic: The component_expr 'costallocationamount' is a reference to the component itself, indicating a self-referential calculation. The component_type 'MATH' and type_value 'COST' suggest a mathematical operation related to cost calculation, with a single criteria.",costallocationamount,CostAllocationMaster
+BillCostAllocation1_CostAllocationParameterValue_65,"Schema Name: BillCostAllocation1
+        Component Name: CostAllocationParameterValue
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: This row defines a cost allocation parameter value component in the BillCostAllocation1 schema, which retrieves the cost allocation method, LOB, cost allocation category, and CAPrdFrom from a schema.
+        Technical Logic: The component_expr field uses a JSON object to fetch values from a schema, where the keys match the component_type_value ('COST') and the values are retrieved from the schema.",CostAllocationParameterValue,BillCostAllocation1
+BillCostAllocation1_costallocationamount_66,"Schema Name: BillCostAllocation1
+        Component Name: costallocationamount
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: This row defines a cost allocation component in the BillCostAllocation1 schema, fetching the cost allocation amount from the CostAllocationMaster model based on the specified criteria.
+        Technical Logic: The component_expr field contains a JSON object that defines the criteria for fetching the cost allocation amount, including the cost allocation method, LOB, cost allocation category, and period from. The FETCHFROMSCHEMA component type is used to retrieve data from the CostAllocationMaster model.",costallocationamount,BillCostAllocation1
+TCostAllocationValue_TCostAllocationValue_67,"Schema Name: TCostAllocationValue
+        Component Name: TCostAllocationValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a TCostAllocationValue component in the BillCostAllocation1 model, which calculates the total cost from a schema based on the CostAllocationMethod, document number, and link reference.
+        Technical Logic: The component_expr field uses a JSON object to specify the criteria for the calculation, which involves retrieving the CostAllocationMethod, document number, and link reference from the schema. The component_type is set to SUMFROMSCHEMA, indicating that the component will sum up values from the specified schema.",TCostAllocationValue,TCostAllocationValue
+AP_SNO_68,"Schema Name: AP
+        Component Name: SNO
+        Component Type: MATH
+        Business Purpose: This row defines a component 'SNO' in the 'AP' schema, which is used to calculate the cost in the 'MATH' model.
+        Technical Logic: The component 'SNO' is a mathematical component of type 'MATH' with a value 'COST', using the expression 'SNo' and is associated with 1 criteria.",SNO,AP
+BillWF_DocumentValue_69,"Schema Name: BillWF
+        Component Name: DocumentValue
+        Component Type: MATH
+        Business Purpose: This row defines a component in the 'BillWF' schema that calculates the 'COST' value of a document based on a mathematical model 'MATH'.
+        Technical Logic: The component 'DocumentValue' of type 'MATH' with value 'COST' uses the expression '1' and is associated with 1 criteria, likely used in a decision-making process within the 'BillWF' schema.",DocumentValue,BillWF
+AD_Parameter1_70,"Schema Name: AD
+        Component Name: Parameter1
+        Component Type: MATH
+        Business Purpose: This row represents a parameter in the 'AD' schema, specifically 'Parameter1', which is used in a mathematical model 'MATH' to calculate the 'COST' of a component.
+        Technical Logic: This row defines a mathematical component 'Parameter1' in the 'MATH' model, where its value is calculated as '1*Parameter1', and it is used as a criteria in the 'AD' schema.",Parameter1,AD
+AD_SingleTresholdLimit_71,"Schema Name: AD
+        Component Name: SingleTresholdLimit
+        Component Type: MATH
+        Business Purpose: This row represents a single threshold limit component in the 'AD' schema, used to evaluate a cost-based criteria with a model ID of 'MATH'.
+        Technical Logic: The 'SingleTresholdLimit' component is a mathematical component of type 'MATH' that evaluates a cost-based criteria, utilizing the 'COST' component type value and the 'SingleTresholdLimit' expression, with a total of 1 criteria.",SingleTresholdLimit,AD
+AD_CummThresholdLimit_72,"Schema Name: AD
+        Component Name: CummThresholdLimit
+        Component Type: MATH
+        Business Purpose: This row defines a component in the 'AD' schema, specifically 'CummThresholdLimit', which is a mathematical component used to calculate 'COST' based on the 'CummThresholdLimit' expression, and it is used in 1 criteria.
+        Technical Logic: The 'CummThresholdLimit' component is a mathematical component of type 'MATH' with a value of 'COST', and it is evaluated using the expression 'CummThresholdLimit'. It is used in 1 criteria, indicating its importance in the decision-making process.",CummThresholdLimit,AD
+IM_PercentageofTDS_73,"Schema Name: IM
+        Component Name: PercentageofTDS
+        Component Type: MATH
+        Business Purpose: This row represents a component in the 'IM' schema that calculates the percentage of Total Distribution System (TDS) costs, which is used in the 'MATH' model.
+        Technical Logic: The 'PercentageofTDS' component is a mathematical calculation that retrieves the 'COST' value from the 'PercentageofTDS' expression, and it is used once in the criteria count.",PercentageofTDS,IM
+VM_SNO_74,"Schema Name: VM
+        Component Name: SNO
+        Component Type: MATH
+        Business Purpose: This row defines a component named 'SNO' in the 'VM' schema, which is used to calculate the 'COST' of 'MATH' models based on a single criteria.
+        Technical Logic: The component 'SNO' in the 'VM' schema uses a mathematical model 'MATH' to evaluate the 'COST' based on a single expression '1', resulting in a single criteria count of 1.",SNO,VM
+ProcessedTDSAmtinGSE_amountinlocalcurrency_75,"Schema Name: ProcessedTDSAmtinGSE
+        Component Name: amountinlocalcurrency
+        Component Type: MATH
+        Business Purpose: This row represents a component in the 'ProcessedTDSAmtinGSE' schema that calculates the amount in local currency, specifically for the 'MATH' model, using a mathematical operation to determine the cost.
+        Technical Logic: The component 'amountinlocalcurrency' in the 'ProcessedTDSAmtinGSE' schema is a mathematical operation (component_type: 'MATH') that evaluates to a cost (component_type_value: 'COST') based on the 'amountinlocalcurrency' expression, with a single criteria.",amountinlocalcurrency,ProcessedTDSAmtinGSE
+ReversalTDS_journalsno_76,"Schema Name: ReversalTDS
+        Component Name: journalsno
+        Component Type: MATH
+        Business Purpose: This row defines a component in the ReversalTDS schema that calculates the cost of journals with a model ID of MATH.
+        Technical Logic: The component_expr '1' indicates that the component always evaluates to true, and the component_type 'MATH' with value 'COST' suggests that it is a mathematical component that calculates a cost value. The criteria_count of 1 implies that this component is used as a single criteria in a larger calculation or decision-making process.",journalsno,ReversalTDS
+ReversalTDS_ExchangeRate_77,"Schema Name: ReversalTDS
+        Component Name: ExchangeRate
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: Unknown purpose
+        Technical Logic: Unknown logic",ExchangeRate,ReversalTDS
+ReversalTDS_Value_78,"Schema Name: ReversalTDS
+        Component Name: Value
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row represents a component in the ReversalTDS schema that calculates the sum of costs from another schema, specifically for the 'ProcessedTDSAmtinGSE' model, and is used as a criteria in a calculation.
+        Technical Logic: The component_expr field contains a JSON object that references a link and an Itemid, which is used to fetch data from another schema, and the component_type_value 'COST' indicates that the sum is calculated based on cost values.",Value,ReversalTDS
+ReversalTDS_AmountinLocalCurrency_79,"Schema Name: ReversalTDS
+        Component Name: AmountinLocalCurrency
+        Component Type: MATH
+        Business Purpose: This row represents a component in the ReversalTDS schema that calculates the amount in local currency by subtracting the value from a given expression.
+        Technical Logic: The component 'AmountinLocalCurrency' is a mathematical operation (MATH) that takes the 'Value' expression and negates it, resulting in a cost calculation with a criteria count of 1.",AmountinLocalCurrency,ReversalTDS
+ReversalTDS_AmountinTransactionCurrency_80,"Schema Name: ReversalTDS
+        Component Name: AmountinTransactionCurrency
+        Component Type: MATH
+        Business Purpose: This row represents a component in the ReversalTDS schema that calculates the amount in transaction currency by subtracting the value divided by the exchange rate.
+        Technical Logic: The component_expr '-(Value/ExchangeRate)' is a mathematical expression that performs division and negation to calculate the amount in transaction currency.",AmountinTransactionCurrency,ReversalTDS
+ReversalProvisionExpAcc_journalsno_81,"Schema Name: ReversalProvisionExpAcc
+        Component Name: journalsno
+        Component Type: MATH
+        Business Purpose: This row defines a component in the ReversalProvisionExpAcc schema that represents the journal number (journalsno) for the MATH model, specifically for cost calculations.
+        Technical Logic: The component_expr value of '1' indicates a simple literal value, and the component_type_value of 'COST' specifies that this component is used for cost-related calculations. The criteria_count of 1 suggests that this component is used as a single criteria in a calculation.",journalsno,ReversalProvisionExpAcc
+ReversalProvisionExpAcc_ExchangeRate_82,"Schema Name: ReversalProvisionExpAcc
+        Component Name: ExchangeRate
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: Unknown purpose
+        Technical Logic: Unknown logic",ExchangeRate,ReversalProvisionExpAcc
+ReversalProvisionExpAcc_ProvisionValue_83,"Schema Name: ReversalProvisionExpAcc
+        Component Name: ProvisionValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of provision value for PO&IP status, which is used in the ReversalProvisionExpAcc schema.
+        Technical Logic: The component_expr uses a JSON object to link the document number and item ID, and then the SUMFROMSCHEMA component type aggregates the COST value from the schema, resulting in a total cost of provision value.",ProvisionValue,ReversalProvisionExpAcc
+ReversalProvisionExpAcc_BillValue_84,"Schema Name: ReversalProvisionExpAcc
+        Component Name: BillValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of a bill item by summing the cost from the ReversalProvisionExpAcc schema.
+        Technical Logic: The component_expr is a JSON object that defines the fields to be used in the calculation, and the component_type_value 'COST' specifies that the sum should be taken from the COST field in the schema.",BillValue,ReversalProvisionExpAcc
+ReversalProvisionExpAcc_currentprovisionvalue_85,"Schema Name: ReversalProvisionExpAcc
+        Component Name: currentprovisionvalue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the current provision value for the 'PO&IP_Status' model, specifically summing up the 'COST' value from the 'ReversalProvisionExpAcc' schema.
+        Technical Logic: The component_expr is a JSON object that references a link and an item ID, which is used to fetch data from another schema. The component_type is set to 'SUMFROMSCHEMA', indicating that the component will sum up values from the referenced schema.",currentprovisionvalue,ReversalProvisionExpAcc
+ReversalProvisionExpAcc_Value_86,"Schema Name: ReversalProvisionExpAcc
+        Component Name: Value
+        Component Type: COSTPROVISION-VALUE
+        Business Purpose: This row represents a component in the ReversalProvisionExpAcc schema that calculates the cost of a provision.
+        Technical Logic: The component 'Value' of type 'COSTPROVISION-VALUE' with a value of 'COST' is used in the ReversalProvisionExpAcc schema, likely as part of a calculation to determine the total cost of a provision, with 1 criteria applied.",Value,ReversalProvisionExpAcc
+ReversalProvisionExpAcc_AmountinLocalCurrency_87,"Schema Name: ReversalProvisionExpAcc
+        Component Name: AmountinLocalCurrency
+        Component Type: MATH
+        Business Purpose: This row represents a component in the ReversalProvisionExpAcc schema that calculates the amount in local currency, specifically the cost, by subtracting the value.
+        Technical Logic: The component_expr '-(Value)' indicates that the component is a mathematical operation that subtracts the 'Value' component from an unknown value, likely the total or a related component.",AmountinLocalCurrency,ReversalProvisionExpAcc
+ReversalProvisionExpAcc_AmountinTransactionCurrency_88,"Schema Name: ReversalProvisionExpAcc
+        Component Name: AmountinTransactionCurrency
+        Component Type: MATH
+        Business Purpose: This row represents a component in the ReversalProvisionExpAcc schema that calculates the Amount in Transaction Currency by subtracting the Value from the Exchange Rate.
+        Technical Logic: The component_expr '-(Value/ExchangeRate)' is a mathematical expression that performs division and negation to calculate the Amount in Transaction Currency.",AmountinTransactionCurrency,ReversalProvisionExpAcc
+ReversalProvision_journalsno_89,"Schema Name: ReversalProvision
+        Component Name: journalsno
+        Component Type: MATH
+        Business Purpose: This row defines a component in the ReversalProvision schema that calculates the cost of a journal with a specific model ID (MATH) based on a single criteria.
+        Technical Logic: The component_expr '1' indicates that the component always returns a value of 1, which is likely used as a cost value in the calculation. The component_type 'MATH' and component_type_value 'COST' suggest that this component is part of a mathematical model that calculates costs.",journalsno,ReversalProvision
+ReversalProvision_ExchangeRate_90,"Schema Name: ReversalProvision
+        Component Name: ExchangeRate
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: Unknown purpose
+        Technical Logic: Unknown logic",ExchangeRate,ReversalProvision
+ReversalProvision_ProvisionValue_91,"Schema Name: ReversalProvision
+        Component Name: ProvisionValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row represents a provision value component in the ReversalProvision schema, which calculates the total cost of an item.
+        Technical Logic: The component_expr field contains a JSON object that references a link and an item ID, which is used to fetch the relevant data for the SUMFROMSCHEMA operation, resulting in a total cost value.",ProvisionValue,ReversalProvision
+ReversalProvision_TDSValue_92,"Schema Name: ReversalProvision
+        Component Name: TDSValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component in the ReversalProvision schema that calculates the sum of costs from another schema, specifically for the ReversalTDS model.
+        Technical Logic: The component uses a SUMFROMSCHEMA operation to aggregate data from another schema, based on the provided criteria, and stores the result in the TDSValue component.",TDSValue,ReversalProvision
+ReversalProvision_Value_93,"Schema Name: ReversalProvision
+        Component Name: Value
+        Component Type: MATH
+        Business Purpose: This row defines a component in the ReversalProvision schema that calculates the total provision value by adding the ProvisionValue and TDSValue.
+        Technical Logic: The component_expr 'ProvisionValue + TDSValue' is evaluated to calculate the total provision value, where ProvisionValue and TDSValue are likely calculated elsewhere in the system.",Value,ReversalProvision
+ReversalProvision_AmountinLocalCurrency_94,"Schema Name: ReversalProvision
+        Component Name: AmountinLocalCurrency
+        Component Type: MATH
+        Business Purpose: This row defines a component in the ReversalProvision schema, specifically the AmountinLocalCurrency, which is a mathematical component that calculates the cost in local currency.
+        Technical Logic: The AmountinLocalCurrency component is a MATH component of type COST, using the 'Value' expression, and is associated with a single criteria, making it a simple calculation based on a single input value.",AmountinLocalCurrency,ReversalProvision
+ReversalProvision_AmountinTransactionCurrency_95,"Schema Name: ReversalProvision
+        Component Name: AmountinTransactionCurrency
+        Component Type: MATH
+        Business Purpose: This row defines a component in the ReversalProvision schema that calculates the Amount in Transaction Currency, which is the cost of a transaction after applying the exchange rate.
+        Technical Logic: The component uses a mathematical operation (MATH) to calculate the component_expr 'Value/ExchangeRate', resulting in a single criteria (criteria_count = 1).",AmountinTransactionCurrency,ReversalProvision
+ExpAccBill_I_journalsno_96,"Schema Name: ExpAccBill_I
+        Component Name: journalsno
+        Component Type: MATH
+        Business Purpose: This row defines a component in the 'ExpAccBill_I' schema that represents the journal number for a mathematical model 'MATH', specifically for calculating the 'COST' of a component.
+        Technical Logic: The component 'journalsno' is a mathematical component of type 'MATH' that uses the expression '1' and is evaluated once, as indicated by the 'criteria_count' of 1.",journalsno,ExpAccBill_I
+ExpAccBill_I_ExchangeRate_97,"Schema Name: ExpAccBill_I
+        Component Name: ExchangeRate
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: This row fetches the exchange rate from the 'COST' schema for the 'Bill_Item' model, allowing the system to accurately calculate exchange rates for billing items.
+        Technical Logic: The 'FETCHFROMSCHEMA' component fetches data from the 'COST' schema, using the 'component_expr' to filter by 'documentnumber', and returns the result to the 'Bill_Item' model, with a criteria count of 1.",ExchangeRate,ExpAccBill_I
+ExpAccBill_I_Value_98,"Schema Name: ExpAccBill_I
+        Component Name: Value
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component named 'Value' in the 'ExpAccBill_I' schema, which calculates the total cost of a bill item in the 'Bill_Item' model.
+        Technical Logic: The component uses the 'SUMFROMSCHEMA' type to sum the 'COST' value from the schema, and the component expression is a JSON object that defines the fields to be included in the calculation.",Value,ExpAccBill_I
+ExpAccBill_I_AmountinLocalCurrency_99,"Schema Name: ExpAccBill_I
+        Component Name: AmountinLocalCurrency
+        Component Type: MATH
+        Business Purpose: This row defines a component in the ExpAccBill_I schema that calculates the amount in local currency, specifically the cost, based on a value.
+        Technical Logic: The component 'AmountinLocalCurrency' of type 'MATH' with value 'COST' and expression 'Value' is used in the ExpAccBill_I schema, indicating a mathematical operation to calculate the cost based on a given value.",AmountinLocalCurrency,ExpAccBill_I
+ExpAccBill_I_AmountinTransactionCurrency_100,"Schema Name: ExpAccBill_I
+        Component Name: AmountinTransactionCurrency
+        Component Type: MATH
+        Business Purpose: This row represents a component in the 'ExpAccBill_I' schema that calculates the 'Amount in Transaction Currency' based on the 'Value' and 'Exchange Rate', which is used as a criteria in a mathematical model.
+        Technical Logic: The 'AmountinTransactionCurrency' component is a mathematical operation that divides the 'Value' by the 'ExchangeRate' to produce the final result, which is then used as a criteria in the 'MATH' model with an ID of 'MATH'.",AmountinTransactionCurrency,ExpAccBill_I
+GSTAccBill_I_journalsno_101,"Schema Name: GSTAccBill_I
+        Component Name: journalsno
+        Component Type: MATH
+        Business Purpose: This row defines a component in the GSTAccBill_I schema, specifically the 'journalsno' field, which is used to track the cost of a mathematical model 'MATH'.
+        Technical Logic: The 'journalsno' component is a mathematical field of type 'COST' with a value of '1', and it is used in a criteria count of 1. This suggests that the component is used as a single criteria in a mathematical calculation or model.",journalsno,GSTAccBill_I
+GSTAccBill_I_ExchangeRate_102,"Schema Name: GSTAccBill_I
+        Component Name: ExchangeRate
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: This row fetches the exchange rate from the schema 'GSTAccBill_I' for the 'Bill_Item' model, specifically for the 'COST' component, and uses it as a criteria for filtering.
+        Technical Logic: The component_expr '{\""documentnumber\"":\""documentnumber\""}' is a JSON expression that is evaluated to filter the data, and the component_type 'FETCHFROMSCHEMA' indicates that the exchange rate is fetched from the schema 'GSTAccBill_I' using the 'component_type_value' 'COST'.",ExchangeRate,GSTAccBill_I
+GSTAccBill_I_Parameter1_103,"Schema Name: GSTAccBill_I
+        Component Name: Parameter1
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: This row fetches the 'COST' value from the schema 'GSTAccBill_I' for the model 'AD' based on specific criteria, and stores it in the 'Parameter1' component.
+        Technical Logic: The component 'Parameter1' uses the 'FETCHFROMSCHEMA' type to retrieve data from the 'GSTAccBill_I' schema, specifically the 'COST' value, and stores it in a JSON object with predefined keys such as 'itemtype', 'Accountgroup', 'Accountclass', 'AccountCode', and 'LedgerName'.",Parameter1,GSTAccBill_I
+GSTAccBill_I_BillBaseValue_104,"Schema Name: GSTAccBill_I
+        Component Name: BillBaseValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component in the GSTAccBill_I schema that calculates the sum of the COST value from the Bill_Item model, filtered by specific criteria.
+        Technical Logic: The component_expr field uses a JSON object to specify the criteria for the SUMFROMSCHEMA operation, which aggregates the COST value from the Bill_Item model based on the documentnumber, ItemID, taxcode, ForPrdFrom, ForPrdTo, and Linkref fields.",BillBaseValue,GSTAccBill_I
+GSTAccBill_I_NValue_105,"Schema Name: GSTAccBill_I
+        Component Name: NValue
+        Component Type: MATH
+        Business Purpose: This row represents a component in the GSTAccBill_I schema that calculates the cost of a bill by multiplying the bill base value with a parameter and dividing by 100.
+        Technical Logic: The component_expr '-(BillBaseValue * Parameter1)/100' is a mathematical expression that calculates the cost by subtracting the product of BillBaseValue and Parameter1 from 100, effectively calculating a percentage.",NValue,GSTAccBill_I
+GSTAccBill_I_PValue_106,"Schema Name: GSTAccBill_I
+        Component Name: PValue
+        Component Type: MATH
+        Business Purpose: This row calculates the GST (Goods and Services Tax) cost as a percentage of the bill base value, using a parameter named 'Parameter1'.
+        Technical Logic: The component 'PValue' in the 'GSTAccBill_I' schema uses a mathematical expression to calculate the GST cost, which is then used in the model 'MATH'. The expression '(BillBaseValue * Parameter1)/100' multiplies the bill base value by the parameter value and divides the result by 100 to get the GST cost.",PValue,GSTAccBill_I
+GSTAccBill_I_Value_107,"Schema Name: GSTAccBill_I
+        Component Name: Value
+        Component Type: MATH
+        Business Purpose: This row defines a component in the GSTAccBill_I schema that calculates the total cost by adding the NValue and PValue.
+        Technical Logic: The component_expr 'NValue+PValue' is evaluated to calculate the total cost, where NValue and PValue are likely numeric values representing different components of the cost.",Value,GSTAccBill_I
+GSTAccBill_I_AmountinLocalCurrency_108,"Schema Name: GSTAccBill_I
+        Component Name: AmountinLocalCurrency
+        Component Type: MATH
+        Business Purpose: This row represents a component in the GSTAccBill_I schema, specifically the 'AmountinLocalCurrency' component, which is used to calculate the cost in local currency.
+        Technical Logic: The 'AmountinLocalCurrency' component is a mathematical operation (MATH) that takes the 'Value' as input and has a criteria count of 1, indicating it is used as a single criteria in the GSTAccBill_I model.",AmountinLocalCurrency,GSTAccBill_I
+GSTAccBill_I_AmountinTransactionCurrency_109,"Schema Name: GSTAccBill_I
+        Component Name: AmountinTransactionCurrency
+        Component Type: MATH
+        Business Purpose: This row represents a component in a GSTAccBill_I schema that calculates the amount in transaction currency by dividing the value by the exchange rate.
+        Technical Logic: The backend operation involves a mathematical calculation where the 'Value' is divided by the 'ExchangeRate' to produce the 'AmountinTransactionCurrency'.",AmountinTransactionCurrency,GSTAccBill_I
+ExpAccBill_I_GST_journalsno_110,"Schema Name: ExpAccBill_I_GST
+        Component Name: journalsno
+        Component Type: MATH
+        Business Purpose: This row defines a component in the 'ExpAccBill_I_GST' schema, specifically 'journalsno', which is a mathematical component of type 'MATH' used to calculate 'COST' based on a fixed value of 1.
+        Technical Logic: The component 'journalsno' is a mathematical component that uses a fixed value of 1 to calculate 'COST', with a criteria count of 1, indicating it is a simple calculation.",journalsno,ExpAccBill_I_GST
+ExpAccBill_I_GST_ExchangeRate_111,"Schema Name: ExpAccBill_I_GST
+        Component Name: ExchangeRate
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: This row fetches the exchange rate from the 'ExpAccBill_I_GST' schema for use in the 'Bill_Item' model, specifically for the 'COST' component, based on the document number, and the from and to period.
+        Technical Logic: The 'FETCHFROMSCHEMA' component type uses the 'component_expr' to retrieve data from the 'ExpAccBill_I_GST' schema, which is then used in the 'Bill_Item' model. The 'component_expr' is a JSON object that maps field names to their corresponding values, allowing for dynamic data retrieval.",ExchangeRate,ExpAccBill_I_GST
+ExpAccBill_I_GST_Parameter1_112,"Schema Name: ExpAccBill_I_GST
+        Component Name: Parameter1
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component in the ExpAccBill_I_GST schema, specifically 'Parameter1', which is a SUMFROMSCHEMA type component that calculates the COST for the GSTAccBill_I model based on certain criteria.
+        Technical Logic: The component_expr field contains a JSON object that specifies the fields to be used for the calculation, including documentnumber, ItemID, ForPrdFrom, and ForPrdTo. The criteria_count field indicates that there is only one set of criteria for this component.",Parameter1,ExpAccBill_I_GST
+ExpAccBill_I_GST_BillBaseValue_113,"Schema Name: ExpAccBill_I_GST
+        Component Name: BillBaseValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component in the 'ExpAccBill_I_GST' schema, named 'BillBaseValue', which calculates the sum of 'COST' for the 'Bill_Item' model.
+        Technical Logic: The component uses a SUMFROMSCHEMA operation, which aggregates data from a schema, and applies a filter based on the provided criteria. The component_expr is a JSON object that specifies the fields to be used in the aggregation.",BillBaseValue,ExpAccBill_I_GST
+ExpAccBill_I_GST_NValue_114,"Schema Name: ExpAccBill_I_GST
+        Component Name: NValue
+        Component Type: MATH
+        Business Purpose: This row calculates the GST (Goods and Services Tax) cost by subtracting 1% of the BillBaseValue multiplied by Parameter1.
+        Technical Logic: The component_expr '-(BillBaseValue * Parameter1)/100' is a mathematical expression that calculates the GST cost. It multiplies the BillBaseValue by Parameter1, then subtracts 1% of the result, effectively calculating the GST cost.",NValue,ExpAccBill_I_GST
+ExpAccBill_I_GST_PValue_115,"Schema Name: ExpAccBill_I_GST
+        Component Name: PValue
+        Component Type: MATH
+        Business Purpose: This row calculates the GST (Goods and Services Tax) cost as a percentage of the bill base value, using a mathematical formula and a parameter.
+        Technical Logic: The component_expr '(BillBaseValue * Parameter1)/100' is evaluated to calculate the GST cost, where BillBaseValue is the base value of the bill and Parameter1 is a parameter used in the calculation.",PValue,ExpAccBill_I_GST
+ExpAccBill_I_GST_Value_116,"Schema Name: ExpAccBill_I_GST
+        Component Name: Value
+        Component Type: MATH
+        Business Purpose: This row defines a component 'Value' in the 'ExpAccBill_I_GST' schema, which calculates the total cost by adding 'NValue' and 'PValue' for mathematical model 'MATH'.
+        Technical Logic: The component 'Value' uses a mathematical expression 'NValue+PValue' to calculate its value, where 'NValue' and 'PValue' are likely other components or values in the model, and 'COST' is the type of value being calculated for the 'MATH' model.",Value,ExpAccBill_I_GST
+ExpAccBill_I_GST_AmountinLocalCurrency_117,"Schema Name: ExpAccBill_I_GST
+        Component Name: AmountinLocalCurrency
+        Component Type: MATH
+        Business Purpose: This row defines a component in the ExpAccBill_I_GST schema that calculates the amount in local currency based on the cost value.
+        Technical Logic: The component 'AmountinLocalCurrency' of type 'MATH' with value 'COST' and expression 'Value' is used in the 'ExpAccBill_I_GST' schema, likely for financial reporting purposes, and is associated with a single criteria.",AmountinLocalCurrency,ExpAccBill_I_GST
+ExpAccBill_I_GST_AmountinTransactionCurrency_118,"Schema Name: ExpAccBill_I_GST
+        Component Name: AmountinTransactionCurrency
+        Component Type: MATH
+        Business Purpose: This row calculates the amount in transaction currency by dividing the value by the exchange rate for the 'ExpAccBill_I_GST' schema.
+        Technical Logic: The 'AmountinTransactionCurrency' component uses a mathematical operation (MATH) to calculate the component_expr 'Value/ExchangeRate', which is then used in the 'ExpAccBill_I_GST' schema. The operation is of type 'COST' and is used once in the criteria.",AmountinTransactionCurrency,ExpAccBill_I_GST
+TDSAccBill_I_journalsno_119,"Schema Name: TDSAccBill_I
+        Component Name: journalsno
+        Component Type: MATH
+        Business Purpose: This row defines a component in the TDSAccBill_I schema, specifically the 'journalsno' component, which is used to calculate the cost of a mathematical model (MATH) based on a single criteria.
+        Technical Logic: The 'journalsno' component is a mathematical component that uses a simple expression (1) to calculate the cost of a model, where the component type is set to 'MATH' and the component type value is 'COST'. The component expression is hardcoded to 1, indicating a fixed value, and it is used in a single criteria.",journalsno,TDSAccBill_I
+TDSAccBill_I_ExchangeRate_120,"Schema Name: TDSAccBill_I
+        Component Name: ExchangeRate
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: This row fetches the exchange rate from the schema 'COST' for the 'Bill_Item' model, likely used to calculate the cost of items in a bill.
+        Technical Logic: The component 'ExchangeRate' uses the FETCHFROMSCHEMA component type to retrieve data from the 'COST' schema, with a criteria count of 1, and applies a simple expression to filter the data.",ExchangeRate,TDSAccBill_I
+TDSAccBill_I_TDSRate_121,"Schema Name: TDSAccBill_I
+        Component Name: TDSRate
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: This row defines a component named 'TDSRate' in the 'TDSAccBill_I' schema, which fetches the 'COST' value from the 'Bill_Item' model.
+        Technical Logic: The component_expr field uses a JSON object to specify the document fields 'documentnumber' and 'sectionname' to be fetched, and the criteria_count field indicates that this component is used in a single criteria.",TDSRate,TDSAccBill_I
+TDSAccBill_I_AccBaseValue_122,"Schema Name: TDSAccBill_I
+        Component Name: AccBaseValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of an item in a bill by summing the 'COST' field from the 'TDSAccBill_I' schema.
+        Technical Logic: The 'AccBaseValue' component uses the 'SUMFROMSCHEMA' component type to aggregate the 'COST' field from the 'TDSAccBill_I' schema, based on the specified criteria, and returns the result as a JSON object.",AccBaseValue,TDSAccBill_I
+TDSAccBill_I_ExpAmtPerc_123,"Schema Name: TDSAccBill_I
+        Component Name: ExpAmtPerc
+        Component Type: MATH
+        Business Purpose: This row calculates the expense amount percentage for the TDSAccBill_I schema, using the MATH model, COST component type, and a formula that adds 100 to the TDS rate.
+        Technical Logic: The component_expr '100 + TDSRate' is evaluated to calculate the expense amount percentage, where TDSRate is presumably a variable or field in the underlying data, and the result is used in the TDSAccBill_I schema with a criteria count of 1.",ExpAmtPerc,TDSAccBill_I
+TDSAccBill_I_Value1_124,"Schema Name: TDSAccBill_I
+        Component Name: Value1
+        Component Type: MATH
+        Business Purpose: This row calculates the TDS (Tax Deducted at Source) on a bill by multiplying the base value with the TDS rate and dividing by 100.
+        Technical Logic: The component_expr 'AccBaseValue*TDSRate/100' is evaluated to calculate the TDS amount, where AccBaseValue is the base value and TDSRate is the TDS rate.",Value1,TDSAccBill_I
+TDSAccBill_I_Value2_125,"Schema Name: TDSAccBill_I
+        Component Name: Value2
+        Component Type: MATH
+        Business Purpose: This row calculates the cost of a bill by multiplying the base value with the tax rate and dividing by the expense amount percentage.
+        Technical Logic: The component_expr 'AccBaseValue*TDSRate/ExpAmtPerc' is evaluated to calculate the cost, where AccBaseValue is the base value, TDSRate is the tax rate, and ExpAmtPerc is the expense amount percentage.",Value2,TDSAccBill_I
+TDSAccBill_I_ProcessedTDSValue_126,"Schema Name: TDSAccBill_I
+        Component Name: ProcessedTDSValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of processed TDS amounts in GSE, based on the link reference and section name.
+        Technical Logic: The component_expr uses JSON to filter data by 'createdid' and 'accountclass', and the SUMFROMSCHEMA component_type aggregates the 'COST' value from the schema.",ProcessedTDSValue,TDSAccBill_I
+TDSAccBill_I_Value_127,"Schema Name: TDSAccBill_I
+        Component Name: Value
+        Component Type: MATH
+        Business Purpose: This row defines a calculation component in the TDSAccBill_I schema, specifically calculating the total cost by summing 'Value1' and 'Value2'.
+        Technical Logic: The component_expr '(Value1+Value2)' is evaluated as a mathematical expression, where 'Value1' and 'Value2' are likely other components or values in the model, and the result is used as the component_type_value 'COST'.",Value,TDSAccBill_I
+TDSAccBill_I_AmountinLocalCurrency_128,"Schema Name: TDSAccBill_I
+        Component Name: AmountinLocalCurrency
+        Component Type: MATH
+        Business Purpose: This row defines a component in the TDSAccBill_I schema that calculates the amount in local currency, specifically the cost, based on a value.
+        Technical Logic: The component 'AmountinLocalCurrency' of type 'MATH' with value 'COST' is evaluated based on the 'Value' expression, and it is used in 1 criteria.",AmountinLocalCurrency,TDSAccBill_I
+TDSAccBill_I_AmountinTransactionCurrency_129,"Schema Name: TDSAccBill_I
+        Component Name: AmountinTransactionCurrency
+        Component Type: MATH
+        Business Purpose: This row represents a calculation component in the TDSAccBill_I schema, specifically calculating the amount in transaction currency by dividing the value by the exchange rate.
+        Technical Logic: The component_expr 'Value/ExchangeRate' indicates that the component performs a mathematical operation, dividing the 'Value' by the 'ExchangeRate' to produce the 'AmountinTransactionCurrency'.",AmountinTransactionCurrency,TDSAccBill_I
+ExpAccBill_I_TDS_journalsno_130,"Schema Name: ExpAccBill_I_TDS
+        Component Name: journalsno
+        Component Type: MATH
+        Business Purpose: This row defines a component in the 'ExpAccBill_I_TDS' schema that represents the journal number for a mathematical model 'MATH', specifically for calculating the 'COST' of a component.
+        Technical Logic: The component 'journalsno' is a mathematical component of type 'MATH' with a value of 'COST' and an expression of '1', indicating it's a simple cost calculation. It has a criteria count of 1, suggesting it's a basic component with a single condition.",journalsno,ExpAccBill_I_TDS
+ExpAccBill_I_TDS_ExchangeRate_131,"Schema Name: ExpAccBill_I_TDS
+        Component Name: ExchangeRate
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: This row fetches the exchange rate from the 'COST' schema for the 'Bill_Item' model, likely used to calculate the total cost of an item in an expense account bill.
+        Technical Logic: The 'FETCHFROMSCHEMA' component fetches data from the 'COST' schema, using the 'component_expr' to filter by 'documentnumber', and returns the result to the 'Bill_Item' model.",ExchangeRate,ExpAccBill_I_TDS
+ExpAccBill_I_TDS_Value1_132,"Schema Name: ExpAccBill_I_TDS
+        Component Name: Value1
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row represents a component in the 'ExpAccBill_I_TDS' schema, specifically 'Value1', which is a SUMFROMSCHEMA type component that calculates the 'COST' for the 'TDSAccBill_I' model, based on certain criteria.
+        Technical Logic: The component_expr field contains a JSON object that defines the fields to be used in the calculation, such as documentnumber, Itemid, sectionname, ForPrdFrom, ForPrdTo, and Linkref. The component_type_value 'COST' indicates that the component is calculating the total cost, and the component_type 'SUMFROMSCHEMA' suggests that the calculation is being performed on a schema level.",Value1,ExpAccBill_I_TDS
+ExpAccBill_I_TDS_Value_133,"Schema Name: ExpAccBill_I_TDS
+        Component Name: Value
+        Component Type: MATH
+        Business Purpose: This row calculates the cost of a Value component in the ExpAccBill_I_TDS schema, subtracting Value1 from the result.
+        Technical Logic: The component_expr '-(Value1)' is evaluated as a mathematical expression, where Value1 is another component, resulting in a cost calculation.",Value,ExpAccBill_I_TDS
+ExpAccBill_I_TDS_AmountinLocalCurrency_134,"Schema Name: ExpAccBill_I_TDS
+        Component Name: AmountinLocalCurrency
+        Component Type: MATH
+        Business Purpose: This row represents a calculation component in the ExpAccBill_I_TDS schema, specifically calculating the amount in local currency based on the 'Value' expression.
+        Technical Logic: The component 'AmountinLocalCurrency' is a mathematical calculation (MATH) with a type value of 'COST', utilizing the 'Value' expression and having a single criteria, which is executed within the 'MATH' model (MATH).",AmountinLocalCurrency,ExpAccBill_I_TDS
+ExpAccBill_I_TDS_AmountinTransactionCurrency_135,"Schema Name: ExpAccBill_I_TDS
+        Component Name: AmountinTransactionCurrency
+        Component Type: MATH
+        Business Purpose: This row represents a calculation component in the 'ExpAccBill_I_TDS' schema, specifically 'AmountinTransactionCurrency', which calculates the cost of a transaction by dividing the 'Value' by the 'ExchangeRate'.
+        Technical Logic: The component 'AmountinTransactionCurrency' is a mathematical calculation (component_type: 'MATH') that uses the formula 'Value/ExchangeRate' (component_expr) to determine the cost of a transaction, with a single criteria (criteria_count: 1) applied.",AmountinTransactionCurrency,ExpAccBill_I_TDS
+RoundOffAcc_journalsno_136,"Schema Name: RoundOffAcc
+        Component Name: journalsno
+        Component Type: MATH
+        Business Purpose: This row defines a component in the RoundOffAcc schema that calculates the cost of journals with a single criteria.
+        Technical Logic: The component_expr '1' indicates a fixed value, and the component_type 'MATH' with value 'COST' suggests a mathematical operation related to cost calculation. The criteria_count of 1 implies that this component is based on a single criterion.",journalsno,RoundOffAcc
+RoundOffAcc_AmountinLocalCurrency_137,"Schema Name: RoundOffAcc
+        Component Name: AmountinLocalCurrency
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: This row fetches the cost of a bill from a schema named RoundOffAcc, specifically the 'AmountinLocalCurrency' component, and uses it as a criteria in a model.
+        Technical Logic: The FETCHFROMSCHEMA component_type executes a query on the RoundOffAcc schema to retrieve the 'AmountinLocalCurrency' component, which is then used as a criteria in the model with model_id 'Bill_H'.",AmountinLocalCurrency,RoundOffAcc
+RoundOffAcc_AmountinTransactionCurrency_138,"Schema Name: RoundOffAcc
+        Component Name: AmountinTransactionCurrency
+        Component Type: MATH
+        Business Purpose: This row defines a component in the RoundOffAcc schema that calculates the amount in transaction currency based on the cost in local currency.
+        Technical Logic: The component 'AmountinTransactionCurrency' is a mathematical operation (MATH) that takes the 'AmountinLocalCurrency' as input and returns the result as 'COST', with a criteria count of 1.",AmountinTransactionCurrency,RoundOffAcc
+CrAccBill_I_journalsno_139,"Schema Name: CrAccBill_I
+        Component Name: journalsno
+        Component Type: MATH
+        Business Purpose: This row defines a component in the 'CrAccBill_I' schema that represents the journal number for a mathematical model 'MATH', specifically for cost calculations.
+        Technical Logic: The component 'journalsno' is a mathematical component of type 'MATH' with a value of 'COST', evaluated as a constant '1', and is used in a single criteria.",journalsno,CrAccBill_I
+CrAccBill_I_ExchangeRate_140,"Schema Name: CrAccBill_I
+        Component Name: ExchangeRate
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: This row fetches the exchange rate from the schema 'CrAccBill_I' for the 'Bill_Item' model, specifically for the 'COST' component, and uses it as a criteria for the current document number.
+        Technical Logic: The component_expr '{\""documentnumber\"":\""documentnumber\""}' is used to fetch the exchange rate from the schema 'CrAccBill_I' for the 'Bill_Item' model, where the 'documentnumber' is used as a criteria. The component_type 'FETCHFROMSCHEMA' indicates that the data is fetched from a schema, and the component_type_value 'COST' specifies the type of data being fetched.",ExchangeRate,CrAccBill_I
+CrAccBill_I_ExpValue_141,"Schema Name: CrAccBill_I
+        Component Name: ExpValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of items in the 'CrAccBill_I' schema by summing up the 'COST' value from the 'ExpAccBill_I' model, based on the specified criteria.
+        Technical Logic: The 'ExpValue' component uses the 'SUMFROMSCHEMA' type to aggregate the 'COST' value from the 'ExpAccBill_I' model, filtered by the specified criteria in the 'component_expr' expression, resulting in a total cost value.",ExpValue,CrAccBill_I
+CrAccBill_I_GSTValue_142,"Schema Name: CrAccBill_I
+        Component Name: GSTValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total GST value for a bill by summing the COST from the CrAccBill_I schema.
+        Technical Logic: The component_expr is a JSON object that specifies the fields to be used in the calculation, and the component_type_value 'COST' indicates that the sum should be performed on the COST field. The component_type 'SUMFROMSCHEMA' indicates that the sum should be performed across the entire schema.",GSTValue,CrAccBill_I
+CrAccBill_I_TDSValue_143,"Schema Name: CrAccBill_I
+        Component Name: TDSValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of items in the CrAccBill_I schema, specifically the TDSValue component, based on the Documentnumber, Itemid, ForPrdFrom, ForPrdTo, and Linkref criteria.
+        Technical Logic: The component_expr is a JSON object that defines the criteria for the calculation, which is then used by the SUMFROMSCHEMA component type to sum the COST value from the TDSAccBill_I model.",TDSValue,CrAccBill_I
+CrAccBill_I_ExpTDSValue_144,"Schema Name: CrAccBill_I
+        Component Name: ExpTDSValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of items in the 'CrAccBill_I' schema, specifically for the 'ExpAccBill_I_TDS' model, by summing up the 'COST' value from the schema.
+        Technical Logic: The 'ExpTDSValue' component uses a 'SUMFROMSCHEMA' type to aggregate data from the schema, filtering by the specified criteria (document number, item ID, for period from, for period to, and link reference), and returns the result as a JSON object.",ExpTDSValue,CrAccBill_I
+CrAccBill_I_ExpGSTValue_145,"Schema Name: CrAccBill_I
+        Component Name: ExpGSTValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of items in a bill, specifically the expense GST value, by summing up the COST from the CrAccBill_I schema.
+        Technical Logic: The component_expr is a JSON object that defines the fields to be used in the calculation. It is then used to filter the data, and the SUMFROMSCHEMA component_type is used to sum up the COST from the CrAccBill_I schema, resulting in the total cost of items in the bill.",ExpGSTValue,CrAccBill_I
+CrAccBill_I_Value_146,"Schema Name: CrAccBill_I
+        Component Name: Value
+        Component Type: MATH
+        Business Purpose: This row calculates the total cost of an expense by subtracting the values of GST, TDS, and their respective expenses from the expense value.
+        Technical Logic: The component_expr '- (ExpValue + GSTValue + TDSValue + ExpTDSValue + ExpGSTValue)' is a mathematical expression that calculates the total cost by subtracting the sum of GST, TDS, and their respective expenses from the expense value.",Value,CrAccBill_I
+CrAccBill_I_AmountinLocalCurrency_147,"Schema Name: CrAccBill_I
+        Component Name: AmountinLocalCurrency
+        Component Type: MATH
+        Business Purpose: This row defines a component in the CrAccBill_I schema that calculates the amount in local currency, specifically the cost, based on a value.
+        Technical Logic: The component 'AmountinLocalCurrency' of type 'MATH' with value 'COST' and expression 'Value' is used in the 'CrAccBill_I' schema, indicating a mathematical operation to calculate the cost based on a given value.",AmountinLocalCurrency,CrAccBill_I
+CrAccBill_I_AmountinTransactionCurrency_148,"Schema Name: CrAccBill_I
+        Component Name: AmountinTransactionCurrency
+        Component Type: MATH
+        Business Purpose: This row defines a component in the CrAccBill_I schema that calculates the amount in transaction currency by dividing the value by the exchange rate.
+        Technical Logic: The component 'AmountinTransactionCurrency' is a mathematical operation that takes the 'Value' and 'ExchangeRate' as inputs, and returns the result of the division as its output.",AmountinTransactionCurrency,CrAccBill_I
+ProvisionReversalCostAllocation_costallocationparameterperc_149,"Schema Name: ProvisionReversalCostAllocation
+        Component Name: costallocationparameterperc
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: This row defines a cost allocation parameter percentage component in the ProvisionReversalCostAllocation schema, used in the ReverseCA model to fetch cost data.
+        Technical Logic: The component_expr field contains a JSON object that specifies the fields to fetch from the linkref schema, including itemid, ForPrdFrom, ForPrdTo, CostAllocationMethod, and LOB, which are then used to fetch cost data.",costallocationparameterperc,ProvisionReversalCostAllocation
+ProvisionReversalCostAllocation_Value_150,"Schema Name: ProvisionReversalCostAllocation
+        Component Name: Value
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component in the ProvisionReversalCostAllocation schema that calculates the total cost of a reversal provision expense account, specifically summing up the costs from the ReversalProvisionExpAcc model.
+        Technical Logic: The component_expr field uses a JSON object to specify the fields to be included in the calculation, which are then used to filter and aggregate data from the model. The SUMFROMSCHEMA component_type is used to sum up the values from the specified model, resulting in a total cost value.",Value,ProvisionReversalCostAllocation
+ProvisionReversalCostAllocation_AmountinLocalCurrency_151,"Schema Name: ProvisionReversalCostAllocation
+        Component Name: AmountinLocalCurrency
+        Component Type: MATH
+        Business Purpose: This row calculates the amount in local currency for provision reversal cost allocation, using a formula that multiplies the value by a cost allocation percentage.
+        Technical Logic: The component_expr '(Value * costallocationparameterperc)/100' is evaluated to calculate the amount in local currency, where 'Value' and 'costallocationparameterperc' are likely input parameters or variables in the MATH model.",AmountinLocalCurrency,ProvisionReversalCostAllocation
+ProvisionReversalCostAllocation_CostAllocationParameterValue_152,"Schema Name: ProvisionReversalCostAllocation
+        Component Name: CostAllocationParameterValue
+        Component Type: MATH
+        Business Purpose: This row defines a cost allocation parameter value for the Provision Reversal Cost Allocation model, specifying a mathematical calculation to determine the cost allocation percentage.
+        Technical Logic: The component_expr 'costallocationparameterperc' is evaluated as a mathematical expression to determine the cost allocation percentage, with a criteria count of 1, indicating a single input value is used in the calculation.",CostAllocationParameterValue,ProvisionReversalCostAllocation
+BillCostAllocation_TCostAllocationValue_153,"Schema Name: BillCostAllocation
+        Component Name: TCostAllocationValue
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: This row defines a component in the BillCostAllocation schema that fetches the cost allocation value from the model TCostAllocationValue.
+        Technical Logic: The component FETCHFROMSCHEMA with value 'COST' retrieves the 'CostAllocationMethod' and 'linkref' from the model TCostAllocationValue, using the component expression '{""CostAllocationMethod"":""CostAllocationMethod"",""linkref"":""linkref""}'.",TCostAllocationValue,BillCostAllocation
+BillCostAllocation_CostAllocationParameterValue_154,"Schema Name: BillCostAllocation
+        Component Name: CostAllocationParameterValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a cost allocation parameter value for the 'BillCostAllocation1' model, specifically summing the 'COST' value from the 'BillCostAllocation' schema.
+        Technical Logic: The 'CostAllocationParameterValue' component uses the 'SUMFROMSCHEMA' component type to calculate the sum of 'COST' values from the 'BillCostAllocation' schema, with a criteria count of 1, and stores the result in the 'CostAllocationMethod' field of the 'linkref' reference, within the 'LOB' context.",CostAllocationParameterValue,BillCostAllocation
+BillCostAllocation_CostAllocationParameterPerc_155,"Schema Name: BillCostAllocation
+        Component Name: CostAllocationParameterPerc
+        Component Type: MATH
+        Business Purpose: This row defines a cost allocation parameter percentage in the BillCostAllocation schema, used to allocate costs based on a specific percentage value.
+        Technical Logic: The component_expr 'CostAllocationParameterValue / TCostAllocationValue' calculates the cost allocation percentage by dividing the cost allocation parameter value by the total cost allocation value, resulting in a percentage value.",CostAllocationParameterPerc,BillCostAllocation
+BillCostAllocation_BillAmountinLocalCurrency_156,"Schema Name: BillCostAllocation
+        Component Name: BillAmountinLocalCurrency
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component in the 'BillCostAllocation' schema that calculates the total cost of an accounting journal entry, specifically the 'BillAmountinLocalCurrency' component, which sums up the costs based on the 'COST' type.
+        Technical Logic: The component_expr field uses a JSON object to filter the data, selecting records where the 'documentnumber', 'AccountType', 'ForPrdFrom', 'ForPrdTo', 'linkref', 'CostAllocationMethod', and 'lineref' fields match the specified values. The SUMFROMSCHEMA component_type is then used to calculate the sum of the 'COST' type, resulting in the total cost of the accounting journal entry.",BillAmountinLocalCurrency,BillCostAllocation
+BillCostAllocation_AmountinLocalCurrency1_157,"Schema Name: BillCostAllocation
+        Component Name: AmountinLocalCurrency1
+        Component Type: MATH
+        Business Purpose: This row defines a component in the BillCostAllocation schema that calculates the amount in local currency based on the bill amount and cost allocation percentage.
+        Technical Logic: The component_expr 'BillAmountinLocalCurrency * CostAllocationParameterPerc' is evaluated to calculate the amount in local currency, where BillAmountinLocalCurrency is the bill amount and CostAllocationParameterPerc is the cost allocation percentage.",AmountinLocalCurrency1,BillCostAllocation
+BillCostAllocation_AmountinLocalCurrency2_158,"Schema Name: BillCostAllocation
+        Component Name: AmountinLocalCurrency2
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row represents a component in the BillCostAllocation model that calculates the total cost in local currency.
+        Technical Logic: The component uses the SUMFROMSCHEMA type to aggregate data from another schema, specifically COST values, and applies a criteria count of 1, with the component expression containing a JSON object that references 'CostAllocationMethod' and 'LOB'.",AmountinLocalCurrency2,BillCostAllocation
+BillCostAllocation_AmountinLocalCurrency_159,"Schema Name: BillCostAllocation
+        Component Name: AmountinLocalCurrency
+        Component Type: MATH
+        Business Purpose: This row defines a component in the BillCostAllocation schema that calculates the total amount in local currency by summing the values of AmountinLocalCurrency1 and AmountinLocalCurrency2.
+        Technical Logic: The component_expr 'AmountinLocalCurrency1+AmountinLocalCurrency2' is evaluated as a mathematical expression, where AmountinLocalCurrency1 and AmountinLocalCurrency2 are likely other components in the schema, and the result is stored in the AmountinLocalCurrency component.",AmountinLocalCurrency,BillCostAllocation
+AmortizeBill_I_SignWAccBaseValue_160,"Schema Name: AmortizeBill_I
+        Component Name: SignWAccBaseValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the base value of the sign of the working account for a bill item, summing up the cost from the AmortizeBill_I schema.
+        Technical Logic: The component_expr is a JSON object that defines the fields to be used in the calculation, and the component_type_value 'COST' specifies that the sum should be calculated based on the cost field. The component_type 'SUMFROMSCHEMA' indicates that the sum should be calculated from the AmortizeBill_I schema.",SignWAccBaseValue,AmortizeBill_I
+AmortizeBill_I_ExpValue_TDS_161,"Schema Name: AmortizeBill_I
+        Component Name: ExpValue_TDS
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of items in the AmortizeBill_I schema, specifically for the ExpValue_TDS component, which is part of the ExpAccBill_I_TDS model. It sums up the costs from the schema based on certain criteria.
+        Technical Logic: The component_expr field uses a JSON object to specify the fields to be used for the calculation, which are Documentnumber, Itemid, and Linkref. The component_type is set to SUMFROMSCHEMA, indicating that it will sum up values from the schema based on the specified criteria.",ExpValue_TDS,AmortizeBill_I
+AmortizeBill_I_ExpValue_GST_162,"Schema Name: AmortizeBill_I
+        Component Name: ExpValue_GST
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of items in the AmortizeBill_I schema, specifically for the ExpValue_GST component, which is part of the ExpAccBill_I_GST model. It sums up the cost of items based on certain criteria.
+        Technical Logic: The component_expr field uses a JSON object to specify the fields to be used in the calculation, which are Documentnumber, Itemid, and Linkref. The component_type is set to SUMFROMSCHEMA, indicating that the component will sum up values from the schema. The component_type_value is set to COST, specifying that the values to be summed up are costs.",ExpValue_GST,AmortizeBill_I
+AmortizeBill_I_ExchangeRate_163,"Schema Name: AmortizeBill_I
+        Component Name: ExchangeRate
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: This row fetches the exchange rate for a bill item from the 'COST' schema, using the document number as a reference.
+        Technical Logic: The FETCHFROMSCHEMA component type retrieves data from another schema, in this case 'COST', based on the component expression '{""documentnumber"":""documentnumber""}', which is likely a placeholder for the actual document number. The result is then used in the AmortizeBill_I model.",ExchangeRate,AmortizeBill_I
+AmortizeBill_I_AddlCharge_164,"Schema Name: AmortizeBill_I
+        Component Name: AddlCharge
+        Component Type: MATH
+        Business Purpose: This row represents a component in the 'AmortizeBill_I' schema that calculates an additional charge based on the exchange rate, used in a mathematical model.
+        Technical Logic: The 'AddlCharge' component multiplies the 'AddlCharge' value by the 'ExchangeRate' value to produce the final result, with a criteria count of 1 indicating a single condition applied.",AddlCharge,AmortizeBill_I
+AmortizeBill_I_BillBasevalue_165,"Schema Name: AmortizeBill_I
+        Component Name: BillBasevalue
+        Component Type: MATH
+        Business Purpose: This row calculates the base value of a bill by adding additional charges to the signed and weighted accumulated value.
+        Technical Logic: The component_expr 'SignWAccBaseValue+AddlCharge' is evaluated to determine the base value of a bill, where 'SignWAccBaseValue' represents the signed and weighted accumulated value and 'AddlCharge' represents additional charges.",BillBasevalue,AmortizeBill_I
+AmortizeBill_I_Rate_166,"Schema Name: AmortizeBill_I
+        Component Name: Rate
+        Component Type: MATH
+        Business Purpose: This row defines a component named 'Rate' in the 'AmortizeBill_I' schema, which is used to calculate the cost of an amortized bill.
+        Technical Logic: The 'Rate' component is a mathematical function (component_type: MATH) with a value of 'COST' (component_type_value) that is directly referenced in the component expression, indicating a simple lookup operation.",Rate,AmortizeBill_I
+AmortizeBill_I_DiscountAmt_167,"Schema Name: AmortizeBill_I
+        Component Name: DiscountAmt
+        Component Type: MATH
+        Business Purpose: This row represents a component in the 'AmortizeBill_I' schema that calculates the discount amount for a bill, based on the cost.
+        Technical Logic: The 'DiscountAmt' component uses a mathematical operation (component_type: MATH) with a value of 'COST' to calculate the discount amount from the 'Discount' expression.",DiscountAmt,AmortizeBill_I
+AmortizeBill_I_TaxPercentage_168,"Schema Name: AmortizeBill_I
+        Component Name: TaxPercentage
+        Component Type: MATH
+        Business Purpose: This row defines a component in the AmortizeBill_I schema that calculates the tax percentage based on the cost, which is used in the MATH model.
+        Technical Logic: The TaxPercentage component is a mathematical calculation that retrieves its value from the 'TaxPercentage' expression, indicating it's a direct reference to a predefined value. It's used in the MATH model and has a single criteria.",TaxPercentage,AmortizeBill_I
+AmortizeBill_I_Basevalue_169,"Schema Name: AmortizeBill_I
+        Component Name: Basevalue
+        Component Type: MATH
+        Business Purpose: This row calculates the base value of a bill by adding the TDS and GST expenses.
+        Technical Logic: The component_expr 'BillBasevalue + ExpValue_TDS + ExpValue_GST' is evaluated to determine the total bill value, where 'BillBasevalue' is the base value, 'ExpValue_TDS' is the TDS expense, and 'ExpValue_GST' is the GST expense.",Basevalue,AmortizeBill_I
+AmortizeBill_I_TaxValue_170,"Schema Name: AmortizeBill_I
+        Component Name: TaxValue
+        Component Type: MATH
+        Business Purpose: This row represents a component in the 'AmortizeBill_I' schema that calculates the tax value of a bill, using the 'MATH' model and 'COST' component type.
+        Technical Logic: The 'TaxValue' component uses the 'MATH' model and 'COST' component type to calculate its value, with a single criteria and an expression that references itself.",TaxValue,AmortizeBill_I
+AmortizeBill_I_DocumentValue_171,"Schema Name: AmortizeBill_I
+        Component Name: DocumentValue
+        Component Type: MATH
+        Business Purpose: This row defines a component in the AmortizeBill_I schema that calculates the document value based on the cost, which is used in a mathematical model.
+        Technical Logic: The DocumentValue component is a mathematical component that retrieves its value from the 'DocumentValue' expression, and it is used in a model with ID 'MATH'. The component type is 'MATH' and its value is 'COST', indicating that it is used to calculate the cost.",DocumentValue,AmortizeBill_I
+PO&IPVsBill_POorIPQty_172,"Schema Name: PO&IPVsBill
+        Component Name: POorIPQty
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row represents a component in the PO&IPVsBill schema that calculates the sum of the COST value from the PO&IP_Status model, linked to the document number and item ID.
+        Technical Logic: The component_expr field uses a JSON object to link the document number and item ID from the current document to the PO&IP_Status model, and the component_type_value field specifies that the sum of the COST value should be calculated.",POorIPQty,PO&IPVsBill
+PO&IPVsBill_BillQty_173,"Schema Name: PO&IPVsBill
+        Component Name: BillQty
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component named 'BillQty' in the 'PO&IPVsBill' schema, which calculates the total cost of items in the 'Bill_Item' model.
+        Technical Logic: The component uses a SUMFROMSCHEMA operation to calculate the total cost, aggregating values from the 'COST' field in the schema, and applies criteria based on the specified document and item IDs.",BillQty,PO&IPVsBill
+PO&IPVsBill_RefQty_174,"Schema Name: PO&IPVsBill
+        Component Name: RefQty
+        Component Type: ROWWISE-MINVALUE
+        Business Purpose: This row defines a component named 'RefQty' in the 'PO&IPVsBill' schema, which calculates the minimum cost value for a row-wise comparison between 'POorIPQty' and 'BillQty'.
+        Technical Logic: The component 'RefQty' uses a ROWWISE-MINVALUE component type to find the minimum cost value for each row, based on the comparison 'POorIPQty <> BillQty', and stores the result in a single row.",RefQty,PO&IPVsBill
+PO&IPVsBill_DiffQty_175,"Schema Name: PO&IPVsBill
+        Component Name: DiffQty
+        Component Type: MATH
+        Business Purpose: This row represents a calculation component in the PO&IPVsBill schema, specifically the DiffQty component, which calculates the difference between RefQty and BillQty, and is used as a criteria in the MATH model.
+        Technical Logic: The DiffQty component is a mathematical calculation that subtracts BillQty from RefQty, and is used as a criteria in the MATH model with a count of 1, indicating it is a single criteria in the model's logic.",DiffQty,PO&IPVsBill
+PO&IPVsBill_POorIPRate_176,"Schema Name: PO&IPVsBill
+        Component Name: POorIPRate
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: Unknown purpose
+        Technical Logic: Unknown logic",POorIPRate,PO&IPVsBill
+PO&IPVsBill_BillRate_177,"Schema Name: PO&IPVsBill
+        Component Name: BillRate
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component named 'BillRate' in the 'PO&IPVsBill' schema, which calculates the total cost of items in the 'Bill_Item' model.
+        Technical Logic: The component uses the 'SUMFROMSCHEMA' type to sum the 'COST' value from the schema, filtered by the document number, item ID, and link reference, as specified in the component expression.",BillRate,PO&IPVsBill
+PO&IPVsBill_RefRate_178,"Schema Name: PO&IPVsBill
+        Component Name: RefRate
+        Component Type: ROWWISE-MINVALUE
+        Business Purpose: This row defines a component named 'RefRate' in the 'PO&IPVsBill' schema, which calculates the minimum cost value for the 'COST' component type, based on the condition that 'POorIPRate' is not equal to 'BillRate'.
+        Technical Logic: The 'ROWWISE-MINVALUE' component type is used to find the minimum value of the 'COST' component type for each row, where the condition 'POorIPRate <> BillRate' is met.",RefRate,PO&IPVsBill
+PO&IPVsBill_DiffRate_179,"Schema Name: PO&IPVsBill
+        Component Name: DiffRate
+        Component Type: MATH
+        Business Purpose: This row represents a component in the PO&IPVsBill schema, specifically the DiffRate component, which calculates the difference between RefRate and BillRate, and is used as a criteria in the MATH model.
+        Technical Logic: The DiffRate component is a mathematical operation that subtracts BillRate from RefRate, and is used as a criteria in the MATH model with a count of 1, indicating it is used once in the model's logic.",DiffRate,PO&IPVsBill
+PO&IPVsBill_POorIPAddlCharge_180,"Schema Name: PO&IPVsBill
+        Component Name: POorIPAddlCharge
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row represents a component in the PO&IPVsBill schema that calculates the sum of costs from a specific schema (PO&IP_Status) for each item, linked by document number.
+        Technical Logic: The component_expr field uses a JSON object to link the document number from the current row to the ItemID in the PO&IP_Status schema, and then sums the COST value from that schema.",POorIPAddlCharge,PO&IPVsBill
+PO&IPVsBill_BillAddlCharge_181,"Schema Name: PO&IPVsBill
+        Component Name: BillAddlCharge
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component named 'BillAddlCharge' in the 'PO&IPVsBill' schema, which calculates the sum of 'COST' from the 'Bill_Item' model based on certain criteria.
+        Technical Logic: The component_expr field uses a JSON object to specify the fields to be used in the calculation, which are 'documentnumber', 'ItemID', and 'LinkRef'. The component_type is set to 'SUMFROMSCHEMA', indicating that the component will sum up values from the specified schema.",BillAddlCharge,PO&IPVsBill
+PO&IPVsBill_RefAddlCharge_182,"Schema Name: PO&IPVsBill
+        Component Name: RefAddlCharge
+        Component Type: ROWWISE-MINVALUE
+        Business Purpose: This row calculates the minimum value of 'COST' between 'POorIPAddlCharge' and 'BillAddlCharge' for each row in the 'PO&IPVsBill' schema, likely used to determine the additional charge with the lowest cost.
+        Technical Logic: The 'ROWWISE-MINVALUE' component type is used to find the minimum value of 'COST' between two expressions 'POorIPAddlCharge' and 'BillAddlCharge' for each row, based on the condition 'POorIPAddlCharge <> BillAddlCharge'.",RefAddlCharge,PO&IPVsBill
+PO&IPVsBill_DiffAddlCharge_183,"Schema Name: PO&IPVsBill
+        Component Name: DiffAddlCharge
+        Component Type: MATH
+        Business Purpose: This row calculates the difference between the additional charge referenced in the model and the additional charge billed, and uses this value in the PO&IPVsBill model.
+        Technical Logic: The component_expr 'RefAddlCharge - BillAddlCharge' is evaluated to determine the value of the DiffAddlCharge component in the PO&IPVsBill model, which is then used in the model with a criteria count of 1.",DiffAddlCharge,PO&IPVsBill
+PO&IPVsBill_POorIPDiscountAmt_184,"Schema Name: PO&IPVsBill
+        Component Name: POorIPDiscountAmt
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of items in the PO&IP Status model by summing the COST value from the PO&IPVsBill schema.
+        Technical Logic: The component_expr uses a JSON object to link the document number and Item ID from the PO&IPVsBill schema to the PO&IP Status model, and then sums the COST value for each item.",POorIPDiscountAmt,PO&IPVsBill
+PO&IPVsBill_BillDiscountAmt_185,"Schema Name: PO&IPVsBill
+        Component Name: BillDiscountAmt
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component named 'BillDiscountAmt' in the 'PO&IPVsBill' schema, which calculates the sum of 'COST' for each 'Bill_Item' model based on specific criteria.
+        Technical Logic: The component_expr uses a JSON object to filter data by 'documentnumber', 'ItemID', and 'LinkRef' fields, and the SUMFROMSCHEMA component_type aggregates the 'COST' value for each matching record.",BillDiscountAmt,PO&IPVsBill
+PO&IPVsBill_RefDiscountAmt_186,"Schema Name: PO&IPVsBill
+        Component Name: RefDiscountAmt
+        Component Type: ROWWISE-MINVALUE
+        Business Purpose: This row calculates the minimum value of 'COST' for the 'RefDiscountAmt' component in the 'PO&IPVsBill' schema, based on the condition that 'POorIPDiscountAmt' is not equal to 'BillDiscountAmt'.
+        Technical Logic: The 'ROWWISE-MINVALUE' component type is used to find the minimum value of 'COST' for each row, where the condition 'POorIPDiscountAmt <> BillDiscountAmt' is met.",RefDiscountAmt,PO&IPVsBill
+PO&IPVsBill_DiffDiscountAmt_187,"Schema Name: PO&IPVsBill
+        Component Name: DiffDiscountAmt
+        Component Type: MATH
+        Business Purpose: This row calculates the difference between the reference discount amount and the bill discount amount to determine the discount amount for a PO&IPVsBill.
+        Technical Logic: The component_expr 'RefDiscountAmt - BillDiscountAmt' is evaluated to calculate the DiffDiscountAmt, which is a mathematical operation that subtracts the BillDiscountAmt from the RefDiscountAmt.",DiffDiscountAmt,PO&IPVsBill
+PO&IPVsBill_POorIPTaxPercentage_188,"Schema Name: PO&IPVsBill
+        Component Name: POorIPTaxPercentage
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of items in the PO&IP Status model by summing up the COST value from the PO&IPVsBill schema based on the document number and item ID.
+        Technical Logic: The component_expr uses a JSON object to link the document number and item ID from the PO&IP Status model to the PO&IPVsBill schema, and then sums up the COST value for each matching record.",POorIPTaxPercentage,PO&IPVsBill
+PO&IPVsBill_BillTaxPercentage_189,"Schema Name: PO&IPVsBill
+        Component Name: BillTaxPercentage
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component named 'BillTaxPercentage' in the 'PO&IPVsBill' schema, which calculates the sum of 'COST' for 'Bill_Item' model based on certain criteria.
+        Technical Logic: The component_expr uses a JSON object to specify the fields 'documentnumber', 'ItemID', and 'LinkRef' to be used in the calculation, which is then aggregated using the 'SUMFROMSCHEMA' component type.",BillTaxPercentage,PO&IPVsBill
+PO&IPVsBill_RefTaxPercentage_190,"Schema Name: PO&IPVsBill
+        Component Name: RefTaxPercentage
+        Component Type: ROWWISE-MINVALUE
+        Business Purpose: This row calculates the minimum tax percentage by comparing the tax percentages from 'POorIPTaxPercentage' and 'BillTaxPercentage' and returns the lower value.
+        Technical Logic: The ROWWISE-MINVALUE component type is used to find the minimum value of 'COST' based on the expression 'POorIPTaxPercentage <> BillTaxPercentage', which is evaluated for each row, resulting in a single minimum value.",RefTaxPercentage,PO&IPVsBill
+PO&IPVsBill_DiffTaxPercentage_191,"Schema Name: PO&IPVsBill
+        Component Name: DiffTaxPercentage
+        Component Type: MATH
+        Business Purpose: This row represents a component in the PO&IPVsBill schema that calculates the difference in tax percentages between RefTaxPercentage and BillTaxPercentage.
+        Technical Logic: The component DiffTaxPercentage is a mathematical operation that subtracts BillTaxPercentage from RefTaxPercentage, resulting in a single value that represents the difference in tax percentages. This operation is likely used in a calculation or formula within the PO&IPVsBill model.",DiffTaxPercentage,PO&IPVsBill
+PO&IPVsBill_POorIPBaseValue_192,"Schema Name: PO&IPVsBill
+        Component Name: POorIPBaseValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row represents a component in the PO&IPVsBill schema that calculates the sum of the COST value from the PO&IP_Status model, linked by document number and Item ID.
+        Technical Logic: The component_expr field uses a JSON object to link the document number and Item ID from the current document to the PO&IP_Status model, and the component_type field specifies that the component should sum the COST value from the linked model.",POorIPBaseValue,PO&IPVsBill
+PO&IPVsBill_BillBasevalue_193,"Schema Name: PO&IPVsBill
+        Component Name: BillBasevalue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component in the 'PO&IPVsBill' schema that calculates the total cost of items in the 'Bill_Item' model by summing the 'COST' value from the schema.
+        Technical Logic: The component uses a SUMFROMSCHEMA operation to aggregate the 'COST' value from the schema, with criteria count set to 1, and the component expression is a JSON object that maps document fields to their respective keys.",BillBasevalue,PO&IPVsBill
+PO&IPVsBill_RefBasevalue_194,"Schema Name: PO&IPVsBill
+        Component Name: RefBasevalue
+        Component Type: ROWWISE-MINVALUE
+        Business Purpose: This row identifies the minimum cost value between 'POorIPBaseValue' and 'BillBasevalue' for use in the 'PO&IPVsBill' schema.
+        Technical Logic: The ROWWISE-MINVALUE component type is used to find the minimum value between two expressions ('POorIPBaseValue' and 'BillBasevalue') based on the 'COST' criteria, resulting in a single value for use in the model.",RefBasevalue,PO&IPVsBill
+PO&IPVsBill_DiffBasevalue_195,"Schema Name: PO&IPVsBill
+        Component Name: DiffBasevalue
+        Component Type: MATH
+        Business Purpose: This row calculates the difference between the base value of a reference and a bill, and stores it as a component in the PO&IPVsBill schema.
+        Technical Logic: The component 'DiffBasevalue' is a mathematical calculation that subtracts the 'BillBasevalue' from the 'RefBasevalue' and stores the result in the PO&IPVsBill schema, using a model ID of 'MATH' and a component type of 'COST'.",DiffBasevalue,PO&IPVsBill
+PO&IPVsBill_POorIPTaxValue_196,"Schema Name: PO&IPVsBill
+        Component Name: POorIPTaxValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of items in the PO&IP Status model by summing the cost from the PO&IPVsBill schema.
+        Technical Logic: The component_expr uses a JSON object to link the document number and item ID from the PO&IPVsBill schema to the PO&IP Status model, and then sums the COST value for each item.",POorIPTaxValue,PO&IPVsBill
+PO&IPVsBill_BillTaxValue_197,"Schema Name: PO&IPVsBill
+        Component Name: BillTaxValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component named 'BillTaxValue' in the 'PO&IPVsBill' schema, which calculates the total cost of items in the 'Bill_Item' model.
+        Technical Logic: The component uses the 'SUMFROMSCHEMA' type to sum the 'COST' value from the schema, filtered by the document number, item ID, and link reference, as specified in the component expression.",BillTaxValue,PO&IPVsBill
+PO&IPVsBill_RefTaxValue_198,"Schema Name: PO&IPVsBill
+        Component Name: RefTaxValue
+        Component Type: ROWWISE-MINVALUE
+        Business Purpose: This row calculates the minimum cost value for the RefTaxValue component in the PO&IPVsBill schema, based on the comparison between POorIPTaxValue and BillTaxValue.
+        Technical Logic: The ROWWISE-MINVALUE component type with a value of 'COST' applies a minimum value calculation to the RefTaxValue component, using the expression POorIPTaxValue <> BillTaxValue as the criteria, resulting in a single criteria count of 1.",RefTaxValue,PO&IPVsBill
+PO&IPVsBill_DiffTaxValue_199,"Schema Name: PO&IPVsBill
+        Component Name: DiffTaxValue
+        Component Type: MATH
+        Business Purpose: This row calculates the difference between RefTaxValue and BillTaxValue to determine the DiffTaxValue in the PO&IPVsBill schema.
+        Technical Logic: The component_expr 'RefTaxValue - BillTaxValue' is evaluated to compute the DiffTaxValue, which is a mathematical operation based on the MATH component type and COST component type value.",DiffTaxValue,PO&IPVsBill
+PO&IPVsBill_POorIPDocumentValue_200,"Schema Name: PO&IPVsBill
+        Component Name: POorIPDocumentValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row represents a component in the PO&IPVsBill schema that calculates the total cost of a document, linking it to the ItemID.
+        Technical Logic: The component_expr uses a JSON object to link the document number to the LinkRef field and the ItemID to the ItemID field, then the SUMFROMSCHEMA component_type aggregates the COST value from the PO&IP_Status model.",POorIPDocumentValue,PO&IPVsBill
+PO&IPVsBill_BillDocumentValue_201,"Schema Name: PO&IPVsBill
+        Component Name: BillDocumentValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component in the 'PO&IPVsBill' schema that calculates the total cost of a bill item, based on the 'COST' field from another schema, and uses the document number, item ID, and link reference as criteria.
+        Technical Logic: The component uses a SUMFROMSCHEMA operation to aggregate the 'COST' field from another schema, and applies criteria based on the document number, item ID, and link reference, which are extracted from the component expression using JSON parsing.",BillDocumentValue,PO&IPVsBill
+PO&IPVsBill_RefDocumentValue_202,"Schema Name: PO&IPVsBill
+        Component Name: RefDocumentValue
+        Component Type: ROWWISE-MINVALUE
+        Business Purpose: This row identifies the minimum cost value between 'PO or IP Document Value' and 'Bill Document Value' for the 'MATH' model in the 'PO&IPVsBill' schema.
+        Technical Logic: The ROWWISE-MINVALUE component with value 'COST' applies a logical operation to find the minimum cost between two document values, based on the expression 'POorIPDocumentValue <> BillDocumentValue', resulting in a single criteria count of 1.",RefDocumentValue,PO&IPVsBill
+PO&IPVsBill_DiffDocumentValue_203,"Schema Name: PO&IPVsBill
+        Component Name: DiffDocumentValue
+        Component Type: MATH
+        Business Purpose: This row represents a component in the PO&IPVsBill schema that calculates the difference between RefDocumentValue and BillDocumentValue, and is used as a criteria in a mathematical model.
+        Technical Logic: The component_expr 'RefDocumentValue - BillDocumentValue' is evaluated to calculate the difference between two document values, and the result is used as a criteria in a mathematical model with a count of 1.",DiffDocumentValue,PO&IPVsBill
+PO&IPVsBill_POorIP_204,"Schema Name: PO&IPVsBill
+        Component Name: POorIP
+        Component Type: MATH
+        Business Purpose: This row represents a calculation component in the PO&IPVsBill schema, specifically the POorIP component, which calculates the total cost of a purchase order or invoice.
+        Technical Logic: The component_expr field contains a mathematical expression that sums up various cost-related fields (POorIPQty, POorIPRate, POorIPAddlCharge, POorIPDiscountAmt, POorIPTaxPercentage, POorIPBaseValue, POorIPTaxValue, POorIPDocumentValue) to calculate the total cost of the POorIP component.",POorIP,PO&IPVsBill
+PO&IPVsBill_Bill_205,"Schema Name: PO&IPVsBill
+        Component Name: Bill
+        Component Type: MATH
+        Business Purpose: This row represents a bill component in the PO&IPVsBill schema, used to calculate the total cost of a bill.
+        Technical Logic: The component_expr 'BillQty + BillRate + BillAddlCharge + BillDiscountAmt + BillTaxPercentage + BillBaseValue + BillTaxValue + BillDocumentValue' is evaluated to calculate the total cost, which is then used in the model with ID 'MATH' for 1 criteria.",Bill,PO&IPVsBill
+PO&IPVsBill_Reference_206,"Schema Name: PO&IPVsBill
+        Component Name: Reference
+        Component Type: MATH
+        Business Purpose: This row represents a reference component in the PO&IPVsBill schema, used to calculate the total cost of an item based on various factors such as quantity, rate, additional charges, discounts, tax percentages, base value, and tax value.
+        Technical Logic: The component_expr 'RefQty + RefRate + RefAddlCharge + RefDiscountAmt + RefTaxPercentage + RefBaseValue + RefTaxValue + RefDocumentValue' is evaluated to calculate the total cost, where each variable is likely a field in the database table, and the result is used in the PO&IPVsBill schema.",Reference,PO&IPVsBill
+PO&IPVsBill_Different_207,"Schema Name: PO&IPVsBill
+        Component Name: Different
+        Component Type: MATH
+        Business Purpose: This row represents a component in the 'PO&IPVsBill' schema that calculates the total cost of a bill by summing up different quantities, rates, charges, discounts, tax percentages, base values, and tax values.
+        Technical Logic: The component_expr 'DiffQty + DiffRate + DiffAddlCharge + DiffDiscountAmt + DiffTaxPercentage + DiffBaseValue + DiffTaxValue + DiffDocumentValue' is a mathematical expression that sums up eight different values, which are likely calculated from other components or data sources, and returns the total cost.",Different,PO&IPVsBill
+ErrorDetection_TotalBillBaseValue_208,"Schema Name: ErrorDetection
+        Component Name: TotalBillBaseValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of an accounting journal entry by summing the 'COST' value from the 'ErrorDetection' schema.
+        Technical Logic: The 'TotalBillBaseValue' component uses a SUMFROMSCHEMA operation to aggregate the 'COST' value from the 'ErrorDetection' schema, based on the document number, link reference, and account type criteria.",TotalBillBaseValue,ErrorDetection
+ErrorDetection_TotalOrderBaseValue_209,"Schema Name: ErrorDetection
+        Component Name: TotalOrderBaseValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: Unknown purpose
+        Technical Logic: Unknown logic",TotalOrderBaseValue,ErrorDetection
+ErrorDetection_TotalCostAllocation_210,"Schema Name: ErrorDetection
+        Component Name: TotalCostAllocation
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row represents a component in the ErrorDetection schema that calculates the total cost allocation for the BillCostAllocation model by summing up the COST value from the schema.
+        Technical Logic: The component_expr field contains a JSON object that defines the fields to be used in the calculation, which are then used to filter and aggregate data in the schema to produce the total cost allocation.",TotalCostAllocation,ErrorDetection
+ErrorDetection_CostAllocationVariance_211,"Schema Name: ErrorDetection
+        Component Name: CostAllocationVariance
+        Component Type: MATH
+        Business Purpose: This row represents a cost allocation variance component in the ErrorDetection schema, used to detect discrepancies in cost allocation.
+        Technical Logic: The CostAllocationVariance component calculates the difference between TotalBillBaseValue and TotalCostAllocation, utilizing the MATH model and a criteria count of 1, to identify potential errors in cost allocation.",CostAllocationVariance,ErrorDetection
+ErrorDetection_AJCrossFootErrorInd_212,"Schema Name: ErrorDetection
+        Component Name: AJCrossFootErrorInd
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row represents a component in the ErrorDetection schema that calculates the total cost of AccountingJournal entries based on the document number and LinkRef.
+        Technical Logic: The component_expr field contains a JSON object that defines the fields to be used in the calculation, which is then evaluated to determine the total cost.",AJCrossFootErrorInd,ErrorDetection
+ErrorDetection_totalreversedcostallocation_213,"Schema Name: ErrorDetection
+        Component Name: totalreversedcostallocation
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row represents a component in the ErrorDetection schema that calculates the total reversed cost allocation for the ProvisionReversalCostAllocation model, summing up the COST values from a schema.
+        Technical Logic: The component_expr field contains a JSON object that defines the fields to be used in the calculation, specifically 'documentnumber' and 'LinkRef'. The component_type is set to SUMFROMSCHEMA, indicating that the component will sum up values from a schema based on the specified criteria.",totalreversedcostallocation,ErrorDetection
+ErrorDetection_reversedajcrossfooterrorind_214,"Schema Name: ErrorDetection
+        Component Name: reversedajcrossfooterrorind
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row represents a component in the ErrorDetection schema that calculates the total cost of a provision reversal accounting journal, based on the document number and LinkRef.
+        Technical Logic: The component_expr field contains a JSON object that defines the fields to be used in the calculation, which is then used to sum the COST value from the schema, resulting in a criteria_count of 1.",reversedajcrossfooterrorind,ErrorDetection
+BillHead_totalbasevalue_215,"Schema Name: BillHead
+        Component Name: totalbasevalue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: Unknown purpose
+        Technical Logic: Unknown logic",totalbasevalue,BillHead
+BillHead_totalrate_216,"Schema Name: BillHead
+        Component Name: totalrate
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of items in the 'Bill_Item' model by summing up the 'COST' field from the 'BillHead' schema.
+        Technical Logic: The 'totalrate' component uses the 'SUMFROMSCHEMA' type to aggregate data from the 'BillHead' schema, specifically the 'COST' field, and stores the result in a single row with a criteria count of 1.",totalrate,BillHead
+BillHead_totaltaxvalue_217,"Schema Name: BillHead
+        Component Name: totaltaxvalue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total tax value for the 'Bill_Item' model in the 'BillHead' schema, summing up the 'COST' values.
+        Technical Logic: The 'SUMFROMSCHEMA' component type is used to calculate the total tax value by summing up the 'COST' values from the 'Bill_Item' model in the 'BillHead' schema, based on the provided criteria.",totaltaxvalue,BillHead
+BillHead_totaldocumentvalue_218,"Schema Name: BillHead
+        Component Name: totaldocumentvalue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: Unknown purpose
+        Technical Logic: Unknown logic",totaldocumentvalue,BillHead
+BillHead_amountinlocalcurrency_219,"Schema Name: BillHead
+        Component Name: amountinlocalcurrency
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of a Bill_Item, summing up the COST values from the BillHead schema.
+        Technical Logic: The component_expr is a JSON object that likely contains a reference to another component or schema, but in this case, it's a placeholder. The component_type 'SUMFROMSCHEMA' indicates that the component will sum up values from the specified schema, and the component_type_value 'COST' specifies that it should only consider 'COST' values.",amountinlocalcurrency,BillHead
+BillHead_amountintransactioncurrency_220,"Schema Name: BillHead
+        Component Name: amountintransactioncurrency
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: Unknown purpose
+        Technical Logic: Unknown logic",amountintransactioncurrency,BillHead
+BillHead_ExchangeRate_221,"Schema Name: BillHead
+        Component Name: ExchangeRate
+        Component Type: MATH
+        Business Purpose: This row defines a component in the 'BillHead' schema, specifically 'ExchangeRate', which is a mathematical component used to calculate the cost of an exchange rate, with a single criteria.
+        Technical Logic: The 'ExchangeRate' component is a mathematical function that takes a single criteria and returns the calculated cost, utilizing the 'MATH' model and 'COST' component type, with its expression set to 'ExchangeRate'.",ExchangeRate,BillHead
+PO_ItemCalculation_lineid_222,"Schema Name: PO_ItemCalculation
+        Component Name: lineid
+        Component Type: MATH
+        Business Purpose: This row defines a calculation component in the PO_ItemCalculation schema, specifically for calculating the cost of an item based on its line ID.
+        Technical Logic: The component_expr 'lineid' suggests that the component simply returns the line ID as is, without any mathematical operations. The component_type 'MATH' and component_type_value 'COST' indicate that this component is used for cost-related calculations, but the actual calculation is not performed here, it's likely used as input for further calculations.",lineid,PO_ItemCalculation
+PO_ItemCalculation_Qty_223,"Schema Name: PO_ItemCalculation
+        Component Name: Qty
+        Component Type: MATH
+        Business Purpose: This row defines a calculation component in the PO_ItemCalculation schema, specifically for calculating the quantity (Qty) based on the cost, which is a mathematical operation.
+        Technical Logic: The component_expr 'Qty' suggests that the calculation is a simple reference to an existing field, likely retrieving the quantity value directly. The component_type 'MATH' and component_type_value 'COST' imply that the calculation is a mathematical operation involving cost, but the actual operation is not specified, possibly relying on a default or implicit calculation.",Qty,PO_ItemCalculation
+PO_ItemCalculation_Rate_224,"Schema Name: PO_ItemCalculation
+        Component Name: Rate
+        Component Type: MATH
+        Business Purpose: This row defines a calculation component named 'Rate' in the 'PO_ItemCalculation' schema, which calculates the cost of an item.
+        Technical Logic: The 'Rate' component is a mathematical calculation (component_type: 'MATH') with a value of 'COST' (component_type_value: 'COST'), using the expression 'Rate' (component_expr: 'Rate'). It is used in a model with ID 'MATH' and has 1 associated criteria.",Rate,PO_ItemCalculation
+PO_ItemCalculation_AddlCharge_225,"Schema Name: PO_ItemCalculation
+        Component Name: AddlCharge
+        Component Type: MATH
+        Business Purpose: This row represents a calculation component in the PO_ItemCalculation schema, specifically an additional charge calculation based on the COST model, which is a mathematical operation.
+        Technical Logic: The AddlCharge component is a mathematical operation (MATH) with a type value of COST, utilizing the component expression 'AddlCharge' and having a single criteria, making it a simple calculation component.",AddlCharge,PO_ItemCalculation
+PO_ItemCalculation_DiscountAmt_226,"Schema Name: PO_ItemCalculation
+        Component Name: DiscountAmt
+        Component Type: MATH
+        Business Purpose: This row defines a calculation component in the PO_ItemCalculation schema, specifically the DiscountAmt component, which calculates the discount amount based on the cost of an item.
+        Technical Logic: The DiscountAmt component is a mathematical calculation (component_type: MATH) that uses the COST component_type_value to calculate the discount amount from the 'Discount' expression, with a criteria count of 1.",DiscountAmt,PO_ItemCalculation
+PO_ItemCalculation_TaxPercentage_227,"Schema Name: PO_ItemCalculation
+        Component Name: TaxPercentage
+        Component Type: MATH
+        Business Purpose: This row defines a calculation component in the PO_ItemCalculation schema, specifically the TaxPercentage component, which calculates the tax percentage based on the cost.
+        Technical Logic: The TaxPercentage component is a mathematical calculation (component_type: MATH) that operates on the COST value (component_type_value: COST), using the TaxPercentage expression, and is applied to a single criterion.",TaxPercentage,PO_ItemCalculation
+PO_ItemCalculation_Basevalue_228,"Schema Name: PO_ItemCalculation
+        Component Name: Basevalue
+        Component Type: MATH
+        Business Purpose: This row calculates the base value of an item in a calculation model, taking into account the quantity, rate, discount amount, and additional charge.
+        Technical Logic: The component_expr '(Qty * Rate) - DiscountAmt + AddlCharge' is evaluated as a mathematical expression, where 'Qty' and 'Rate' are assumed to be input values, 'DiscountAmt' and 'AddlCharge' are assumed to be input values, and the result is the base value of the item.",Basevalue,PO_ItemCalculation
+PO_ItemCalculation_TaxValue_229,"Schema Name: PO_ItemCalculation
+        Component Name: TaxValue
+        Component Type: MATH
+        Business Purpose: This row calculates the tax value of an item in the PO_ItemCalculation schema, using the cost as the base value and the tax percentage.
+        Technical Logic: The TaxValue component uses a mathematical expression to calculate the tax value: (Basevalue * TaxPercentage) / 100. This operation is performed in the MATH model, with a single criteria applied.",TaxValue,PO_ItemCalculation
+PO_ItemCalculation_DocumentValue_230,"Schema Name: PO_ItemCalculation
+        Component Name: DocumentValue
+        Component Type: MATH
+        Business Purpose: This row calculates the total cost of an item by adding the base value and tax value in the PO_ItemCalculation schema.
+        Technical Logic: The component 'DocumentValue' of type 'MATH' with value 'COST' uses the expression 'Basevalue + TaxValue' to calculate the total cost, which is based on the model 'MATH' and has a single criteria.",DocumentValue,PO_ItemCalculation
+PO_ItemCalculation_ExchangeRate_231,"Schema Name: PO_ItemCalculation
+        Component Name: ExchangeRate
+        Component Type: MATH
+        Business Purpose: This row defines a calculation component in the PO_ItemCalculation schema, specifically an ExchangeRate component used for COST calculations in the MATH model.
+        Technical Logic: The ExchangeRate component is a mathematical calculation (component_type: MATH) that uses the 'exchangerate' expression to perform a COST calculation, with a single criteria applied.",ExchangeRate,PO_ItemCalculation
+PO_ItemCalculation_AmountinLocalCurrency_232,"Schema Name: PO_ItemCalculation
+        Component Name: AmountinLocalCurrency
+        Component Type: MATH
+        Business Purpose: This row calculates the amount in local currency for a PO item, taking into account the document value and exchange rate.
+        Technical Logic: The backend operation involves a mathematical calculation using the 'DocumentValue' and 'ExchangeRate' values, multiplied together to produce the 'AmountinLocalCurrency' result.",AmountinLocalCurrency,PO_ItemCalculation
+PO_ItemCalculation_AmountinTransactionCurrency_233,"Schema Name: PO_ItemCalculation
+        Component Name: AmountinTransactionCurrency
+        Component Type: MATH
+        Business Purpose: This row calculates the total amount in transaction currency for a PO item, taking into account both the base value and tax value.
+        Technical Logic: The 'AmountinTransactionCurrency' component uses a mathematical operation (MATH) to calculate the total amount by adding the 'Basevalue' and 'TaxValue' expressions, resulting in a single value.",AmountinTransactionCurrency,PO_ItemCalculation
+PO_ItemCalculation_AmountinLocalCurrencyWOTax_234,"Schema Name: PO_ItemCalculation
+        Component Name: AmountinLocalCurrencyWOTax
+        Component Type: MATH
+        Business Purpose: This row calculates the amount in local currency without tax for a PO item, using the base value and exchange rate.
+        Technical Logic: The 'AmountinLocalCurrencyWOTax' component uses the 'MATH' model to perform a calculation based on the 'Basevalue' and 'ExchangeRate' expressions, resulting in a single criteria count.",AmountinLocalCurrencyWOTax,PO_ItemCalculation
+CostAllocationMaster_CNT_CostAllocationValue_235,"Schema Name: CostAllocationMaster
+        Component Name: CNT_CostAllocationValue
+        Component Type: MATH
+        Business Purpose: This row defines a cost allocation component in the CostAllocationMaster schema, specifically 'CNT_CostAllocationValue', which is a mathematical component that calculates the cost allocation value.
+        Technical Logic: The component 'CNT_CostAllocationValue' is a mathematical component of type 'MATH' with a value of 'COST', which is evaluated using the expression 'CostAllocationValue'. It is used in a model with ID 'MATH' and has a single criteria.",CNT_CostAllocationValue,CostAllocationMaster
+CostAllocationMaster_PERC_CostAllocationValue_236,"Schema Name: CostAllocationMaster
+        Component Name: PERC_CostAllocationValue
+        Component Type: MATH
+        Business Purpose: This row defines a cost allocation component in the CostAllocationMaster schema, specifically the PERC_CostAllocationValue component, which is a mathematical component that calculates the cost allocation value.
+        Technical Logic: The component_expr 'CostAllocationValue' likely references a mathematical function or formula that is used to calculate the cost allocation value, and the criteria_count of 1 indicates that this component is based on a single criteria.",PERC_CostAllocationValue,CostAllocationMaster
+CostAllocationMaster_CostAllocationParameterValue_237,"Schema Name: CostAllocationMaster
+        Component Name: CostAllocationParameterValue
+        Component Type: MATH
+        Business Purpose: This row defines a cost allocation parameter value component in the CostAllocationMaster schema, used to calculate the total cost allocation value by adding the percentage and count values.
+        Technical Logic: The component_expr 'PERC_CostAllocationValue + CNT_CostAllocationValue' is evaluated as a mathematical expression, where PERC_CostAllocationValue and CNT_CostAllocationValue are likely other components or values in the model, and the result is used to determine the cost allocation value.",CostAllocationParameterValue,CostAllocationMaster
+POCostAllocation1_CostAllocationParameterValue_238,"Schema Name: POCostAllocation1
+        Component Name: CostAllocationParameterValue
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: This row defines a cost allocation parameter value component in the 'POCostAllocation1' schema, which retrieves 'COST' data from the 'CostAllocationMaster' model based on specific criteria.
+        Technical Logic: The component_expr field uses a JSON object to specify the criteria for fetching data, including 'CostAllocationMethod', 'LOB', 'costallocationcategory', and 'ForPrdFrom'. The FETCHFROMSCHEMA component type indicates that the data is retrieved from a schema, and the component_type_value 'COST' specifies the type of data being fetched.",CostAllocationParameterValue,POCostAllocation1
+TCostAllocationValue_TCostAllocationValue_239,"Schema Name: TCostAllocationValue
+        Component Name: TCostAllocationValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a TCostAllocationValue component in the POCostAllocation1 model, which calculates the total cost based on the cost allocation method and document number.
+        Technical Logic: The component_expr field uses a JSON object to specify the cost allocation method and document number, which are then used to calculate the SUMFROMSCHEMA value, resulting in a total cost.",TCostAllocationValue,TCostAllocationValue
+POCostAllocation_TCostAllocationValue_240,"Schema Name: POCostAllocation
+        Component Name: TCostAllocationValue
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: Unknown purpose
+        Technical Logic: Unknown logic",TCostAllocationValue,POCostAllocation
+POCostAllocation_CostAllocationParameterValue_241,"Schema Name: POCostAllocation
+        Component Name: CostAllocationParameterValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a cost allocation parameter value for a specific model (POCostAllocation1) in the POCostAllocation schema, allowing for the calculation of total cost based on the cost allocation method and LOB.
+        Technical Logic: The component_expr field uses a JSON expression to evaluate the cost allocation method and LOB, which is then used to calculate the SUMFROMSCHEMA value for the component (CostAllocationParameterValue) in the POCostAllocation schema.",CostAllocationParameterValue,POCostAllocation
+POCostAllocation_CostAllocationParameterPerc_242,"Schema Name: POCostAllocation
+        Component Name: CostAllocationParameterPerc
+        Component Type: MATH
+        Business Purpose: This row defines a cost allocation parameter percentage in the 'POCostAllocation' schema, used to allocate costs based on a specific percentage value.
+        Technical Logic: The 'CostAllocationParameterPerc' component calculates the cost allocation percentage by dividing the 'CostAllocationParameterValue' by the 'TCostAllocationValue' in the 'MATH' model, resulting in a single criteria count.",CostAllocationParameterPerc,POCostAllocation
+POCostAllocation_POAmountinLocalCurrency_243,"Schema Name: POCostAllocation
+        Component Name: POAmountinLocalCurrency
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row calculates the total cost of a purchase order in the local currency, based on the cost allocation method.
+        Technical Logic: The component_expr uses a JSON expression to extract the document number and cost allocation method from the data, and then sums the cost from the schema to calculate the total cost.",POAmountinLocalCurrency,POCostAllocation
+POCostAllocation_AmountinLocalCurrency_244,"Schema Name: POCostAllocation
+        Component Name: AmountinLocalCurrency
+        Component Type: MATH
+        Business Purpose: This row defines a component in the 'POCostAllocation' schema that calculates the 'Amount in Local Currency' based on the 'PO Amount in Local Currency' and 'Cost Allocation Parameter Percentage'.
+        Technical Logic: The component_expr 'POAmountinLocalCurrency * CostAllocationParameterPerc' is evaluated to calculate the 'Amount in Local Currency' by multiplying the 'PO Amount in Local Currency' with the 'Cost Allocation Parameter Percentage'.",AmountinLocalCurrency,POCostAllocation
+AP_SNO_245,"Schema Name: AP
+        Component Name: SNO
+        Component Type: MATH
+        Business Purpose: This row defines a component 'SNO' in the 'AP' schema, which is a mathematical component of type 'MATH' that calculates the 'COST' of 'SNo'. It is used as a criteria in the model 'MATH' and has a count of 1.
+        Technical Logic: This component is a mathematical expression 'SNo' that is used to calculate the cost. It is a single criteria in the model 'MATH' and is likely used to determine the cost of a specific item or service.",SNO,AP
+POWF_DocumentValue_246,"Schema Name: POWF
+        Component Name: DocumentValue
+        Component Type: MATH
+        Business Purpose: This row defines a document value component in the POWF schema, specifically for the MATH model, which calculates the cost based on a single criteria.
+        Technical Logic: The component_expr '1' indicates a fixed value, and the component_type 'MATH' with value 'COST' suggests a mathematical operation to calculate the cost, likely using a single criteria to determine the value.",DocumentValue,POWF
+IM_PercentageofTDS_247,"Schema Name: IM
+        Component Name: PercentageofTDS
+        Component Type: MATH
+        Business Purpose: This row represents a component in the IM schema that calculates the percentage of Total Distribution System (TDS) costs.
+        Technical Logic: The PercentageofTDS component is a mathematical calculation that retrieves the TDS cost and calculates its percentage value, likely used in a model to analyze or compare TDS costs.",PercentageofTDS,IM
+VM_SNO_248,"Schema Name: VM
+        Component Name: SNO
+        Component Type: MATH
+        Business Purpose: This row defines a component named 'SNO' in the 'VM' schema, which is used to calculate the 'COST' of 'MATH' models based on a single criteria.
+        Technical Logic: The component 'SNO' in the 'VM' schema is a mathematical component that evaluates to a single value '1', indicating that the 'COST' of 'MATH' models is calculated based on a single criteria.",SNO,VM
+G&SRN_BT3H_ExchangeRate_249,"Schema Name: G&SRN_BT3H
+        Component Name: ExchangeRate
+        Component Type: MATH
+        Business Purpose: This row represents a component in a mathematical model, specifically an ExchangeRate component, used to calculate costs within the G&SRN_BT3H schema.
+        Technical Logic: The ExchangeRate component is a mathematical component that uses a simple expression of '1' to perform its calculation, with a single criteria, and is part of the MATH model.",ExchangeRate,G&SRN_BT3H
+BT3I_DYNAMIC_CA_250,"Schema Name: BT3I
+        Component Name: DYNAMIC_CA
+        Component Type: MATH
+        Business Purpose: This row represents a dynamic cost calculation component in the BT3I schema, used for mathematical modeling.
+        Technical Logic: The component_expr '1' indicates a constant value, and the component_type 'MATH' and component_type_value 'Cost' suggest a simple arithmetic operation to calculate cost.",DYNAMIC_CA,BT3I
+BT3I_LineID_251,"Schema Name: BT3I
+        Component Name: LineID
+        Component Type: MATH
+        Business Purpose: This row defines a component named LineID in the BT3I schema, which is used to calculate the cost of a mathematical model (MATH).
+        Technical Logic: The LineID component is a mathematical component of type MATH, with a value of 'Cost', and is evaluated using the expression 'LineID'. It is used in a model with 1 criteria.",LineID,BT3I
+BT3I_AcceptedQty_252,"Schema Name: BT3I
+        Component Name: AcceptedQty
+        Component Type: MATH
+        Business Purpose: This row defines a component named 'AcceptedQty' in the 'BT3I' schema, which calculates the cost based on quantity, and is used as a criteria in the 'MATH' model.
+        Technical Logic: The 'AcceptedQty' component is a mathematical calculation that takes the 'Qty' expression as input and returns the 'Cost' value, with a criteria count of 1, indicating it is used as a single criteria in the 'MATH' model.",AcceptedQty,BT3I
+G&SRN_BT3I_LineID_253,"Schema Name: G&SRN_BT3I
+        Component Name: LineID
+        Component Type: MATH
+        Business Purpose: This row defines a component named 'LineID' in the 'G&SRN_BT3I' schema, which is used to calculate the 'Cost' of a model with ID 'MATH'.
+        Technical Logic: The 'LineID' component is a mathematical component of type 'MATH' that uses the 'LineID' expression to calculate the 'Cost' value, and it is associated with a single criteria.",LineID,G&SRN_BT3I
+G&SRN_BT3I_TotalAcceptedQty_254,"Schema Name: G&SRN_BT3I
+        Component Name: TotalAcceptedQty
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row represents a component in a business model that calculates the total accepted quantity of a specific cost, based on the receiver account.
+        Technical Logic: The component_expr field contains a JSON object that filters data based on the receiver account, and the component_type is set to SUMFROMSCHEMA, which likely aggregates data from a schema, in this case, summing the COST value.",TotalAcceptedQty,G&SRN_BT3I
+G&SRN_BT3I_Qty_255,"Schema Name: G&SRN_BT3I
+        Component Name: Qty
+        Component Type: MATH
+        Business Purpose: This row defines a mathematical component named 'Qty' in the 'G&SRN_BT3I' schema, which calculates the cost based on quantity.
+        Technical Logic: The component 'Qty' is a mathematical function of type 'MATH' with a value 'Cost', using the expression 'Qty' and having a criteria count of 1, likely used in a model 'MATH' for calculations.",Qty,G&SRN_BT3I
+G&SRN_BT3I_AcceptedQty_256,"Schema Name: G&SRN_BT3I
+        Component Name: AcceptedQty
+        Component Type: MATH
+        Business Purpose: This row represents a component in a mathematical model, specifically 'AcceptedQty', which is used to calculate the cost based on quantity.
+        Technical Logic: The component 'AcceptedQty' is a mathematical expression that calculates cost based on quantity, with a component type of 'MATH' and a value of 'Cost'. It is part of a model with ID 'MATH' and has a single criteria.",AcceptedQty,G&SRN_BT3I
+G&SRN_BT3I_Rate_257,"Schema Name: G&SRN_BT3I
+        Component Name: Rate
+        Component Type: MATH
+        Business Purpose: This row represents a 'Rate' component in the 'G&SRN_BT3I' schema, used to calculate 'Cost' in the 'MATH' model, with a single criteria.
+        Technical Logic: The 'Rate' component is a mathematical function that takes a single criteria and returns a 'Cost' value, utilizing the 'MATH' model's underlying logic.",Rate,G&SRN_BT3I
+G&SRN_BT3I_BaseValue_258,"Schema Name: G&SRN_BT3I
+        Component Name: BaseValue
+        Component Type: MATH
+        Business Purpose: This row represents a mathematical component in a model, specifically calculating the cost of an item in local currency.
+        Technical Logic: The component 'BaseValue' of type 'MATH' with value 'Cost' is evaluated based on the expression 'AmountinLocalCurrency' and is used in 1 criteria.",BaseValue,G&SRN_BT3I
+G&SRN_BT3I_OrderValue_259,"Schema Name: G&SRN_BT3I
+        Component Name: OrderValue
+        Component Type: MATH
+        Business Purpose: This row calculates the OrderValue by multiplying the order quantity with the OrderRate in the G&SRN_BT3I schema.
+        Technical Logic: The component_expr 'orderqty*OrderRate' is evaluated to compute the OrderValue, where 'orderqty' and 'OrderRate' are assumed to be existing components or fields in the model.",OrderValue,G&SRN_BT3I
+G&SRN_BT3I_ExchangeRate_260,"Schema Name: G&SRN_BT3I
+        Component Name: ExchangeRate
+        Component Type: MATH
+        Business Purpose: This row represents a component in a mathematical model, specifically 'ExchangeRate', which is used to calculate costs based on exchange rates.
+        Technical Logic: The component 'ExchangeRate' is a mathematical function that takes into account the exchange rate to calculate costs, and it is used in a model with 'MATH' as its ID, with a single criteria.",ExchangeRate,G&SRN_BT3I
+G&SRN_BT3I_AmountinLocalCurrency_261,"Schema Name: G&SRN_BT3I
+        Component Name: AmountinLocalCurrency
+        Component Type: MATH
+        Business Purpose: This row defines a component in a mathematical model, specifically 'AmountinLocalCurrency', which is used to calculate costs.
+        Technical Logic: The component 'AmountinLocalCurrency' is a mathematical operation (component_type: MATH) that evaluates to a cost value (component_type_value: Cost), based on the expression 'AmountinLocalCurrency' and is used in 1 criteria.",AmountinLocalCurrency,G&SRN_BT3I
+G&SRN_BT3I_AmountinTransactionCurrency_262,"Schema Name: G&SRN_BT3I
+        Component Name: AmountinTransactionCurrency
+        Component Type: MATH
+        Business Purpose: This row represents a mathematical component in a model, specifically calculating the cost of a transaction in the transaction's currency.
+        Technical Logic: The component 'AmountinTransactionCurrency' is a mathematical component of type 'MATH' with a value of 'Cost', which is evaluated based on the expression 'AmountinTransactionCurrency' and is used in 1 criteria.",AmountinTransactionCurrency,G&SRN_BT3I
+G&SRN_BT3I_orderqty_263,"Schema Name: G&SRN_BT3I
+        Component Name: orderqty
+        Component Type: MATH
+        Business Purpose: This row defines a mathematical component in the G&SRN_BT3I schema, specifically calculating the cost based on the order quantity.
+        Technical Logic: The component_expr 'orderqty' suggests that the component is directly referencing the 'orderqty' field, and the component_type 'MATH' with value 'Cost' implies that it's performing a mathematical operation to calculate the cost, likely using a simple formula.",orderqty,G&SRN_BT3I
+G&SRN_BT3I_orderrate_264,"Schema Name: G&SRN_BT3I
+        Component Name: orderrate
+        Component Type: MATH
+        Business Purpose: This row represents a component in a model that calculates the cost of an order, with a single criteria.
+        Technical Logic: The 'orderrate' component is a mathematical function of type 'MATH' that evaluates the 'Cost' component expression, likely using a formula or calculation to determine the order cost, based on a single criteria.",orderrate,G&SRN_BT3I
+G&SRN_BT3I_ReceivedQty_265,"Schema Name: G&SRN_BT3I
+        Component Name: ReceivedQty
+        Component Type: MATH
+        Business Purpose: This row defines a mathematical component 'ReceivedQty' in the schema 'G&SRN_BT3I' that calculates the cost based on the quantity.
+        Technical Logic: The component 'ReceivedQty' is a mathematical function of type 'MATH' that takes 'Qty' as input and returns 'Cost' as output, with a single criteria.",ReceivedQty,G&SRN_BT3I
+CostAllocationMaster_CNT_CostAllocationValue_266,"Schema Name: CostAllocationMaster
+        Component Name: CNT_CostAllocationValue
+        Component Type: MATH
+        Business Purpose: This row defines a cost allocation component in the CostAllocationMaster schema, which is used to calculate the cost allocation value based on mathematical criteria.
+        Technical Logic: The component 'CNT_CostAllocationValue' is a mathematical component of type 'MATH' with a value of 'COST', which is calculated using the expression 'CostAllocationValue' and is used in 1 criteria.",CNT_CostAllocationValue,CostAllocationMaster
+CostAllocationMaster_PERC_CostAllocationValue_267,"Schema Name: CostAllocationMaster
+        Component Name: PERC_CostAllocationValue
+        Component Type: MATH
+        Business Purpose: This row defines a cost allocation component in the CostAllocationMaster schema, specifically for calculating the cost allocation value using mathematical operations.
+        Technical Logic: The component 'PERC_CostAllocationValue' of type 'MATH' with value 'COST' and expression 'CostAllocationValue' is used to perform mathematical calculations on the model 'MATH', with a single criteria, to determine the cost allocation value.",PERC_CostAllocationValue,CostAllocationMaster
+CostAllocationMaster_CostAllocationParameterValue_268,"Schema Name: CostAllocationMaster
+        Component Name: CostAllocationParameterValue
+        Component Type: MATH
+        Business Purpose: This row defines a cost allocation parameter value component in the CostAllocationMaster schema, used to calculate the cost allocation value based on percentage and count.
+        Technical Logic: The component_expr 'PERC_CostAllocationValue + CNT_CostAllocationValue' is evaluated to calculate the cost allocation value, where PERC_CostAllocationValue and CNT_CostAllocationValue are likely other components that represent percentage and count values respectively.",CostAllocationParameterValue,CostAllocationMaster
+G&SRNCostAllocation1_CostAllocationParameterValue_269,"Schema Name: G&SRNCostAllocation1
+        Component Name: CostAllocationParameterValue
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: This row defines a cost allocation parameter value in the G&SRNCostAllocation1 schema, specifically for the CostAllocationMaster model. It fetches the cost allocation method, LOB, cost allocation category, and CAPrdFrom from the schema.
+        Technical Logic: The component_expr field uses a JSON object to fetch specific values from the schema, which are then used to populate the cost allocation parameter value. The FETCHFROMSCHEMA component type is used to retrieve data from the schema.",CostAllocationParameterValue,G&SRNCostAllocation1
+TCostAllocationValue_TCostAllocationValue_270,"Schema Name: TCostAllocationValue
+        Component Name: TCostAllocationValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component in the TCostAllocationValue schema that calculates the total cost from a schema, specifically for the 'COST' component type, and is used in a model with the ID 'G&SRNCostAllocation1'.
+        Technical Logic: This component uses the SUMFROMSCHEMA component type to aggregate data from a schema, with the component expression evaluating to a JSON object containing 'CostAllocationMethod' and 'createdid' (document number) properties, and is used in a model with a single criteria.",TCostAllocationValue,TCostAllocationValue
+AD_Parameter1_271,"Schema Name: AD
+        Component Name: Parameter1
+        Component Type: MATH
+        Business Purpose: This row defines a parameter named 'Parameter1' in the 'AD' schema, which is used in a mathematical model 'MATH' to represent the cost.
+        Technical Logic: This row creates a component of type 'MATH' with value 'COST' in the 'AD' schema, where the component expression is directly linked to the component name 'Parameter1'.",Parameter1,AD
+AD_SingleTresholdLimit_272,"Schema Name: AD
+        Component Name: SingleTresholdLimit
+        Component Type: MATH
+        Business Purpose: This row represents a single threshold limit component in the 'AD' schema, used to evaluate a cost-based criteria in the 'MATH' model.
+        Technical Logic: The 'SingleTresholdLimit' component applies a cost-based evaluation logic, utilizing a single criteria to determine the outcome, with a total of 1 criteria being considered.",SingleTresholdLimit,AD
+AD_CummThresholdLimit_273,"Schema Name: AD
+        Component Name: CummThresholdLimit
+        Component Type: MATH
+        Business Purpose: This row defines a component named CummThresholdLimit in the AD schema, which is used to calculate the cost in a mathematical model.
+        Technical Logic: The component_expr 'CummThresholdLimit' suggests that this component is used to evaluate a cumulative threshold limit, likely used in a decision-making process, and is associated with a single criterion.",CummThresholdLimit,AD
+ExpAcc_journalsno_274,"Schema Name: ExpAcc
+        Component Name: journalsno
+        Component Type: MATH
+        Business Purpose: This row defines a component in the 'ExpAcc' schema that calculates the cost of journals for the 'MATH' model, based on a single criteria.
+        Technical Logic: The component_expr '1' indicates that the cost is a fixed value, and the component_type 'MATH' and component_type_value 'COST' specify the mathematical operation and its type, respectively.",journalsno,ExpAcc
+ExpAcc_ExchangeRate_275,"Schema Name: ExpAcc
+        Component Name: ExchangeRate
+        Component Type: MATH
+        Business Purpose: This row represents a component in the 'ExpAcc' schema that calculates the exchange rate for the 'MATH' model, specifically for the 'COST' component type.
+        Technical Logic: The 'ExchangeRate' component is a mathematical component that retrieves the exchange rate value from the 'ExchangeRate' expression, and is used once in the criteria count.",ExchangeRate,ExpAcc
+ExpAcc_Value_276,"Schema Name: ExpAcc
+        Component Name: Value
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component named 'Value' in the 'ExpAcc' schema, which calculates the sum of 'COST' from another schema, used as a criteria in a model with ID 'G&SRN_BT3I'.
+        Technical Logic: The component_expr field contains a JSON object that is not actually used in this case, as the component_type is 'SUMFROMSCHEMA'. The actual logic is defined by the component_type and component_type_value, which specify the operation to be performed (summing 'COST' from another schema).",Value,ExpAcc
+ExpAcc_AmountinLocalCurrency1_277,"Schema Name: ExpAcc
+        Component Name: AmountinLocalCurrency1
+        Component Type: MATH
+        Business Purpose: This row represents a mathematical component in the 'ExpAcc' schema that calculates the amount in local currency, specifically the cost, by subtracting the 'Value' from an unknown source.
+        Technical Logic: The component 'AmountinLocalCurrency1' in the 'ExpAcc' schema uses a mathematical operation to calculate the cost, which is represented by the expression '-(Value)', indicating a subtraction of the 'Value' from an unknown source, likely another component or value in the model.",AmountinLocalCurrency1,ExpAcc
+ExpAcc_AmountinLocalCurrency2_278,"Schema Name: ExpAcc
+        Component Name: AmountinLocalCurrency2
+        Component Type: MATH
+        Business Purpose: This row defines a component in the 'ExpAcc' schema that calculates the 'Amount in Local Currency' based on the 'Value' criteria, specifically for the 'COST' type, within the 'MATH' model.
+        Technical Logic: The 'AmountinLocalCurrency2' component is a mathematical operation (component_type: 'MATH') that evaluates to 'COST' (component_type_value: 'COST') within the 'MATH' model (model_id: 'MATH'), utilizing a single criteria (criteria_count: 1) represented by the 'Value' expression (component_expr: 'Value').",AmountinLocalCurrency2,ExpAcc
+ExpAcc_AmountinLocalCurrency_279,"Schema Name: ExpAcc
+        Component Name: AmountinLocalCurrency
+        Component Type: MATH
+        Business Purpose: This row calculates the total amount in local currency by summing the 'AmountinLocalCurrency1' and 'AmountinLocalCurrency2' components in the 'ExpAcc' schema.
+        Technical Logic: The 'AmountinLocalCurrency' component is a mathematical operation that adds the values of 'AmountinLocalCurrency1' and 'AmountinLocalCurrency2' based on the 'COST' component type, and is used in the 'MATH' model.",AmountinLocalCurrency,ExpAcc
+ExpAcc_AmountinTransactionCurrency_280,"Schema Name: ExpAcc
+        Component Name: AmountinTransactionCurrency
+        Component Type: MATH
+        Business Purpose: This row calculates the cost of a transaction in the local currency by dividing the transaction amount in the local currency by the exchange rate.
+        Technical Logic: The component 'AmountinTransactionCurrency' is a mathematical component of type 'MATH' that uses the expression 'AmountinLocalCurrency/ExchangeRate' to calculate the cost of a transaction, with a criteria count of 1.",AmountinTransactionCurrency,ExpAcc
+TDSAcc_journalsno_281,"Schema Name: TDSAcc
+        Component Name: journalsno
+        Component Type: MATH
+        Business Purpose: This row defines a component in the TDSAcc schema, specifically a journal number component for the MATH model, which is used to calculate the cost.
+        Technical Logic: The component_expr '1' indicates that the component is a fixed value, and the component_type 'MATH' and component_type_value 'COST' suggest that it is used in a mathematical calculation to determine a cost value.",journalsno,TDSAcc
+TDSAcc_ExchangeRate_282,"Schema Name: TDSAcc
+        Component Name: ExchangeRate
+        Component Type: MATH
+        Business Purpose: This row defines a component in the TDSAcc schema, specifically an ExchangeRate component of type MATH, used for calculating COST, with a single criteria.
+        Technical Logic: This component is a mathematical function (MATH) that calculates the ExchangeRate, with a value of COST, based on a single criteria, and is part of the TDSAcc schema.",ExchangeRate,TDSAcc
+TDSAcc_BaseValue_283,"Schema Name: TDSAcc
+        Component Name: BaseValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row represents a component in the TDSAcc schema that calculates the sum of 'COST' values from another schema, with a single criteria, and is used to derive the 'BaseValue'.
+        Technical Logic: The component_expr field contains a JSON object that is likely used to filter or transform data, but in this case, it appears to be a placeholder with a uuid value. The component_type 'SUMFROMSCHEMA' indicates that this component aggregates data from another schema, and the component_type_value 'COST' specifies the field to sum.",BaseValue,TDSAcc
+TDSAcc_TDSRate_284,"Schema Name: TDSAcc
+        Component Name: TDSRate
+        Component Type: MATH
+        Business Purpose: This row represents a TDS rate component in the TDSAcc schema, used to calculate the cost of TDS based on a percentage.
+        Technical Logic: The component_expr 'PercentageofTDS' likely uses a mathematical formula to calculate the TDS rate, and the criteria_count of 1 indicates that this component is based on a single criteria.",TDSRate,TDSAcc
+TDSAcc_Value_285,"Schema Name: TDSAcc
+        Component Name: Value
+        Component Type: MATH
+        Business Purpose: This row calculates the cost of a product by multiplying the base value with the TDS rate and dividing by 100.
+        Technical Logic: The component 'Value' of model 'MATH' with ID 'MATH' uses the formula 'BaseValue*TDSRate/100' to calculate the cost, which is a mathematical operation involving multiplication, division, and variable substitution.",Value,TDSAcc
+TDSAcc_AmountinLocalCurrency1_286,"Schema Name: TDSAcc
+        Component Name: AmountinLocalCurrency1
+        Component Type: MATH
+        Business Purpose: This row represents a calculation component in the TDSAcc schema, specifically calculating the amount in local currency for the 'MATH' model, using the 'COST' value and subtracting the 'Value' from it.
+        Technical Logic: The component_expr '-(Value)' indicates a mathematical operation where the 'Value' is subtracted from the result, likely using a cost-based calculation for the 'MATH' model.",AmountinLocalCurrency1,TDSAcc
+TDSAcc_AmountinLocalCurrency2_287,"Schema Name: TDSAcc
+        Component Name: AmountinLocalCurrency2
+        Component Type: MATH
+        Business Purpose: This row defines a component in the TDSAcc schema that calculates the amount in local currency, specifically the cost, based on a value.
+        Technical Logic: The component 'AmountinLocalCurrency2' of type 'MATH' with value 'COST' is used in the 'MATH' model, and it is based on a single criteria, which is evaluated to determine the final result.",AmountinLocalCurrency2,TDSAcc
+TDSAcc_AmountinLocalCurrency_288,"Schema Name: TDSAcc
+        Component Name: AmountinLocalCurrency
+        Component Type: MATH
+        Business Purpose: This row calculates the total amount in local currency by summing the 'AmountinLocalCurrency1' and 'AmountinLocalCurrency2' components in the 'TDSAcc' schema.
+        Technical Logic: The 'AmountinLocalCurrency' component is a mathematical operation that adds the values of 'AmountinLocalCurrency1' and 'AmountinLocalCurrency2' based on the 'COST' component type, and is part of the 'MATH' model with a single criteria.",AmountinLocalCurrency,TDSAcc
+TDSAcc_AmountinTransactionCurrency_289,"Schema Name: TDSAcc
+        Component Name: AmountinTransactionCurrency
+        Component Type: MATH
+        Business Purpose: This row defines a component in the TDSAcc schema that calculates the cost of a transaction in the local currency, taking into account the exchange rate.
+        Technical Logic: The component 'AmountinTransactionCurrency' is a mathematical operation that divides the 'AmountinLocalCurrency' by the 'ExchangeRate' to determine the cost of a transaction in the local currency.",AmountinTransactionCurrency,TDSAcc
+Provision_journalsno_290,"Schema Name: Provision
+        Component Name: journalsno
+        Component Type: MATH
+        Business Purpose: This row defines a journal number component in the Provision schema, used to track cost-related data for the MATH model.
+        Technical Logic: The component_expr '1' indicates a fixed value, and the component_type 'MATH' and component_type_value 'COST' specify the mathematical operation and its type, respectively. The criteria_count of 1 suggests a single criteria is being evaluated.",journalsno,Provision
+Provision_ExchangeRate_291,"Schema Name: Provision
+        Component Name: ExchangeRate
+        Component Type: MATH
+        Business Purpose: This row defines a component in the Provision schema, specifically an ExchangeRate component of type MATH, used for calculating COST, which is used as a criteria in the model.
+        Technical Logic: The ExchangeRate component is a mathematical component that retrieves the ExchangeRate value, which is then used as a criteria in the model with a count of 1, indicating it is a single criteria.",ExchangeRate,Provision
+Provision_ExpAccValue_292,"Schema Name: Provision
+        Component Name: ExpAccValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component in the 'Provision' schema that calculates the sum of 'COST' values from the 'ExpAcc' model, used as a criteria for 1 condition.
+        Technical Logic: The component_expr field contains a JSON object that is likely used to filter or transform data, but in this case, it appears to be a placeholder with a UUID value. The component_type 'SUMFROMSCHEMA' indicates that the component aggregates data from the schema, and the component_type_value 'COST' specifies the field to sum.",ExpAccValue,Provision
+Provision_TDSAccValue_293,"Schema Name: Provision
+        Component Name: TDSAccValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row defines a component in the 'Provision' schema that calculates the sum of 'COST' values from the 'TDSAcc' model, with a criteria count of 1.
+        Technical Logic: The component_expr field contains a JSON object that is likely used to filter or transform data, but its current value is a placeholder with 'uuid' as the key and value. The component_type is set to 'SUMFROMSCHEMA', indicating that it will sum values from the schema, and the component_type_value is set to 'COST', specifying the field to sum.",TDSAccValue,Provision
+Provision_AmountinLocalCurrency1_294,"Schema Name: Provision
+        Component Name: AmountinLocalCurrency1
+        Component Type: MATH
+        Business Purpose: This row defines a component in the 'Provision' schema that calculates the total amount in local currency, taking into account the expense account value and the tax deduction account value.
+        Technical Logic: The component 'AmountinLocalCurrency1' uses a mathematical operation to calculate its value, specifically 'ExpAccValue + TDSAccValue', where 'ExpAccValue' and 'TDSAccValue' are likely other components or values in the model, and 'MATH' is the model ID indicating a mathematical operation.",AmountinLocalCurrency1,Provision
+Provision_AmountinLocalCurrency2_295,"Schema Name: Provision
+        Component Name: AmountinLocalCurrency2
+        Component Type: MATH
+        Business Purpose: This row calculates the amount in local currency, taking into account the expenses and taxes, by subtracting the total expenses and tax deductions from the expense account value.
+        Technical Logic: The component 'AmountinLocalCurrency2' uses a mathematical expression '-(ExpAccValue + TDSAccValue)' to calculate the result, where 'ExpAccValue' and 'TDSAccValue' are presumably database fields representing expenses and tax deductions, respectively.",AmountinLocalCurrency2,Provision
+Provision_AmountinLocalCurrency_296,"Schema Name: Provision
+        Component Name: AmountinLocalCurrency
+        Component Type: MATH
+        Business Purpose: This row calculates the total amount in local currency by summing 'AmountinLocalCurrency1' and 'AmountinLocalCurrency2' for the 'MATH' model in the 'Provision' schema.
+        Technical Logic: The 'AmountinLocalCurrency' component uses a mathematical operation ('MATH') with a value of 'COST' to evaluate the expression 'AmountinLocalCurrency1+AmountinLocalCurrency2', resulting in a total criteria count of 1.",AmountinLocalCurrency,Provision
+Provision_AmountinTransactionCurrency_297,"Schema Name: Provision
+        Component Name: AmountinTransactionCurrency
+        Component Type: MATH
+        Business Purpose: This row defines a component in the 'Provision' schema that calculates the cost of a transaction in the local currency, taking into account the exchange rate.
+        Technical Logic: The component 'AmountinTransactionCurrency' in the 'Provision' schema uses a mathematical operation to calculate the cost of a transaction in the local currency by dividing the 'AmountinLocalCurrency' by the 'ExchangeRate'.",AmountinTransactionCurrency,Provision
+GRIRAc_journalsno_298,"Schema Name: GRIRAc
+        Component Name: journalsno
+        Component Type: MATH
+        Business Purpose: This row defines a component in the GRIRAc schema that calculates the cost of journals for the MATH model.
+        Technical Logic: The component_expr '1' indicates that the component always returns a value of 1, regardless of the input criteria, and the component_type_value 'COST' specifies that the component represents a cost. The component_type 'MATH' suggests that this component is part of a mathematical model.",journalsno,GRIRAc
+GRIRAc_ExchangeRate_299,"Schema Name: GRIRAc
+        Component Name: ExchangeRate
+        Component Type: MATH
+        Business Purpose: This row represents a component in the GRIRAc schema, specifically an ExchangeRate component of type MATH, used in the MATH model, which evaluates the cost of ExchangeRate.
+        Technical Logic: The backend operation of this component involves evaluating the ExchangeRate component expression, which is the component itself, and counting the number of criteria associated with it, which is 1 in this case.",ExchangeRate,GRIRAc
+GRIRAc_ExpAccValue_300,"Schema Name: GRIRAc
+        Component Name: ExpAccValue
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: This row fetches the cost value from the GRIRAc schema, specifically for the ExpAcc model, and uses it as a criteria in the ExpAccValue component.
+        Technical Logic: The FETCHFROMSCHEMA component_type operation retrieves the 'COST' value from the GRIRAc schema, using the component_expr to filter the result, which is then used as a criteria in the ExpAccValue component.",ExpAccValue,GRIRAc
+GRIRAc_TDSAccValue_301,"Schema Name: GRIRAc
+        Component Name: TDSAccValue
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: This row fetches the cost value from the GRIRAc schema for the TDSAcc model, likely used for cost calculation purposes.
+        Technical Logic: The FETCHFROMSCHEMA component type retrieves a value from a schema, in this case, the COST value from the GRIRAc schema for the TDSAcc model, based on the provided component_expr which is a UUID.",TDSAccValue,GRIRAc
+GRIRAc_AmountinLocalCurrency1_302,"Schema Name: GRIRAc
+        Component Name: AmountinLocalCurrency1
+        Component Type: MATH
+        Business Purpose: This row represents a mathematical component in the GRIRAc schema, specifically calculating the amount in local currency by subtracting TDSAccValue from ExpAccValue.
+        Technical Logic: The component_expr 'ExpAccValue - TDSAccValue' is evaluated to calculate the component_value, which is then used in the model with ID 'MATH'.",AmountinLocalCurrency1,GRIRAc
+GRIRAc_AmountinLocalCurrency2_303,"Schema Name: GRIRAc
+        Component Name: AmountinLocalCurrency2
+        Component Type: MATH
+        Business Purpose: This row calculates the amount in local currency by subtracting the tax deducted at source from the expense account value.
+        Technical Logic: The component_expr '-(ExpAccValue - TDSAccValue)' is evaluated to calculate the amount in local currency. This is a mathematical operation where the expense account value is subtracted from the tax deducted at source, and the result is negated.",AmountinLocalCurrency2,GRIRAc
+GRIRAc_AmountinLocalCurrency_304,"Schema Name: GRIRAc
+        Component Name: AmountinLocalCurrency
+        Component Type: MATH
+        Business Purpose: This row defines a component in the GRIRAc schema that calculates the total amount in local currency by summing the values of AmountinLocalCurrency1 and AmountinLocalCurrency2.
+        Technical Logic: The component_expr 'AmountinLocalCurrency2+AmountinLocalCurrency1' is evaluated to calculate the total amount, and the result is stored in the component 'AmountinLocalCurrency'.",AmountinLocalCurrency,GRIRAc
+GRIRAc_AmountinTransactionCurrency_305,"Schema Name: GRIRAc
+        Component Name: AmountinTransactionCurrency
+        Component Type: MATH
+        Business Purpose: This row defines a component in the GRIRAc schema that calculates the cost of a transaction in the local currency.
+        Technical Logic: The component 'AmountinTransactionCurrency' of type 'MATH' with value 'COST' is calculated based on the expression 'AmountinLocalCurrency' and is used in 1 criteria.",AmountinTransactionCurrency,GRIRAc
+G&SRNCostAllocation_TCostAllocationValue_306,"Schema Name: G&SRNCostAllocation
+        Component Name: TCostAllocationValue
+        Component Type: FETCHFROMSCHEMA
+        Business Purpose: This row defines a cost allocation value component in the G&SRNCostAllocation schema, fetching the 'COST' value from the schema.
+        Technical Logic: The component_expr field uses a JSON object to specify the document number and cost allocation method, which are then used to fetch the 'COST' value from the schema, with a criteria count of 1.",TCostAllocationValue,G&SRNCostAllocation
+G&SRNCostAllocation_CostAllocationParameterValue_307,"Schema Name: G&SRNCostAllocation
+        Component Name: CostAllocationParameterValue
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row represents a cost allocation parameter value component in the G&SRNCostAllocation model, which is used to allocate costs based on a specific method.
+        Technical Logic: The component_expr field contains a JSON object that defines the criteria for the cost allocation, including the created ID, cost allocation method, and line of business. The component_type is set to SUMFROMSCHEMA, indicating that the component will sum values from a schema.",CostAllocationParameterValue,G&SRNCostAllocation
+G&SRNCostAllocation_CostAllocationParameterPerc_308,"Schema Name: G&SRNCostAllocation
+        Component Name: CostAllocationParameterPerc
+        Component Type: MATH
+        Business Purpose: This row defines a cost allocation parameter percentage in the G&SRN Cost Allocation schema, used to calculate the percentage of cost allocation based on a given parameter value.
+        Technical Logic: The component_expr '(CostAllocationParameterValue / TCostAllocationValue)*100' calculates the cost allocation percentage by dividing the parameter value by a target cost allocation value and multiplying by 100, resulting in a percentage value.",CostAllocationParameterPerc,G&SRNCostAllocation
+G&SRNCostAllocation_BillAmountinLocalCurrency_309,"Schema Name: G&SRNCostAllocation
+        Component Name: BillAmountinLocalCurrency
+        Component Type: SUMFROMSCHEMA
+        Business Purpose: This row represents a component in the G&SRNCostAllocation schema that calculates the sum of costs from the ExpAcc model, specifically for the BillAmountinLocalCurrency component.
+        Technical Logic: The component_expr field contains a JSON object that defines the calculation logic, which in this case is a simple reference to the 'createdid' and 'CostAllocationMethod' fields. The component_type is set to 'SUMFROMSCHEMA', indicating that the component will sum values from the schema, and the component_type_value is 'COST', specifying the type of values to be summed.",BillAmountinLocalCurrency,G&SRNCostAllocation
+G&SRNCostAllocation_AmountinLocalCurrency1_310,"Schema Name: G&SRNCostAllocation
+        Component Name: AmountinLocalCurrency1
+        Component Type: MATH
+        Business Purpose: This row calculates the amount in local currency for a cost allocation, taking into account the bill amount and a cost allocation parameter percentage.
+        Technical Logic: The component_expr '(BillAmountinLocalCurrency * CostAllocationParameterPerc)/100' is evaluated to calculate the amount in local currency, where BillAmountinLocalCurrency is multiplied by the cost allocation parameter percentage and then divided by 100.",AmountinLocalCurrency1,G&SRNCostAllocation
+G&SRNCostAllocation_AmountinLocalCurrency2_311,"Schema Name: G&SRNCostAllocation
+        Component Name: AmountinLocalCurrency2
+        Component Type: MATH
+        Business Purpose: This row calculates the amount in local currency for a cost allocation, taking into account the bill amount in local currency and a cost allocation parameter percentage.
+        Technical Logic: The component_expr '(BillAmountinLocalCurrency * CostAllocationParameterPerc)/100' is evaluated to calculate the amount in local currency, where BillAmountinLocalCurrency is multiplied by the cost allocation parameter percentage and then divided by 100.",AmountinLocalCurrency2,G&SRNCostAllocation
+G&SRNCostAllocation_AmountinLocalCurrency_312,"Schema Name: G&SRNCostAllocation
+        Component Name: AmountinLocalCurrency
+        Component Type: MATH
+        Business Purpose: This row represents a cost allocation component in the G&SRN Cost Allocation model, specifically calculating the total amount in local currency by summing the values of 'AmountinLocalCurrency1' and 'AmountinLocalCurrency2'.
+        Technical Logic: The component_expr 'AmountinLocalCurrency1 + AmountinLocalCurrency2' is evaluated as a mathematical expression, where 'AmountinLocalCurrency1' and 'AmountinLocalCurrency2' are likely other components in the model, and the result is stored as the 'AmountinLocalCurrency' component.",AmountinLocalCurrency,G&SRNCostAllocation
+AP_SNO_313,"Schema Name: AP
+        Component Name: SNO
+        Component Type: MATH
+        Business Purpose: This row defines a component 'SNO' in the 'AP' schema, which is used to calculate the cost in the 'MATH' model.
+        Technical Logic: The component 'SNO' is a mathematical component of type 'MATH' with a value 'COST', using the expression 'SNo' and is associated with 1 criteria.",SNO,AP
+G&SRNWF_SNO_314,"Schema Name: G&SRNWF
+        Component Name: SNO
+        Component Type: MATH
+        Business Purpose: This row defines a 'SNO' component within the 'G&SRNWF' schema, which is used to calculate the 'COST' of a mathematical model 'MATH'.
+        Technical Logic: The 'SNO' component is a mathematical component that uses the expression '1' to calculate the 'COST' of the model 'MATH'. It is a simple component that does not rely on any criteria, as indicated by the 'criteria_count' of 1.",SNO,G&SRNWF

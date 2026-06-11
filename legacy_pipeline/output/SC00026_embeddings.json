@@ -1,0 +1,156 @@
+[
+    {
+        "id": "SC00026_SUB_001",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Validate received quantities against original Purchase Orders",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Validate received quantities against original Purchase Orders"
+        }
+    },
+    {
+        "id": "SC00026_SUB_002",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Validate received descriptions against original Purchase Orders",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Validate received descriptions against original Purchase Orders"
+        }
+    },
+    {
+        "id": "SC00026_SUB_003",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Calculate cost provisioning for goods received but not yet billed",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Calculate cost provisioning for goods received but not yet billed"
+        }
+    },
+    {
+        "id": "SC00026_SUB_004",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Determine Lines of Business (LOB) for cost allocation",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Determine Lines of Business (LOB) for cost allocation"
+        }
+    },
+    {
+        "id": "SC00026_SUB_005",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Determine cost centers for cost allocation",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Determine cost centers for cost allocation"
+        }
+    },
+    {
+        "id": "SC00026_SUB_006",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Allocate provisioned costs to specific LOB and cost centers",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Allocate provisioned costs to specific LOB and cost centers"
+        }
+    },
+    {
+        "id": "SC00026_SUB_007",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Compute Tax Deducted at Source (TDS) based on item descriptions",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Compute Tax Deducted at Source (TDS) based on item descriptions"
+        }
+    },
+    {
+        "id": "SC00026_SUB_008",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Compute other expense accounts based on item descriptions",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Compute other expense accounts based on item descriptions"
+        }
+    },
+    {
+        "id": "SC00026_SUB_009",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Generate cost provision accounting journal entries",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Generate cost provision accounting journal entries"
+        }
+    },
+    {
+        "id": "SC00026_SUB_010",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Track workflow status based on sender account",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Track workflow status based on sender account"
+        }
+    },
+    {
+        "id": "SC00026_SUB_011",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Track workflow status based on accounting dates",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Track workflow status based on accounting dates"
+        }
+    },
+    {
+        "id": "SC00026_SUB_012",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Map item descriptions to corresponding expense accounts",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Map item descriptions to corresponding expense accounts"
+        }
+    },
+    {
+        "id": "SC00026_SUB_013",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Handle exceptions for invalid or missing Purchase Order data",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Handle exceptions for invalid or missing Purchase Order data"
+        }
+    },
+    {
+        "id": "SC00026_SUB_014",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Handle exceptions for discrepancies in received quantities or descriptions",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Handle exceptions for discrepancies in received quantities or descriptions"
+        }
+    }
+]

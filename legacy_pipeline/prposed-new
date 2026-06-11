@@ -1,0 +1,32 @@
+1. Stage 0: Corpus Ingestion Offline
+This happens before any user asks a question.
+
+Goal: Turn your 30 raw JSON schemas into searchable knowledge.
+Process: A Python Parser reads the JSONs and extracts structural details (components, criteria) into a relational database (PostgreSQL). It also maps out how schemas depend on each other into a graph database (Neo4j). Finally, an LLM summarizes what each schema does, and those summaries are converted to vectors and stored in Pinecone for semantic search.
+2. Stage 1: Problem Intake
+This is where the user interacts with the system.
+
+Goal: Understand the user's plain-English problem.
+Process: The user submits a problem. The Intake LLM reads it and extracts a rigid "Grounding Document" (capturing the domain, data sources, etc.).
+Critical Rule: If the LLM detects any ambiguity (e.g., the user forgot to specify the line of business), the pipeline HALTS immediately and asks the user for clarification.
+3. Stage 2: Decomposition
+Goal: Break the big problem into smaller pieces.
+Process: The Decomposition LLM looks at the Grounding Document and breaks the problem into an ordered list of "Slots" (e.g., Slot 1: Fetch Master Data, Slot 2: Calculate Subtotal, Slot 3: Apply Tax).
+4. Stage 3: Retrieval & Candidate Selection
+Goal: Find existing schema templates for each slot.
+Process: For every slot, the system queries the vector database (Pinecone) to find the most similar existing schema class.
+It assigns a Confidence Tier:
+HIGH: Near exact match.
+MEDIUM: Good match, but needs minor tweaks (e.g., different field names).
+LOW / GAP: No match found; needs to be generated from scratch.
+5. Stage 4: Adaptation & Assembly
+Goal: Write the JSON code.
+Process:
+HIGH confidence slots bypass the LLM and go straight to assembly.
+MEDIUM slots are sent to an Adapter LLM to tweak the existing JSON template.
+GAP slots are sent to a Generator LLM to write brand new JSON.
+Crucial Step: Every generated/adapted JSON class MUST pass through a rigid Pydantic 4C Validator. If it fails structural rules, it is sent back to the LLM to be fixed (up to 3 times). Once everything passes, the DAG (Graph) assembles them in the correct dependency order.
+6. Stage 5: Validation & Review
+Goal: Prove it works before deploying.
+Process: The fully assembled schema JSON is sent to an Engine Dry-Run using synthetic test data to see if it actually computes the correct numbers.
+Finally, everything (the JSON, the dry-run results, the confidence scores) is displayed on a Streamlit Dashboard for a human expert to review. If approved, the new schema is saved to the databases, making the system smarter for next time!

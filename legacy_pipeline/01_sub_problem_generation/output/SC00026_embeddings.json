@@ -1,0 +1,156 @@
+[
+    {
+        "id": "SC00026_SUB_001",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Retrieve associated Purchase Order (PO) details for GRN/SRN validation.",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Retrieve associated Purchase Order (PO) details for GRN/SRN validation."
+        }
+    },
+    {
+        "id": "SC00026_SUB_002",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Validate GRN/SRN received quantities against PO ordered quantities.",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Validate GRN/SRN received quantities against PO ordered quantities."
+        }
+    },
+    {
+        "id": "SC00026_SUB_003",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Validate GRN/SRN item descriptions against PO item descriptions.",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Validate GRN/SRN item descriptions against PO item descriptions."
+        }
+    },
+    {
+        "id": "SC00026_SUB_004",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Identify GRN/SRN line items that are received but not yet billed by the vendor.",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Identify GRN/SRN line items that are received but not yet billed by the vendor."
+        }
+    },
+    {
+        "id": "SC00026_SUB_005",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Calculate the provisional cost for each unbilled GRN/SRN line item using PO prices.",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Calculate the provisional cost for each unbilled GRN/SRN line item using PO prices."
+        }
+    },
+    {
+        "id": "SC00026_SUB_006",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Allocate the calculated provisional costs to the relevant Lines of Business (LOBs).",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Allocate the calculated provisional costs to the relevant Lines of Business (LOBs)."
+        }
+    },
+    {
+        "id": "SC00026_SUB_007",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Allocate the calculated provisional costs to the specific cost centers.",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Allocate the calculated provisional costs to the specific cost centers."
+        }
+    },
+    {
+        "id": "SC00026_SUB_008",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Determine and calculate Tax Deducted at Source (TDS) based on GRN/SRN item and vendor characteristics.",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Determine and calculate Tax Deducted at Source (TDS) based on GRN/SRN item and vendor characteristics."
+        }
+    },
+    {
+        "id": "SC00026_SUB_009",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Determine and calculate other expense account provisions (e.g., freight, insurance) based on GRN/SRN item descriptions.",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Determine and calculate other expense account provisions (e.g., freight, insurance) based on GRN/SRN item descriptions."
+        }
+    },
+    {
+        "id": "SC00026_SUB_010",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Generate the required debit and credit accounting journal entries for cost provisioning.",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Generate the required debit and credit accounting journal entries for cost provisioning."
+        }
+    },
+    {
+        "id": "SC00026_SUB_011",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Generate specific accounting journal entries for TDS and other expense provisions.",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Generate specific accounting journal entries for TDS and other expense provisions."
+        }
+    },
+    {
+        "id": "SC00026_SUB_012",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Update and maintain the workflow status of each GRN/SRN transaction.",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Update and maintain the workflow status of each GRN/SRN transaction."
+        }
+    },
+    {
+        "id": "SC00026_SUB_013",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Record and track the sender account associated with each GRN/SRN.",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Record and track the sender account associated with each GRN/SRN."
+        }
+    },
+    {
+        "id": "SC00026_SUB_014",
+        "parent_id": "SC00026",
+        "project_name": "Goods Receipt Note (GRN) Cost Provisioning",
+        "sub_problem_statement": "Store and manage all critical accounting dates relevant to GRN/SRN processing.",
+        "context": "Requirement extracted from Goods Receipt Note (GRN) Cost Provisioning problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Goods Receipt Note (GRN) Cost Provisioning: Store and manage all critical accounting dates relevant to GRN/SRN processing."
+        }
+    }
+]

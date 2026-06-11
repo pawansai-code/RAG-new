@@ -1,0 +1,142 @@
+[
+    {
+        "SchemaName": "BillCostAllocation1",
+        "DataSource": "Bill_I",
+        "DateAggregationOn": "ForPrdFrom",
+        "SettlementType": "Per LOB Monthly",
+        "OutputProcessCode": "TT"
+    },
+    {
+        "SchemaName": "BillCostAllocation",
+        "DataSource": "Bill_I",
+        "DateAggregationOn": "ForPrdFrom",
+        "SettlementType": "Per LOB Monthly",
+        "OutputProcessCode": "TT"
+    },
+    {
+        "SchemaName": "BillCostAllocation1",
+        "DataSource": "Bill_I",
+        "DateAggregationOn": "ForPrdFrom",
+        "SettlementType": "Per LOB Monthly",
+        "OutputProcessCode": "TT"
+    },
+    {
+        "SchemaName": "GSTAccBill_I",
+        "DataSource": "Bill_I",
+        "DateAggregationOn": "ForPrdFrom",
+        "SettlementType": "Per ItemID Monthly",
+        "OutputProcessCode": "TT"
+    },
+    {
+        "SchemaName": "TDSAccBill_I",
+        "DataSource": "Bill_I",
+        "DateAggregationOn": "ForPrdFrom",
+        "SettlementType": "Per SectionName Monthly",
+        "OutputProcessCode": "TT"
+    },
+    {
+        "SchemaName": "BillCostAllocation",
+        "DataSource": "Bill_I",
+        "DateAggregationOn": "ForPrdFrom",
+        "SettlementType": "Per LOB Monthly",
+        "OutputProcessCode": "TT"
+    },
+    {
+        "SchemaName": "TDSAccBill_I",
+        "DataSource": "Bill_I",
+        "DateAggregationOn": "ForPrdFrom",
+        "SettlementType": "Per SectionName Monthly",
+        "OutputProcessCode": "TT"
+    },
+    {
+        "SchemaName": "GSTAccBill_I",
+        "DataSource": "Bill_I",
+        "DateAggregationOn": "ForPrdFrom",
+        "SettlementType": "Per ItemID Monthly",
+        "OutputProcessCode": "TT"
+    },
+    {
+        "SchemaName": "BillCostAllocation",
+        "DataSource": "Bill_I",
+        "DateAggregationOn": "ForPrdFrom",
+        "SettlementType": "Per LOB Monthly",
+        "OutputProcessCode": "TT"
+    },
+    {
+        "SchemaName": "AmortizeBill_I",
+        "DataSource": "Bill_I",
+        "DateAggregationOn": "ForPrdFrom",
+        "SettlementType": "Per Itemid Monthly",
+        "OutputProcessCode": "TT"
+    },
+    {
+        "SchemaName": "ProvisionReversalCostAllocation",
+        "DataSource": "Bill_I",
+        "DateAggregationOn": "ForPrdFrom",
+        "SettlementType": "Per LOB Monthly",
+        "OutputProcessCode": "TT"
+    },
+    {
+        "SchemaName": "IM",
+        "DataSource": "IM",
+        "DateAggregationOn": "ForPrdFrom",
+        "SettlementType": "Per itemid Monthly",
+        "OutputProcessCode": "TT"
+    },
+    {
+        "SchemaName": "GSTAccBill_I",
+        "DataSource": "Bill_I",
+        "DateAggregationOn": "ForPrdFrom",
+        "SettlementType": "Per ItemID Monthly",
+        "OutputProcessCode": "TT"
+    },
+    {
+        "SchemaName": "ProvisionReversalCostAllocation",
+        "DataSource": "Bill_I",
+        "DateAggregationOn": "ForPrdFrom",
+        "SettlementType": "Per LOB Monthly",
+        "OutputProcessCode": "TT"
+    },
+    {
+        "SchemaName": "G&SRN_BT3H",
+        "DataSource": "G&SRNBT3H",
+        "DateAggregationOn": "Accountingdate",
+        "SettlementType": "Per SenderAccount Monthly",
+        "OutputProcessCode": "TT"
+    },
+    {
+        "SchemaName": "G&SRNCostAllocation1",
+        "DataSource": "G&SRNBT3I",
+        "DateAggregationOn": "ForPrdFrom",
+        "SettlementType": "Per LOB Monthly",
+        "OutputProcessCode": "TT"
+    },
+    {
+        "SchemaName": "TDSAcc",
+        "DataSource": "G&SRNBT3I",
+        "DateAggregationOn": "ForPrdFrom",
+        "SettlementType": "Per SectionName Monthly",
+        "OutputProcessCode": "TT"
+    },
+    {
+        "SchemaName": "TDSAcc",
+        "DataSource": "G&SRNBT3I",
+        "DateAggregationOn": "ForPrdFrom",
+        "SettlementType": "Per SectionName Monthly",
+        "OutputProcessCode": "TT"
+    },
+    {
+        "SchemaName": "GSTAccBill_I",
+        "DataSource": "Bill_I",
+        "DateAggregationOn": "ForPrdFrom",
+        "SettlementType": "Per ItemID Monthly",
+        "OutputProcessCode": "TT"
+    },
+    {
+        "SchemaName": "G&SRN_BT3H",
+        "DataSource": "G&SRNBT3H",
+        "DateAggregationOn": "Accountingdate",
+        "SettlementType": "Per SenderAccount Monthly",
+        "OutputProcessCode": "TT"
+    }
+]

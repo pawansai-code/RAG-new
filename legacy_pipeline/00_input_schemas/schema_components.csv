@@ -1,0 +1,316 @@
+schema_name,component_name,model_id,component_type,component_type_value,component_expr,criteria_count
+ReverseCA,amountinlocalcurrency,MATH,MATH,COST,amountinlocalcurrency,1
+ReverseCA,costallocationparameterperc,MATH,MATH,COST,costallocationparameterperc,1
+Bill_I,invoiceqty,MATH,MATH,COST,Qty,1
+Bill_H,ExchangeRate,MATH,MATH,COST,ExchangeRate,1
+Bill_H,AddlCharge,MATH,MATH,COST,AddlCharge,1
+Bill_H,RoundOffValue,MATH,MATH,COST,RoundOffValue,1
+PrevBill,Qty,MATH,MATH,COST,Qty,1
+PrevBill,Rate,MATH,MATH,COST,Rate,1
+PrevBill,AddlCharge,MATH,MATH,COST,AddlCharge,1
+PrevBill,DiscountAmt,MATH,MATH,COST,Discount,1
+PrevBill,TaxPercentage,MATH,MATH,COST,TaxPercentage,1
+PrevBill,Basevalue,MATH,MATH,COST,Basevalue,1
+PrevBill,TaxValue,MATH,MATH,COST,TaxValue,1
+PrevBill,DocumentValue,MATH,MATH,COST,DocumentValue,1
+PO&IP_Status,AwaitingApprovalQty,PrevBill,SUMFROMSCHEMA,COST,"{\""ItemID\"":\""ItemID\"",\""LinkRef\"":\""documentnumber\"",""status"":{""equality"":""EQ"",""value"":""Waiting For Approval""}}",1
+PO&IP_Status,ActiveQty,PrevBill,SUMFROMSCHEMA,COST,"{\""ItemID\"":\""ItemID\"",\""LinkRef\"":\""documentnumber\"",""status"":{""equality"":""EQ"",""value"":""Active""}}",1
+PO&IP_Status,ActualQty,MATH,MATH,COST,Qty-(ActiveQty + AwaitingApprovalQty),1
+PO&IP_Status,Rate,MATH,MATH,COST,Rate,1
+PO&IP_Status,AwaitingApprovalAddlCharge,PrevBill,SUMFROMSCHEMA,COST,"{\""ItemID\"":\""ItemID\"",\""LinkRef\"":\""documentnumber\"",""status"":{""equality"":""EQ"",""value"":""Waiting For Approval""}}",1
+PO&IP_Status,ActiveAddlCharge,PrevBill,SUMFROMSCHEMA,COST,"{\""ItemID\"":\""ItemID\"",\""LinkRef\"":\""documentnumber\"",""status"":{""equality"":""EQ"",""value"":""Active""}}",1
+PO&IP_Status,ActualAddlCharge,MATH,MATH,COST,AddlCharge-(AwaitingApprovalAddlCharge + ActiveAddlCharge),1
+PO&IP_Status,AwaitingApprovalDiscountAmt,PrevBill,SUMFROMSCHEMA,COST,"{\""ItemID\"":\""ItemID\"",\""LinkRef\"":\""documentnumber\"",""status"":{""equality"":""EQ"",""value"":""Waiting For Approval""}}",1
+PO&IP_Status,ActiveDiscountAmt,PrevBill,SUMFROMSCHEMA,COST,"{\""ItemID\"":\""ItemID\"",\""LinkRef\"":\""documentnumber\"",""status"":{""equality"":""EQ"",""value"":""Active""}}",1
+PO&IP_Status,ActualDiscountAmt,MATH,MATH,COST,Discount-(AwaitingApprovalDiscountAmt + ActiveDiscountAmt),1
+PO&IP_Status,Basevalue,MATH,MATH,COST,Basevalue,1
+PO&IP_Status,AwaitingApprovalBaseValue,PrevBill,SUMFROMSCHEMA,COST,"{\""ItemID\"":\""ItemID\"",\""LinkRef\"":\""documentnumber\"",""status"":{""equality"":""EQ"",""value"":""Waiting For Approval""}}",1
+PO&IP_Status,ActiveBaseValue,PrevBill,SUMFROMSCHEMA,COST,"{\""ItemID\"":\""ItemID\"",\""LinkRef\"":\""documentnumber\"",""status"":{""equality"":""EQ"",""value"":""Active""}}",1
+PO&IP_Status,ActualBaseValue,MATH,MATH,COST,BaseValue-(AwaitingApprovalBaseValue + ActiveBaseValue),1
+PO&IP_Status,AwaitingApprovalTaxValue,PrevBill,SUMFROMSCHEMA,COST,"{\""ItemID\"":\""ItemID\"",\""LinkRef\"":\""documentnumber\"",""status"":{""equality"":""EQ"",""value"":""Waiting For Approval""}}",1
+PO&IP_Status,ActiveTaxValue,PrevBill,SUMFROMSCHEMA,COST,"{\""ItemID\"":\""ItemID\"",\""LinkRef\"":\""documentnumber\"",""status"":{""equality"":""EQ"",""value"":""Active""}}",1
+PO&IP_Status,ActualTaxValue,MATH,MATH,COST,TaxValue-(AwaitingApprovalTaxValue + ActiveTaxValue),1
+PO&IP_Status,AwaitingApprovalDocumentValue,PrevBill,SUMFROMSCHEMA,COST,"{\""ItemID\"":\""ItemID\"",\""LinkRef\"":\""documentnumber\"",""status"":{""equality"":""EQ"",""value"":""Waiting For Approval""}}",1
+PO&IP_Status,ActiveDocumentValue,PrevBill,SUMFROMSCHEMA,COST,"{\""ItemID\"":\""ItemID\"",\""LinkRef\"":\""documentnumber\"",""status"":{""equality"":""EQ"",""value"":""Active""}}",1
+PO&IP_Status,ActualDocumentValue,MATH,MATH,COST,DocumentValue-(AwaitingApprovalDocumentValue + ActiveDocumentValue),1
+PO&IP_Status,amountinlocalcurrency,MATH,MATH,COST,amountinlocalcurrency,1
+PO&IP_Status,TaxPercentage,MATH,MATH,COST,TaxPercentage,1
+Bill_Item,headaddlcharge,Bill_H,SUMFROMSCHEMA,COST,"{\""interimid\"":\""interimid\""}",1
+Bill_Item,TotalQty,Bill_I,SUMFROMSCHEMA,COST,"{\""interimid\"":\""interimid\""}",1
+Bill_Item,ExchangeRate,Bill_H,FETCHFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\""}",1
+Bill_Item,Qty,MATH,MATH,COST,Qty,1
+Bill_Item,Rate,MATH,MATH,COST,Rate,1
+Bill_Item,AddlCharge,MATH,MATH,COST,AddlCharge,1
+Bill_Item,AddlCharge1,MATH,MATH,COST,Qty * headaddlcharge/TotalQty*1,1
+Bill_Item,DiscountAmt,MATH,MATH,COST,Discount,1
+Bill_Item,TaxPercentage,MATH,MATH,COST,TaxPercentage,1
+Bill_Item,Basevalue,MATH,MATH,COST,Basevalue,1
+Bill_Item,BillBasevalue,MATH,MATH,COST,(Basevalue+AddlCharge+AddlCharge1-DiscountAmt)*ExchangeRate,1
+Bill_Item,POorIPActualBaseValue,PO&IP_Status,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""LinkRef\"",\""ItemID\"":\""ItemID\""}",1
+Bill_Item,RefBasevalue,MATH,ROWWISE-MINVALUE,COST,BillBasevalue <> POorIPActualBaseValue,1
+Bill_Item,TaxValue,MATH,MATH,COST,TaxValue,1
+Bill_Item,DocumentValue,MATH,MATH,COST,DocumentValue,1
+Bill_Item,AmountinLocalCurrency,MATH,MATH,COST,Basevalue*ExchangeRate,1
+Bill_Item,AmountinTransactionCurrency,MATH,MATH,COST,Basevalue,1
+Bill_Item,AccountBaseValue,,ACCOUNTING-VALUE,COST,,1
+Bill_Item,NAccBaseValue,MATH,MATH,COST,-1*AccountBaseValue,1
+Bill_Item,PAccBaseValue,MATH,MATH,COST,AccountBaseValue,1
+Bill_Item,SignWAccBaseValue,MATH,MATH,COST,PAccBaseValue + NAccBaseValue,1
+Bill_Item,PercentageofTDS,MATH,MATH,COST,PercentageofTDS,1
+Bill_Item,cgstvalue,MATH,MATH,COST,cgstvalue,1
+Bill_Item,sgstvalue,MATH,MATH,COST,sgstvalue,1
+Bill_Item,igstvalue,MATH,MATH,COST,igstvalue,1
+CostAllocationMaster,CNT_CostAllocationValue,MATH,MATH,COST,CostAllocationValue,1
+CostAllocationMaster,PERC_CostAllocationValue,MATH,MATH,COST,CostAllocationValue,1
+CostAllocationMaster,CostAllocationParameterValue,MATH,MATH,COST,PERC_CostAllocationValue + CNT_CostAllocationValue,1
+CostAllocationMaster,costallocationamount,MATH,MATH,COST,costallocationamount,1
+BillCostAllocation1,CostAllocationParameterValue,CostAllocationMaster,FETCHFROMSCHEMA,COST,"{\""CostAllocationMethod\"":\""CostAllocationMethod\"",\""LOB\"":\""LOB\"",\""costallocationcategory\"":\""costallocationcategory\"",\""ForPrdFrom\"":\""CAPrdFrom\""}",1
+BillCostAllocation1,costallocationamount,CostAllocationMaster,FETCHFROMSCHEMA,COST,"{\""CostAllocationMethod\"":\""CostAllocationMethod\"",\""LOB\"":\""LOB\"",\""costallocationcategory\"":\""costallocationcategory\"",\""ForPrdFrom\"":\""CAPrdFrom\""}",1
+TCostAllocationValue,TCostAllocationValue,BillCostAllocation1,SUMFROMSCHEMA,COST,"{\""CostAllocationMethod\"":\""CostAllocationMethod\"",\""documentnumber\"":\""documentnumber\"",\""linkref\"":\""linkref\""}",1
+AP,SNO,MATH,MATH,COST,SNo,1
+BillWF,DocumentValue,MATH,MATH,COST,1,1
+AD,Parameter1,MATH,MATH,COST,1*Parameter1,1
+AD,SingleTresholdLimit,MATH,MATH,COST,SingleTresholdLimit,1
+AD,CummThresholdLimit,MATH,MATH,COST,CummThresholdLimit,1
+IM,PercentageofTDS,MATH,MATH,COST,PercentageofTDS,1
+VM,SNO,MATH,MATH,COST,1,1
+ProcessedTDSAmtinGSE,amountinlocalcurrency,MATH,MATH,COST,amountinlocalcurrency,1
+ReversalTDS,journalsno,MATH,MATH,COST,1,1
+ReversalTDS,ExchangeRate,Bill_Item,FETCHFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\""}",1
+ReversalTDS,Value,ProcessedTDSAmtinGSE,SUMFROMSCHEMA,COST,"{\""createdid\"":\""linkref\"",\""Itemid\"":\""Itemid\""}",1
+ReversalTDS,AmountinLocalCurrency,MATH,MATH,COST,-(Value),1
+ReversalTDS,AmountinTransactionCurrency,MATH,MATH,COST,-(Value/ExchangeRate),1
+ReversalProvisionExpAcc,journalsno,MATH,MATH,COST,1,1
+ReversalProvisionExpAcc,ExchangeRate,Bill_Item,FETCHFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\""}",1
+ReversalProvisionExpAcc,ProvisionValue,PO&IP_Status,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""Linkref\"",\""Itemid\"":\""Itemid\""}",1
+ReversalProvisionExpAcc,BillValue,Bill_Item,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""Itemid\"":\""Itemid\"",\""LinkRef\"":\""LinkRef\"",\""ForPrdFrom\"":\""ForPrdFrom\"",\""ForPrdTo\"":\""ForPrdTo\""}",1
+ReversalProvisionExpAcc,currentprovisionvalue,PO&IP_Status,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""Linkref\"",\""Itemid\"":\""Itemid\""}",1
+ReversalProvisionExpAcc,Value,,COSTPROVISION-VALUE,COST,,1
+ReversalProvisionExpAcc,AmountinLocalCurrency,MATH,MATH,COST,-(Value),1
+ReversalProvisionExpAcc,AmountinTransactionCurrency,MATH,MATH,COST,-(Value/ExchangeRate),1
+ReversalProvision,journalsno,MATH,MATH,COST,1,1
+ReversalProvision,ExchangeRate,Bill_Item,FETCHFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\""}",1
+ReversalProvision,ProvisionValue,ReversalProvisionExpAcc,SUMFROMSCHEMA,COST,"{\""Linkref\"":\""Linkref\"",\""Itemid\"":\""Itemid\""}",1
+ReversalProvision,TDSValue,ReversalTDS,SUMFROMSCHEMA,COST,"{\""Linkref\"":\""Linkref\"",\""Itemid\"":\""Itemid\""}",1
+ReversalProvision,Value,MATH,MATH,COST,ProvisionValue + TDSValue,1
+ReversalProvision,AmountinLocalCurrency,MATH,MATH,COST,Value,1
+ReversalProvision,AmountinTransactionCurrency,MATH,MATH,COST,Value/ExchangeRate,1
+ExpAccBill_I,journalsno,MATH,MATH,COST,1,1
+ExpAccBill_I,ExchangeRate,Bill_Item,FETCHFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\""}",1
+ExpAccBill_I,Value,Bill_Item,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""Itemid\"":\""Itemid\"",\""LinkType\"":\""LinkType\"",\""ForPrdFrom\"":\""ForPrdFrom\"",\""ForPrdTo\"":\""ForPrdTo\"",\""Linkref\"":\""Linkref\"",\""costallocationmethod\"":\""costallocationmethod\""}",1
+ExpAccBill_I,AmountinLocalCurrency,MATH,MATH,COST,Value,1
+ExpAccBill_I,AmountinTransactionCurrency,MATH,MATH,COST,Value/ExchangeRate,1
+GSTAccBill_I,journalsno,MATH,MATH,COST,1,1
+GSTAccBill_I,ExchangeRate,Bill_Item,FETCHFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\""}",1
+GSTAccBill_I,Parameter1,AD,FETCHFROMSCHEMA,COST,"{\""itemtype\"":\""ItemType\"", \""Accountgroup\"":\""AccountGroup\"",\""Accountclass\"":\""AccountClass\"", \""AccountCode\"":\""AccountCode\"", \""LedgerName\"":\""LedgerName\"" }",1
+GSTAccBill_I,BillBaseValue,Bill_Item,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""ItemID\"":\""ItemID\"",\""taxcode\"":\""AccountClass\"",\""ForPrdFrom\"":\""ForPrdFrom\"",\""ForPrdTo\"":\""ForPrdTo\"",\""Linkref\"":\""Linkref\""}",1
+GSTAccBill_I,NValue,MATH,MATH,COST,-(BillBaseValue * Parameter1)/100,1
+GSTAccBill_I,PValue,MATH,MATH,COST,(BillBaseValue * Parameter1)/100,1
+GSTAccBill_I,Value,MATH,MATH,COST,NValue+PValue,1
+GSTAccBill_I,AmountinLocalCurrency,MATH,MATH,COST,Value,1
+GSTAccBill_I,AmountinTransactionCurrency,MATH,MATH,COST,Value/ExchangeRate,1
+ExpAccBill_I_GST,journalsno,MATH,MATH,COST,1,1
+ExpAccBill_I_GST,ExchangeRate,Bill_Item,FETCHFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""ForPrdFrom\"":\""ForPrdFrom\"",\""ForPrdTo\"":\""ForPrdTo\""}",1
+ExpAccBill_I_GST,Parameter1,GSTAccBill_I,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""ItemID\"":\""ItemID\"",\""ForPrdFrom\"":\""ForPrdFrom\"",\""ForPrdTo\"":\""ForPrdTo\""}",1
+ExpAccBill_I_GST,BillBaseValue,Bill_Item,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""ItemID\"":\""ItemID\"",\""taxcode\"":\""taxcode\"",\""ForPrdFrom\"":\""ForPrdFrom\"",\""ForPrdTo\"":\""ForPrdTo\"",\""Linkref\"":\""Linkref\""}",1
+ExpAccBill_I_GST,NValue,MATH,MATH,COST,-(BillBaseValue * Parameter1)/100,1
+ExpAccBill_I_GST,PValue,MATH,MATH,COST,(BillBaseValue * Parameter1)/100,1
+ExpAccBill_I_GST,Value,MATH,MATH,COST,NValue+PValue,1
+ExpAccBill_I_GST,AmountinLocalCurrency,MATH,MATH,COST,Value,1
+ExpAccBill_I_GST,AmountinTransactionCurrency,MATH,MATH,COST,Value/ExchangeRate,1
+TDSAccBill_I,journalsno,MATH,MATH,COST,1,1
+TDSAccBill_I,ExchangeRate,Bill_Item,FETCHFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\""}",1
+TDSAccBill_I,TDSRate,Bill_Item,FETCHFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""sectionname\"":\""sectionname\""}",1
+TDSAccBill_I,AccBaseValue,Bill_Item,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""SectionName\"":\""SectionName\"",\""Itemid\"":\""Itemid\"",\""ForPrdFrom\"":\""ForPrdFrom\"",\""ForPrdTo\"":\""ForPrdTo\"",\""Linkref\"":\""Linkref\""}",1
+TDSAccBill_I,ExpAmtPerc,MATH,MATH,COST,100 + TDSRate,1
+TDSAccBill_I,Value1,MATH,MATH,COST,AccBaseValue*TDSRate/100,1
+TDSAccBill_I,Value2,MATH,MATH,COST,AccBaseValue*TDSRate/ExpAmtPerc,1
+TDSAccBill_I,ProcessedTDSValue,ProcessedTDSAmtinGSE,SUMFROMSCHEMA,COST,"{\""createdid\"":\""Linkref\"",\""accountclass\"":\""SectionName\""}",1
+TDSAccBill_I,Value,MATH,MATH,COST,(Value1+Value2),1
+TDSAccBill_I,AmountinLocalCurrency,MATH,MATH,COST,Value,1
+TDSAccBill_I,AmountinTransactionCurrency,MATH,MATH,COST,Value/ExchangeRate,1
+ExpAccBill_I_TDS,journalsno,MATH,MATH,COST,1,1
+ExpAccBill_I_TDS,ExchangeRate,Bill_Item,FETCHFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\""}",1
+ExpAccBill_I_TDS,Value1,TDSAccBill_I,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""Itemid\"":\""Itemid\"",\""sectionname\"":\""sectionname\"",\""ForPrdFrom\"":\""ForPrdFrom\"",\""ForPrdTo\"":\""ForPrdTo\"",\""Linkref\"":\""Linkref\""}",1
+ExpAccBill_I_TDS,Value,MATH,MATH,COST,-(Value1),1
+ExpAccBill_I_TDS,AmountinLocalCurrency,MATH,MATH,COST,Value,1
+ExpAccBill_I_TDS,AmountinTransactionCurrency,MATH,MATH,COST,Value/ExchangeRate,1
+RoundOffAcc,journalsno,MATH,MATH,COST,1,1
+RoundOffAcc,AmountinLocalCurrency,Bill_H,FETCHFROMSCHEMA,COST,"{\""interimid\"":\""interimid\""}",1
+RoundOffAcc,AmountinTransactionCurrency,MATH,MATH,COST,AmountinLocalCurrency,1
+CrAccBill_I,journalsno,MATH,MATH,COST,1,1
+CrAccBill_I,ExchangeRate,Bill_Item,FETCHFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\""}",1
+CrAccBill_I,ExpValue,ExpAccBill_I,SUMFROMSCHEMA,COST,"{\""Documentnumber\"":\""Documentnumber\"",\""Itemid\"":\""Itemid\"",\""ForPrdFrom\"":\""ForPrdFrom\"",\""ForPrdTo\"":\""ForPrdTo\"",\""Linkref\"":\""Linkref\""}",1
+CrAccBill_I,GSTValue,GSTAccBill_I,SUMFROMSCHEMA,COST,"{\""Documentnumber\"":\""Documentnumber\"",\""Itemid\"":\""Itemid\"",\""ForPrdFrom\"":\""ForPrdFrom\"",\""ForPrdTo\"":\""ForPrdTo\"",\""Linkref\"":\""Linkref\""}",1
+CrAccBill_I,TDSValue,TDSAccBill_I,SUMFROMSCHEMA,COST,"{\""Documentnumber\"":\""Documentnumber\"",\""Itemid\"":\""Itemid\"",\""ForPrdFrom\"":\""ForPrdFrom\"",\""ForPrdTo\"":\""ForPrdTo\"",\""Linkref\"":\""Linkref\""}",1
+CrAccBill_I,ExpTDSValue,ExpAccBill_I_TDS,SUMFROMSCHEMA,COST,"{\""Documentnumber\"":\""Documentnumber\"",\""Itemid\"":\""Itemid\"",\""ForPrdFrom\"":\""ForPrdFrom\"",\""ForPrdTo\"":\""ForPrdTo\"",\""Linkref\"":\""Linkref\""}",1
+CrAccBill_I,ExpGSTValue,ExpAccBill_I_GST,SUMFROMSCHEMA,COST,"{\""Documentnumber\"":\""Documentnumber\"",\""Itemid\"":\""Itemid\"",\""ForPrdFrom\"":\""ForPrdFrom\"",\""ForPrdTo\"":\""ForPrdTo\"",\""Linkref\"":\""Linkref\""}",1
+CrAccBill_I,Value,MATH,MATH,COST,- (ExpValue + GSTValue + TDSValue + ExpTDSValue + ExpGSTValue),1
+CrAccBill_I,AmountinLocalCurrency,MATH,MATH,COST,Value,1
+CrAccBill_I,AmountinTransactionCurrency,MATH,MATH,COST,Value/ExchangeRate,1
+ProvisionReversalCostAllocation,costallocationparameterperc,ReverseCA,FETCHFROMSCHEMA,COST,"{\""createdid\"":\""linkref\"",\""itemid\"":\""itemid\"",\""ForPrdFrom\"":\""ForPrdFrom\"",\""ForPrdTo\"":\""ForPrdTo\"",\""CostAllocationMethod\"":\""CostAllocationMethod\"",\""LOB\"":\""LOB\""}",1
+ProvisionReversalCostAllocation,Value,ReversalProvisionExpAcc,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""itemid\"":\""itemid\"",\""Linkref\"":\""Linkref\"",\""ForPrdFrom\"":\""ForPrdFrom\"",\""ForPrdTo\"":\""ForPrdTo\""}",1
+ProvisionReversalCostAllocation,AmountinLocalCurrency,MATH,MATH,COST,(Value * costallocationparameterperc)/100,1
+ProvisionReversalCostAllocation,CostAllocationParameterValue,MATH,MATH,COST,costallocationparameterperc,1
+BillCostAllocation,TCostAllocationValue,TCostAllocationValue,FETCHFROMSCHEMA,COST,"{\""CostAllocationMethod\"":\""CostAllocationMethod\"",\""linkref\"":\""linkref\""}",1
+BillCostAllocation,CostAllocationParameterValue,BillCostAllocation1,SUMFROMSCHEMA,COST,"{\""CostAllocationMethod\"":\""CostAllocationMethod\"",\""linkref\"":\""linkref\"",\""LOB\"":\""LOB\""}",1
+BillCostAllocation,CostAllocationParameterPerc,MATH,MATH,COST,CostAllocationParameterValue / TCostAllocationValue,1
+BillCostAllocation,BillAmountinLocalCurrency,AccountingJournal,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""AccountType\"":\""category\"",\""ForPrdFrom\"":\""ForPrdFrom\"",\""ForPrdTo\"":\""ForPrdTo\"",\""linkref\"":\""linkref\"",\""CostAllocationMethod\"":\""CostAllocationMethod\"",\""lineref\"":\""lineref\""}",1
+BillCostAllocation,AmountinLocalCurrency1,MATH,MATH,COST,BillAmountinLocalCurrency * CostAllocationParameterPerc,1
+BillCostAllocation,AmountinLocalCurrency2,BillCostAllocation1,SUMFROMSCHEMA,COST,"{\""CostAllocationMethod\"":\""CostAllocationMethod\"",\""LOB\"":\""LOB\""}",1
+BillCostAllocation,AmountinLocalCurrency,MATH,MATH,COST,AmountinLocalCurrency1+AmountinLocalCurrency2,1
+AmortizeBill_I,SignWAccBaseValue,Bill_Item,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""Itemid\"":\""Itemid\"",\""LinkType\"":\""LinkType\"",\""ForPrdFrom\"":\""ForPrdFrom\"",\""ForPrdTo\"":\""ForPrdTo\"",\""Linkref\"":\""Linkref\""}",1
+AmortizeBill_I,ExpValue_TDS,ExpAccBill_I_TDS,SUMFROMSCHEMA,COST,"{\""Documentnumber\"":\""Documentnumber\"",\""Itemid\"":\""Itemid\"",\""Linkref\"":\""Linkref\""}",1
+AmortizeBill_I,ExpValue_GST,ExpAccBill_I_GST,SUMFROMSCHEMA,COST,"{\""Documentnumber\"":\""Documentnumber\"",\""Itemid\"":\""Itemid\"",\""Linkref\"":\""Linkref\""}",1
+AmortizeBill_I,ExchangeRate,Bill_Item,FETCHFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\""}",1
+AmortizeBill_I,AddlCharge,MATH,MATH,COST,AddlCharge*ExchangeRate,1
+AmortizeBill_I,BillBasevalue,MATH,MATH,COST,SignWAccBaseValue+AddlCharge,1
+AmortizeBill_I,Rate,MATH,MATH,COST,Rate,1
+AmortizeBill_I,DiscountAmt,MATH,MATH,COST,Discount,1
+AmortizeBill_I,TaxPercentage,MATH,MATH,COST,TaxPercentage,1
+AmortizeBill_I,Basevalue,MATH,MATH,COST,BillBasevalue + ExpValue_TDS + ExpValue_GST,1
+AmortizeBill_I,TaxValue,MATH,MATH,COST,TaxValue,1
+AmortizeBill_I,DocumentValue,MATH,MATH,COST,DocumentValue,1
+PO&IPVsBill,POorIPQty,PO&IP_Status,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""LinkRef\"",\""ItemID\"":\""ItemID\""}",1
+PO&IPVsBill,BillQty,Bill_Item,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""ItemID\"":\""ItemID\"",\""LinkRef\"":\""LinkRef\""}",1
+PO&IPVsBill,RefQty,MATH,ROWWISE-MINVALUE,COST,POorIPQty <> BillQty,1
+PO&IPVsBill,DiffQty,MATH,MATH,COST,RefQty - BillQty,1
+PO&IPVsBill,POorIPRate,PO&IP_Status,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""LinkRef\"",\""ItemID\"":\""ItemID\""}",1
+PO&IPVsBill,BillRate,Bill_Item,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""ItemID\"":\""ItemID\"",\""LinkRef\"":\""LinkRef\""}",1
+PO&IPVsBill,RefRate,MATH,ROWWISE-MINVALUE,COST,POorIPRate <> BillRate,1
+PO&IPVsBill,DiffRate,MATH,MATH,COST,RefRate - BillRate,1
+PO&IPVsBill,POorIPAddlCharge,PO&IP_Status,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""LinkRef\"",\""ItemID\"":\""ItemID\""}",1
+PO&IPVsBill,BillAddlCharge,Bill_Item,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""ItemID\"":\""ItemID\"",\""LinkRef\"":\""LinkRef\""}",1
+PO&IPVsBill,RefAddlCharge,MATH,ROWWISE-MINVALUE,COST,POorIPAddlCharge <> BillAddlCharge,1
+PO&IPVsBill,DiffAddlCharge,MATH,MATH,COST,RefAddlCharge - BillAddlCharge,1
+PO&IPVsBill,POorIPDiscountAmt,PO&IP_Status,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""LinkRef\"",\""ItemID\"":\""ItemID\""}",1
+PO&IPVsBill,BillDiscountAmt,Bill_Item,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""ItemID\"":\""ItemID\"",\""LinkRef\"":\""LinkRef\""}",1
+PO&IPVsBill,RefDiscountAmt,MATH,ROWWISE-MINVALUE,COST,POorIPDiscountAmt <> BillDiscountAmt,1
+PO&IPVsBill,DiffDiscountAmt,MATH,MATH,COST,RefDiscountAmt - BillDiscountAmt,1
+PO&IPVsBill,POorIPTaxPercentage,PO&IP_Status,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""LinkRef\"",\""ItemID\"":\""ItemID\""}",1
+PO&IPVsBill,BillTaxPercentage,Bill_Item,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""ItemID\"":\""ItemID\"",\""LinkRef\"":\""LinkRef\""}",1
+PO&IPVsBill,RefTaxPercentage,MATH,ROWWISE-MINVALUE,COST,POorIPTaxPercentage <> BillTaxPercentage,1
+PO&IPVsBill,DiffTaxPercentage,MATH,MATH,COST,RefTaxPercentage - BillTaxPercentage,1
+PO&IPVsBill,POorIPBaseValue,PO&IP_Status,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""LinkRef\"",\""ItemID\"":\""ItemID\""}",1
+PO&IPVsBill,BillBasevalue,Bill_Item,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""ItemID\"":\""ItemID\"",\""LinkRef\"":\""LinkRef\""}",1
+PO&IPVsBill,RefBasevalue,MATH,ROWWISE-MINVALUE,COST,POorIPBaseValue <> BillBasevalue,1
+PO&IPVsBill,DiffBasevalue,MATH,MATH,COST,RefBasevalue - BillBasevalue,1
+PO&IPVsBill,POorIPTaxValue,PO&IP_Status,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""LinkRef\"",\""ItemID\"":\""ItemID\""}",1
+PO&IPVsBill,BillTaxValue,Bill_Item,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""ItemID\"":\""ItemID\"",\""LinkRef\"":\""LinkRef\""}",1
+PO&IPVsBill,RefTaxValue,MATH,ROWWISE-MINVALUE,COST,POorIPTaxValue <> BillTaxValue,1
+PO&IPVsBill,DiffTaxValue,MATH,MATH,COST,RefTaxValue - BillTaxValue,1
+PO&IPVsBill,POorIPDocumentValue,PO&IP_Status,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""LinkRef\"",\""ItemID\"":\""ItemID\""}",1
+PO&IPVsBill,BillDocumentValue,Bill_Item,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""ItemID\"":\""ItemID\"",\""LinkRef\"":\""LinkRef\""}",1
+PO&IPVsBill,RefDocumentValue,MATH,ROWWISE-MINVALUE,COST,POorIPDocumentValue <> BillDocumentValue,1
+PO&IPVsBill,DiffDocumentValue,MATH,MATH,COST,RefDocumentValue - BillDocumentValue,1
+PO&IPVsBill,POorIP,MATH,MATH,COST,POorIPQty + POorIPRate + POorIPAddlCharge + POorIPDiscountAmt + POorIPTaxPercentage + POorIPBaseValue + POorIPTaxValue + POorIPDocumentValue ,1
+PO&IPVsBill,Bill,MATH,MATH,COST,BillQty + BillRate + BillAddlCharge + BillDiscountAmt + BillTaxPercentage + BillBaseValue + BillTaxValue + BillDocumentValue ,1
+PO&IPVsBill,Reference,MATH,MATH,COST,RefQty + RefRate + RefAddlCharge + RefDiscountAmt + RefTaxPercentage + RefBaseValue + RefTaxValue + RefDocumentValue ,1
+PO&IPVsBill,Different,MATH,MATH,COST,DiffQty + DiffRate + DiffAddlCharge + DiffDiscountAmt + DiffTaxPercentage + DiffBaseValue + DiffTaxValue + DiffDocumentValue ,1
+ErrorDetection,TotalBillBaseValue,AccountingJournal,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""LinkRef\"":\""LinkRef\"",\""AccountType\"":\""category\""}",1
+ErrorDetection,TotalOrderBaseValue,PO&IP_Status,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""LinkRef\""}",1
+ErrorDetection,TotalCostAllocation,BillCostAllocation,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""LinkRef\"":\""LinkRef\"",\""category\"":\""category\""}",1
+ErrorDetection,CostAllocationVariance,MATH,MATH,COST,TotalBillBaseValue - TotalCostAllocation,1
+ErrorDetection,AJCrossFootErrorInd,AccountingJournal,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""LinkRef\"":\""LinkRef\""}",1
+ErrorDetection,totalreversedcostallocation,ProvisionReversalCostAllocation,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""LinkRef\"":\""LinkRef\""}",1
+ErrorDetection,reversedajcrossfooterrorind,ProvisionReversalAccountingJournal,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""LinkRef\"":\""LinkRef\""}",1
+BillHead,totalbasevalue,Bill_Item,SUMFROMSCHEMA,COST,"{\""interimid\"":\""interimid\""}",1
+BillHead,totalrate,Bill_Item,SUMFROMSCHEMA,COST,"{\""interimid\"":\""interimid\""}",1
+BillHead,totaltaxvalue,Bill_Item,SUMFROMSCHEMA,COST,"{\""interimid\"":\""interimid\""}",1
+BillHead,totaldocumentvalue,Bill_Item,SUMFROMSCHEMA,COST,"{\""interimid\"":\""interimid\""}",1
+BillHead,amountinlocalcurrency,Bill_Item,SUMFROMSCHEMA,COST,"{\""interimid\"":\""interimid\""}",1
+BillHead,amountintransactioncurrency,Bill_Item,SUMFROMSCHEMA,COST,"{\""interimid\"":\""interimid\""}",1
+BillHead,ExchangeRate,MATH,MATH,COST,ExchangeRate,1
+PO_ItemCalculation,lineid,MATH,MATH,COST,lineid,1
+PO_ItemCalculation,Qty,MATH,MATH,COST,Qty,1
+PO_ItemCalculation,Rate,MATH,MATH,COST,Rate,1
+PO_ItemCalculation,AddlCharge,MATH,MATH,COST,AddlCharge,1
+PO_ItemCalculation,DiscountAmt,MATH,MATH,COST,Discount,1
+PO_ItemCalculation,TaxPercentage,MATH,MATH,COST,TaxPercentage,1
+PO_ItemCalculation,Basevalue,MATH,MATH,COST,(Qty * Rate) - DiscountAmt + AddlCharge,1
+PO_ItemCalculation,TaxValue,MATH,MATH,COST,(Basevalue * TaxPercentage) / 100,1
+PO_ItemCalculation,DocumentValue,MATH,MATH,COST,Basevalue + TaxValue,1
+PO_ItemCalculation,ExchangeRate,MATH,MATH,COST,exchangerate,1
+PO_ItemCalculation,AmountinLocalCurrency,MATH,MATH,COST,DocumentValue * ExchangeRate,1
+PO_ItemCalculation,AmountinTransactionCurrency,MATH,MATH,COST,Basevalue + TaxValue,1
+PO_ItemCalculation,AmountinLocalCurrencyWOTax,MATH,MATH,COST,Basevalue * ExchangeRate,1
+CostAllocationMaster,CNT_CostAllocationValue,MATH,MATH,COST,CostAllocationValue,1
+CostAllocationMaster,PERC_CostAllocationValue,MATH,MATH,COST,CostAllocationValue,1
+CostAllocationMaster,CostAllocationParameterValue,MATH,MATH,COST,PERC_CostAllocationValue + CNT_CostAllocationValue,1
+POCostAllocation1,CostAllocationParameterValue,CostAllocationMaster,FETCHFROMSCHEMA,COST,"{\""CostAllocationMethod\"":\""CostAllocationMethod\"",\""LOB\"":\""LOB\"",\""costallocationcategory\"":\""costallocationcategory\"",\""ForPrdFrom\"":\""CAPrdFrom\""}",1
+TCostAllocationValue,TCostAllocationValue,POCostAllocation1,SUMFROMSCHEMA,COST,"{\""CostAllocationMethod\"":\""CostAllocationMethod\"",\""documentnumber\"":\""documentnumber\""}",1
+POCostAllocation,TCostAllocationValue,TCostAllocationValue,FETCHFROMSCHEMA,COST,"{\""CostAllocationMethod\"":\""CostAllocationMethod\""}",1
+POCostAllocation,CostAllocationParameterValue,POCostAllocation1,SUMFROMSCHEMA,COST,"{\""CostAllocationMethod\"":\""CostAllocationMethod\"",\""LOB\"":\""LOB\""}",1
+POCostAllocation,CostAllocationParameterPerc,MATH,MATH,COST,CostAllocationParameterValue / TCostAllocationValue,1
+POCostAllocation,POAmountinLocalCurrency,PO_ItemCalculation,SUMFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""CostAllocationMethod\"":\""CostAllocationMethod\""}",1
+POCostAllocation,AmountinLocalCurrency,MATH,MATH,COST,POAmountinLocalCurrency * CostAllocationParameterPerc,1
+AP,SNO,MATH,MATH,COST,SNo,1
+POWF,DocumentValue,MATH,MATH,COST,1,1
+IM,PercentageofTDS,MATH,MATH,COST,PercentageofTDS,1
+VM,SNO,MATH,MATH,COST,1,1
+G&SRN_BT3H,ExchangeRate,MATH,MATH,Cost,1,1
+BT3I,DYNAMIC_CA,MATH,MATH,Cost,1,1
+BT3I,LineID,MATH,MATH,Cost,LineID,1
+BT3I,AcceptedQty,MATH,MATH,Cost,Qty,1
+G&SRN_BT3I,LineID,MATH,MATH,Cost,LineID,1
+G&SRN_BT3I,TotalAcceptedQty,BT3I,SUMFROMSCHEMA,COST,"{\""ReceiverAccount\"":\""ReceiverAccount\""}",1
+G&SRN_BT3I,Qty,MATH,MATH,Cost,Qty,1
+G&SRN_BT3I,AcceptedQty,MATH,MATH,Cost,Qty,1
+G&SRN_BT3I,Rate,MATH,MATH,Cost,Rate,1
+G&SRN_BT3I,BaseValue,MATH,MATH,Cost,AmountinLocalCurrency,1
+G&SRN_BT3I,OrderValue,MATH,MATH,Cost,orderqty*OrderRate,1
+G&SRN_BT3I,ExchangeRate,MATH,MATH,Cost,ExchangeRate,1
+G&SRN_BT3I,AmountinLocalCurrency,MATH,MATH,Cost,AmountinLocalCurrency,1
+G&SRN_BT3I,AmountinTransactionCurrency,MATH,MATH,Cost,AmountinTransactionCurrency,1
+G&SRN_BT3I,orderqty,MATH,MATH,Cost,orderqty,1
+G&SRN_BT3I,orderrate,MATH,MATH,Cost,orderrate,1
+G&SRN_BT3I,ReceivedQty,MATH,MATH,Cost,Qty,1
+CostAllocationMaster,CNT_CostAllocationValue,MATH,MATH,COST,CostAllocationValue,1
+CostAllocationMaster,PERC_CostAllocationValue,MATH,MATH,COST,CostAllocationValue,1
+CostAllocationMaster,CostAllocationParameterValue,MATH,MATH,COST,PERC_CostAllocationValue + CNT_CostAllocationValue,1
+G&SRNCostAllocation1,CostAllocationParameterValue,CostAllocationMaster,FETCHFROMSCHEMA,COST,"{\""CostAllocationMethod\"":\""CostAllocationMethod\"",\""LOB\"":\""LOB\"",\""costallocationcategory\"":\""costallocationcategory\"",\""ForPrdFrom\"":\""CAPrdFrom\""}",1
+TCostAllocationValue,TCostAllocationValue,G&SRNCostAllocation1,SUMFROMSCHEMA,COST,"{\""CostAllocationMethod\"":\""CostAllocationMethod\"",\""createdid\"":\""documentnumber\""}",1
+AD,Parameter1,MATH,MATH,COST,Parameter1,1
+AD,SingleTresholdLimit,MATH,MATH,COST,SingleTresholdLimit,1
+AD,CummThresholdLimit,MATH,MATH,COST,CummThresholdLimit,1
+ExpAcc,journalsno,MATH,MATH,COST,1,1
+ExpAcc,ExchangeRate,MATH,MATH,COST,ExchangeRate,1
+ExpAcc,Value,G&SRN_BT3I,SUMFROMSCHEMA,COST,"{""uuid\"":\""uuid\""}",1
+ExpAcc,AmountinLocalCurrency1,MATH,MATH,COST,-(Value),1
+ExpAcc,AmountinLocalCurrency2,MATH,MATH,COST,Value,1
+ExpAcc,AmountinLocalCurrency,MATH,MATH,COST,AmountinLocalCurrency1 + AmountinLocalCurrency2,1
+ExpAcc,AmountinTransactionCurrency,MATH,MATH,COST,AmountinLocalCurrency/ExchangeRate,1
+TDSAcc,journalsno,MATH,MATH,COST,1,1
+TDSAcc,ExchangeRate,MATH,MATH,COST,ExchangeRate,1
+TDSAcc,BaseValue,G&SRN_BT3I,SUMFROMSCHEMA,COST,"{""uuid\"":\""uuid\""}",1
+TDSAcc,TDSRate,MATH,MATH,COST,PercentageofTDS,1
+TDSAcc,Value,MATH,MATH,COST,BaseValue*TDSRate/100,1
+TDSAcc,AmountinLocalCurrency1,MATH,MATH,COST,-(Value),1
+TDSAcc,AmountinLocalCurrency2,MATH,MATH,COST,Value,1
+TDSAcc,AmountinLocalCurrency,MATH,MATH,COST,AmountinLocalCurrency1+AmountinLocalCurrency2,1
+TDSAcc,AmountinTransactionCurrency,MATH,MATH,COST,AmountinLocalCurrency/ExchangeRate,1
+Provision,journalsno,MATH,MATH,COST,1,1
+Provision,ExchangeRate,MATH,MATH,COST,ExchangeRate,1
+Provision,ExpAccValue,ExpAcc,SUMFROMSCHEMA,COST,"{""uuid\"":\""uuid\""}",1
+Provision,TDSAccValue,TDSAcc,SUMFROMSCHEMA,COST,"{""uuid\"":\""uuid\""}",1
+Provision,AmountinLocalCurrency1,MATH,MATH,COST,ExpAccValue + TDSAccValue,1
+Provision,AmountinLocalCurrency2,MATH,MATH,COST,-(ExpAccValue + TDSAccValue),1
+Provision,AmountinLocalCurrency,MATH,MATH,COST,AmountinLocalCurrency1+AmountinLocalCurrency2,1
+Provision,AmountinTransactionCurrency,MATH,MATH,COST,AmountinLocalCurrency/ExchangeRate,1
+GRIRAc,journalsno,MATH,MATH,COST,1,1
+GRIRAc,ExchangeRate,MATH,MATH,COST,ExchangeRate,1
+GRIRAc,ExpAccValue,ExpAcc,FETCHFROMSCHEMA,COST,"{""uuid\"":\""uuid\""}",1
+GRIRAc,TDSAccValue,TDSAcc,FETCHFROMSCHEMA,COST,"{""uuid\"":\""uuid\""}",1
+GRIRAc,AmountinLocalCurrency1,MATH,MATH,COST,ExpAccValue - TDSAccValue,1
+GRIRAc,AmountinLocalCurrency2,MATH,MATH,COST,-(ExpAccValue - TDSAccValue),1
+GRIRAc,AmountinLocalCurrency,MATH,MATH,COST,AmountinLocalCurrency2+AmountinLocalCurrency1,1
+GRIRAc,AmountinTransactionCurrency,MATH,MATH,COST,AmountinLocalCurrency,1
+G&SRNCostAllocation,TCostAllocationValue,TCostAllocationValue,FETCHFROMSCHEMA,COST,"{\""documentnumber\"":\""documentnumber\"",\""CostAllocationMethod\"":\""CostAllocationMethod\""}",1
+G&SRNCostAllocation,CostAllocationParameterValue,G&SRNCostAllocation1,SUMFROMSCHEMA,COST,"{\""createdid\"":\""createdid\"",\""CostAllocationMethod\"":\""CostAllocationMethod\"",\""LOB\"":\""LOB\""}",1
+G&SRNCostAllocation,CostAllocationParameterPerc,MATH,MATH,COST,(CostAllocationParameterValue / TCostAllocationValue)*100,1
+G&SRNCostAllocation,BillAmountinLocalCurrency,ExpAcc,SUMFROMSCHEMA,COST,"{\""createdid\"":\""createdid\"",\""CostAllocationMethod\"":\""CostAllocationMethod\""}",1
+G&SRNCostAllocation,AmountinLocalCurrency1,MATH,MATH,COST,(BillAmountinLocalCurrency * CostAllocationParameterPerc)/100,1
+G&SRNCostAllocation,AmountinLocalCurrency2,MATH,MATH,COST,(BillAmountinLocalCurrency * CostAllocationParameterPerc)/100,1
+G&SRNCostAllocation,AmountinLocalCurrency,MATH,MATH,COST,AmountinLocalCurrency1 + AmountinLocalCurrency2,1
+AP,SNO,MATH,MATH,COST,SNo,1
+G&SRNWF,SNO,MATH,MATH,COST,1,1
