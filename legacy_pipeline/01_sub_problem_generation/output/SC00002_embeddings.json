@@ -3,132 +3,176 @@
         "id": "SC00002_SUB_001",
         "parent_id": "SC00002",
         "project_name": "Bill Processing System",
-        "sub_problem_statement": "Validate the structural integrity and completeness of incoming vendor bill data.",
+        "sub_problem_statement": "Validate incoming bill data for completeness and accuracy",
         "context": "Requirement extracted from Bill Processing System problem statement.",
         "metadata": {
             "source_type": "llm_problem_statement_decomposition",
-            "embedding_text": "Bill Processing System: Validate the structural integrity and completeness of incoming vendor bill data."
+            "embedding_text": "Bill Processing System: Validate incoming bill data for completeness and accuracy"
         }
     },
     {
         "id": "SC00002_SUB_002",
         "parent_id": "SC00002",
         "project_name": "Bill Processing System",
-        "sub_problem_statement": "Perform a system-level match of the incoming vendor bill against existing Purchase Orders (POs).",
+        "sub_problem_statement": "Match incoming bill data against existing purchase orders",
         "context": "Requirement extracted from Bill Processing System problem statement.",
         "metadata": {
             "source_type": "llm_problem_statement_decomposition",
-            "embedding_text": "Bill Processing System: Perform a system-level match of the incoming vendor bill against existing Purchase Orders (POs)."
+            "embedding_text": "Bill Processing System: Match incoming bill data against existing purchase orders"
         }
     },
     {
         "id": "SC00002_SUB_003",
         "parent_id": "SC00002",
         "project_name": "Bill Processing System",
-        "sub_problem_statement": "Verify the quantities and unit prices of line items on the vendor bill against the matched Purchase Order.",
+        "sub_problem_statement": "Extract and validate cost center information from bill data",
         "context": "Requirement extracted from Bill Processing System problem statement.",
         "metadata": {
             "source_type": "llm_problem_statement_decomposition",
-            "embedding_text": "Bill Processing System: Verify the quantities and unit prices of line items on the vendor bill against the matched Purchase Order."
+            "embedding_text": "Bill Processing System: Extract and validate cost center information from bill data"
         }
     },
     {
         "id": "SC00002_SUB_004",
         "parent_id": "SC00002",
         "project_name": "Bill Processing System",
-        "sub_problem_statement": "Apply predefined rules for the allocation of bill costs to specific cost centers.",
+        "sub_problem_statement": "Allocate costs to different cost centers based on bill data",
         "context": "Requirement extracted from Bill Processing System problem statement.",
         "metadata": {
             "source_type": "llm_problem_statement_decomposition",
-            "embedding_text": "Bill Processing System: Apply predefined rules for the allocation of bill costs to specific cost centers."
+            "embedding_text": "Bill Processing System: Allocate costs to different cost centers based on bill data"
         }
     },
     {
         "id": "SC00002_SUB_005",
         "parent_id": "SC00002",
         "project_name": "Bill Processing System",
-        "sub_problem_statement": "Apply predefined rules for the allocation of bill costs to specific business units.",
+        "sub_problem_statement": "Identify and allocate costs to respective business units",
         "context": "Requirement extracted from Bill Processing System problem statement.",
         "metadata": {
             "source_type": "llm_problem_statement_decomposition",
-            "embedding_text": "Bill Processing System: Apply predefined rules for the allocation of bill costs to specific business units."
+            "embedding_text": "Bill Processing System: Identify and allocate costs to respective business units"
         }
     },
     {
         "id": "SC00002_SUB_006",
         "parent_id": "SC00002",
         "project_name": "Bill Processing System",
-        "sub_problem_statement": "Calculate the applicable Goods and Services Tax (GST) components (e.g., CGST, SGST, IGST) for the bill.",
+        "sub_problem_statement": "Calculate GST on bill amounts based on applicable tax rates",
         "context": "Requirement extracted from Bill Processing System problem statement.",
         "metadata": {
             "source_type": "llm_problem_statement_decomposition",
-            "embedding_text": "Bill Processing System: Calculate the applicable Goods and Services Tax (GST) components (e.g., CGST, SGST, IGST) for the bill."
+            "embedding_text": "Bill Processing System: Calculate GST on bill amounts based on applicable tax rates"
         }
     },
     {
         "id": "SC00002_SUB_007",
         "parent_id": "SC00002",
         "project_name": "Bill Processing System",
-        "sub_problem_statement": "Determine and calculate Tax Deducted at Source (TDS) based on the vendor and transaction type.",
+        "sub_problem_statement": "Calculate TDS on bill amounts based on applicable tax rates",
         "context": "Requirement extracted from Bill Processing System problem statement.",
         "metadata": {
             "source_type": "llm_problem_statement_decomposition",
-            "embedding_text": "Bill Processing System: Determine and calculate Tax Deducted at Source (TDS) based on the vendor and transaction type."
+            "embedding_text": "Bill Processing System: Calculate TDS on bill amounts based on applicable tax rates"
         }
     },
     {
         "id": "SC00002_SUB_008",
         "parent_id": "SC00002",
         "project_name": "Bill Processing System",
-        "sub_problem_statement": "Automatically generate a complete set of accounting journal entries for the bill (e.g., debits to expense/asset, credits to accounts payable).",
+        "sub_problem_statement": "Create accounting journal entries for settled bills",
         "context": "Requirement extracted from Bill Processing System problem statement.",
         "metadata": {
             "source_type": "llm_problem_statement_decomposition",
-            "embedding_text": "Bill Processing System: Automatically generate a complete set of accounting journal entries for the bill (e.g., debits to expense/asset, credits to accounts payable)."
+            "embedding_text": "Bill Processing System: Create accounting journal entries for settled bills"
         }
     },
     {
         "id": "SC00002_SUB_009",
         "parent_id": "SC00002",
         "project_name": "Bill Processing System",
-        "sub_problem_statement": "Update the Accounts Payable ledger to reflect the new vendor liability.",
+        "sub_problem_statement": "Develop a system to settle bills across multiple dimensions",
         "context": "Requirement extracted from Bill Processing System problem statement.",
         "metadata": {
             "source_type": "llm_problem_statement_decomposition",
-            "embedding_text": "Bill Processing System: Update the Accounts Payable ledger to reflect the new vendor liability."
+            "embedding_text": "Bill Processing System: Develop a system to settle bills across multiple dimensions"
         }
     },
     {
         "id": "SC00002_SUB_010",
         "parent_id": "SC00002",
         "project_name": "Bill Processing System",
-        "sub_problem_statement": "Track the settlement status of the bill, considering different dimensions such as Line of Business (LOB) or item category.",
+        "sub_problem_statement": "Implement settlement by Line of Business (LOB)",
         "context": "Requirement extracted from Bill Processing System problem statement.",
         "metadata": {
             "source_type": "llm_problem_statement_decomposition",
-            "embedding_text": "Bill Processing System: Track the settlement status of the bill, considering different dimensions such as Line of Business (LOB) or item category."
+            "embedding_text": "Bill Processing System: Implement settlement by Line of Business (LOB)"
         }
     },
     {
         "id": "SC00002_SUB_011",
         "parent_id": "SC00002",
         "project_name": "Bill Processing System",
-        "sub_problem_statement": "Implement a mechanism for periodic reconciliation of processed bills against vendor statements or bank payments.",
+        "sub_problem_statement": "Implement settlement by item",
         "context": "Requirement extracted from Bill Processing System problem statement.",
         "metadata": {
             "source_type": "llm_problem_statement_decomposition",
-            "embedding_text": "Bill Processing System: Implement a mechanism for periodic reconciliation of processed bills against vendor statements or bank payments."
+            "embedding_text": "Bill Processing System: Implement settlement by item"
         }
     },
     {
         "id": "SC00002_SUB_012",
         "parent_id": "SC00002",
         "project_name": "Bill Processing System",
-        "sub_problem_statement": "Maintain and update a clear workflow status for each bill throughout its lifecycle (e.g., Draft, Pending Approval, Approved, Paid, Reconciled).",
+        "sub_problem_statement": "Implement settlement by vendor",
         "context": "Requirement extracted from Bill Processing System problem statement.",
         "metadata": {
             "source_type": "llm_problem_statement_decomposition",
-            "embedding_text": "Bill Processing System: Maintain and update a clear workflow status for each bill throughout its lifecycle (e.g., Draft, Pending Approval, Approved, Paid, Reconciled)."
+            "embedding_text": "Bill Processing System: Implement settlement by vendor"
+        }
+    },
+    {
+        "id": "SC00002_SUB_013",
+        "parent_id": "SC00002",
+        "project_name": "Bill Processing System",
+        "sub_problem_statement": "Implement settlement by cost method",
+        "context": "Requirement extracted from Bill Processing System problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Bill Processing System: Implement settlement by cost method"
+        }
+    },
+    {
+        "id": "SC00002_SUB_014",
+        "parent_id": "SC00002",
+        "project_name": "Bill Processing System",
+        "sub_problem_statement": "Design a workflow tracking system for bill status updates",
+        "context": "Requirement extracted from Bill Processing System problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Bill Processing System: Design a workflow tracking system for bill status updates"
+        }
+    },
+    {
+        "id": "SC00002_SUB_015",
+        "parent_id": "SC00002",
+        "project_name": "Bill Processing System",
+        "sub_problem_statement": "Reconcile bills against payment records and purchase orders",
+        "context": "Requirement extracted from Bill Processing System problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Bill Processing System: Reconcile bills against payment records and purchase orders"
+        }
+    },
+    {
+        "id": "SC00002_SUB_016",
+        "parent_id": "SC00002",
+        "project_name": "Bill Processing System",
+        "sub_problem_statement": "Generate reports for bill processing and settlement",
+        "context": "Requirement extracted from Bill Processing System problem statement.",
+        "metadata": {
+            "source_type": "llm_problem_statement_decomposition",
+            "embedding_text": "Bill Processing System: Generate reports for bill processing and settlement"
         }
     }
 ]

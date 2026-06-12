@@ -1,0 +1,282 @@
+{
+                        "title": "#SchemaClass#2",
+                        "technicalName": "#SchemaClass#2",
+                        "children": [
+                            {
+                                "title": "SchemaName",
+                                "technicalName": "SchemaName",
+                                "val": "Bill_I"
+                            },
+                            {
+                                "title": "DataSource",
+                                "technicalName": "DataSource",
+                                "val": "Bill_I"
+                            },
+                            {
+                                "title": "DateAggregationOn",
+                                "technicalName": "DateAggregationOn",
+                                "val": "ForPrdFrom"
+                            },
+                            {
+                                "title": "SettlementType",
+                                "technicalName": "SettlementType",
+                                "val": "Per Lineid Monthly"
+                            },
+                            {
+                                "title": "OutputProcessCode",
+                                "technicalName": "OutputProcessCode",
+                                "val": "TT"
+                            },
+                            {
+                                "title": "senderuniversalid",
+                                "technicalName": "senderuniversalid",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "senderaccount",
+                                "technicalName": "senderaccount",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "senderid",
+                                "technicalName": "senderid",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "sendername",
+                                "technicalName": "sendername",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "receiverid",
+                                "technicalName": "receiverid",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "receivername",
+                                "technicalName": "receivername",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "LineID",
+                                "technicalName": "LineID",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "ItemID",
+                                "technicalName": "ItemID",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "LinkRef1",
+                                "technicalName": "LinkRef1",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "ItemName",
+                                "technicalName": "ItemName",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "ForPrdFrom",
+                                "technicalName": "ForPrdFrom",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "ForPrdTo",
+                                "technicalName": "ForPrdTo",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "documentdate",
+                                "technicalName": "documentdate",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "postingdate",
+                                "technicalName": "postingdate",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "documenttype",
+                                "technicalName": "documenttype",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "documentnumber",
+                                "technicalName": "documentnumber",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "documentref",
+                                "technicalName": "documentref",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "LinkRef",
+                                "technicalName": "LinkRef",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "Linkref2",
+                                "technicalName": "Linkref2",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "LinkType",
+                                "technicalName": "LinkType",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "CostAllocationMethod",
+                                "technicalName": "CostAllocationMethod",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "SectionName",
+                                "technicalName": "SectionName",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "currency",
+                                "technicalName": "currency",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "TransactionType",
+                                "technicalName": "TransactionType",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "TransactionStatus",
+                                "technicalName": "TransactionStatus",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "category",
+                                "technicalName": "category",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "taxcode",
+                                "technicalName": "taxcode",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "Reference1",
+                                "technicalName": "Reference1",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "Reference2",
+                                "technicalName": "Reference2",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "Reference3",
+                                "technicalName": "Reference3",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "interimid",
+                                "technicalName": "interimid",
+                                "val": "*",
+                                "equality": "EQ"
+                            },
+                            {
+                                "title": "Components",
+                                "technicalName": "Components",
+                                "children": [
+                                    {
+                                        "title": "#Components#1",
+                                        "technicalName": "#Components#1",
+                                        "children": [
+                                            {
+                                                "title": "ComponentName",
+                                                "technicalName": "ComponentName",
+                                                "val": "invoiceqty"
+                                            },
+                                            {
+                                                "title": "ModelID",
+                                                "technicalName": "ModelID",
+                                                "val": "MATH"
+                                            },
+                                            {
+                                                "title": "Type",
+                                                "technicalName": "Type",
+                                                "val": "MATH"
+                                            },
+                                            {
+                                                "title": "ComponentType",
+                                                "technicalName": "ComponentType",
+                                                "val": "COST"
+                                            },
+                                            {
+                                                "title": "ComponentExpr",
+                                                "technicalName": "ComponentExpr",
+                                                "val": "Qty"
+                                            },
+                                            {
+                                                "title": "Criteria",
+                                                "technicalName": "Criteria",
+                                                "children": [
+                                                    {
+                                                        "title": "#Criteria#1",
+                                                        "technicalName": "#Criteria#1",
+                                                        "children": [
+                                                            {
+                                                                "title": "ItemID",
+                                                                "technicalName": "ItemID",
+                                                                "val": "*",
+                                                                "equality": "EQ"
+                                                            },
+                                                            {
+                                                                "title": "ForPrdFrom",
+                                                                "technicalName": "ForPrdFrom",
+                                                                "val": "2022-01-01"
+                                                            },
+                                                            {
+                                                                "title": "ForPrdTo",
+                                                                "technicalName": "ForPrdTo",
+                                                                "val": ""
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }

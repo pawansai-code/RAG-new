@@ -1,0 +1,124 @@
+{
+  "title": "Components",
+  "technicalName": "Components",
+  "children": [
+    {
+      "title": "#Components#1",
+      "technicalName": "#Components#1",
+      "children": [
+        {
+          "title": "ComponentName",
+          "technicalName": "ComponentName",
+          "val": "amountinlocalcurrency"
+        },
+        {
+          "title": "ModelID",
+          "technicalName": "ModelID",
+          "val": "MATH"
+        },
+        {
+          "title": "Type",
+          "technicalName": "Type",
+          "val": "MATH"
+        },
+        {
+          "title": "ComponentType",
+          "technicalName": "ComponentType",
+          "val": "COST"
+        },
+        {
+          "title": "ComponentExpr",
+          "technicalName": "ComponentExpr",
+          "val": "amountinlocalcurrency"
+        },
+        {
+          "title": "Criteria",
+          "technicalName": "Criteria",
+          "children": [
+            {
+              "title": "#Criteria#1",
+              "technicalName": "#Criteria#1",
+              "children": [
+                {
+                  "title": "ItemID",
+                  "technicalName": "ItemID",
+                  "val": "*",
+                  "equality": "EQ"
+                },
+                {
+                  "title": "ForPrdFrom",
+                  "technicalName": "ForPrdFrom",
+                  "val": "2022-01-01"
+                },
+                {
+                  "title": "ForPrdTo",
+                  "technicalName": "ForPrdTo",
+                  "val": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "#Components#2",
+      "technicalName": "#Components#2",
+      "children": [
+        {
+          "title": "ComponentName",
+          "technicalName": "ComponentName",
+          "val": "costallocationparameterperc"
+        },
+        {
+          "title": "ModelID",
+          "technicalName": "ModelID",
+          "val": "MATH"
+        },
+        {
+          "title": "Type",
+          "technicalName": "Type",
+          "val": "MATH"
+        },
+        {
+          "title": "ComponentType",
+          "technicalName": "ComponentType",
+          "val": "COST"
+        },
+        {
+          "title": "ComponentExpr",
+          "technicalName": "ComponentExpr",
+          "val": "costallocationparameterperc"
+        },
+        {
+          "title": "Criteria",
+          "technicalName": "Criteria",
+          "children": [
+            {
+              "title": "#Criteria#1",
+              "technicalName": "#Criteria#1",
+              "children": [
+                {
+                  "title": "ItemID",
+                  "technicalName": "ItemID",
+                  "val": "*",
+                  "equality": "EQ"
+                },
+                {
+                  "title": "ForPrdFrom",
+                  "technicalName": "ForPrdFrom",
+                  "val": "2022-01-01"
+                },
+                {
+                  "title": "ForPrdTo",
+                  "technicalName": "ForPrdTo",
+                  "val": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

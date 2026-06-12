@@ -3,7 +3,7 @@ import argparse
 import chromadb
 from chromadb.utils import embedding_functions
 
-def run_similarity_search(db_directory, schema_collection_name, subproblems_collection_name, output_dir, top_k=50):
+def run_similarity_search(db_directory, schema_collection_name, subproblems_collection_name, output_dir, top_k=50, threshold=0.0):
     print(f"[*] Connecting to Vector Database at {db_directory}")
     
     # Connect to ChromaDB
@@ -65,6 +65,9 @@ def run_similarity_search(db_directory, schema_collection_name, subproblems_coll
             # For normalized embeddings, Cosine Similarity = 1 - (L2_Distance / 2)
             cosine_sim = 1 - (raw_distance / 2.0)
             
+            if cosine_sim < threshold:
+                continue
+            
             file_lines.append(f"Match {j+1}: (ID: {match_ids[j]}) - Cosine Similarity: {cosine_sim:.4f} (Raw Distance: {raw_distance:.4f})")
             file_lines.append(match_docs[j])
             file_lines.append("-" * 40 + "\n")
@@ -85,10 +88,11 @@ if __name__ == "__main__":
     parser.add_argument("-d", "--db-dir", required=True, help="Path to the ChromaDB directory")
     parser.add_argument("-o", "--output-dir", required=True, help="Path to save the output text reports")
     parser.add_argument("-k", "--top-k", type=int, default=50, help="Number of top schema matches to retrieve per sub-problem")
+    parser.add_argument("-t", "--threshold", type=float, default=0.0, help="Minimum cosine similarity threshold (0.0 to 1.0)")
     
     args = parser.parse_args()
     
     SCHEMA_COLLECTION = "gemini_schema_collection"
     SUBPROBLEMS_COLLECTION = "gemini_subproblems_collection"
     
-    run_similarity_search(args.db_dir, SCHEMA_COLLECTION, SUBPROBLEMS_COLLECTION, args.output_dir, args.top_k)
+    run_similarity_search(args.db_dir, SCHEMA_COLLECTION, SUBPROBLEMS_COLLECTION, args.output_dir, args.top_k, args.threshold)
