@@ -5,8 +5,18 @@ import time
 import re
 from datetime import datetime
 import google.generativeai as genai
+
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
 # Initialize Gemini Client
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+if not GEMINI_API_KEY:
+    print("[X] GEMINI_API_KEY not found in environment variables. Please check your .env file.")
+    exit(1)
 genai.configure(api_key=GEMINI_API_KEY)
 # We use gemini-2.5-flash for incredibly fast and cheap structured JSON outputs
 model = genai.GenerativeModel("gemini-2.5-flash", generation_config={"response_mime_type": "application/json"})

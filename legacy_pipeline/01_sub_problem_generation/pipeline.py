@@ -24,7 +24,10 @@ def parse_header(text: str) -> tuple[str, str, str]:
 def decompose_with_llm(problem_statement: str) -> List[str]:
     """Uses Groq API to decompose the problem statement into granular sub-problems dynamically."""
     api_key = os.environ.get("GROQ_API_KEY")
-    
+    if not api_key:
+        print("[X] GROQ_API_KEY not found in environment variables.")
+        exit(1)
+        
     client = Groq(api_key=api_key)
     
     prompt = f"""
