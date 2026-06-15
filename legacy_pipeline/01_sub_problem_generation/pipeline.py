@@ -5,10 +5,10 @@ import argparse
 from typing import List, Dict, Any
 
 try:
-    import google.generativeai as genai
+    from groq import Groq
     from dotenv import load_dotenv
 except ImportError:
-    print("Please install the required packages: pip install google-generativeai python-dotenv")
+    print("Please install the required packages: pip install groq python-dotenv")
     exit(1)
 
 # Load environment variables from .env file
@@ -21,20 +21,19 @@ def parse_header(text: str) -> tuple[str, str, str]:
     project_name = header_match.group(2) if header_match else "Unknown Project"
     return problem_id, project_name, text
 
-def decompose_with_llm(problem_statement: str, target_count: int = 10) -> List[str]:
-    """Uses Gemini API to decompose the problem statement into granular sub-problems."""
-    api_key = os.environ.get("GEMINI_API_KEY")
+def decompose_with_llm(problem_statement: str) -> List[str]:
+    """Uses Groq API to decompose the problem statement into granular sub-problems dynamically."""
+    api_key = os.environ.get("GROQ_API_KEY")
     if not api_key:
-        print("Error: GEMINI_API_KEY is missing from environment.")
+        print("[X] GROQ_API_KEY not found in environment variables.")
         exit(1)
         
-    genai.configure(api_key=api_key)
-    # Use gemini-2.5-flash for JSON generation
-    model = genai.GenerativeModel('gemini-2.5-flash', generation_config={"response_mime_type": "application/json"})
+    client = Groq(api_key=api_key)
     
     prompt = f"""
     I will provide you with a problem statement for a software system.
-    Your task is to decompose this problem statement into AT LEAST {target_count} highly granular, distinct functional requirements or sub-problems.
+    Your task is to decompose this problem statement into highly granular, distinct functional requirements or sub-problems.
+    Generate exactly as many sub-problems as necessary to fully capture the entire scope of the statement. Do not artificially limit or inflate the count.
     
     Problem Statement:
     {problem_statement}
@@ -52,8 +51,12 @@ def decompose_with_llm(problem_statement: str, target_count: int = 10) -> List[s
     """
     
     try:
-        response = model.generate_content(prompt)
-        response_text = response.text.strip()
+        response = client.chat.completions.create(
+            model="llama-3.3-70b-versatile",
+            messages=[{"role": "user", "content": prompt}],
+            response_format={"type": "json_object"}
+        )
+        response_text = response.choices[0].message.content.strip()
         data = json.loads(response_text)
         
         sub_problems = data.get("sub_problems", [])
@@ -90,8 +93,8 @@ def process_file(input_filepath: str, output_dir: str):
         
     problem_id, project_name, content = parse_header(text)
     
-    print(f"Analyzing {input_filepath} with Groq API (Llama3-70b) to generate 10+ sub-problems...")
-    sub_problems = decompose_with_llm(content, target_count=10)
+    print(f"Analyzing {input_filepath} with Groq API (Llama3-70b) to dynamically generate all required sub-problems...")
+    sub_problems = decompose_with_llm(content)
     
     if not sub_problems:
         print(f"Warning: No sub-problems extracted from {input_filepath}")

@@ -1,0 +1,10 @@
+{
+  "SC_001_BILLHEADER": {
+    "Bill ID": "BILL-2026-991",
+    "Date": "01-04-2026"
+  },
+  "SC_002_VENDORMASTER": {
+    "Vendor Name": "Global Supply Co.",
+    "Vendor Address": "123 Industrial Way, CA"
+  }
+}

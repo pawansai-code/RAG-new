@@ -1,0 +1,42 @@
+{
+  "global_config": {
+    "main_prompt": "You are an intelligent data extraction assistant. Follow instructions precisely."
+  },
+  "schema_classes": [
+    {
+      "schema_id": "SC_001_BILLHEADER",
+      "class_prompt": "Extract the bill header information such as Bill ID and Date.",
+      "four_cs": {
+        "classes": [
+          "Header",
+          "Invoice Details"
+        ],
+        "components": [
+          "Bill ID",
+          "Date"
+        ],
+        "criteria": [
+          "Extract exactly as written"
+        ],
+        "conditions": []
+      }
+    },
+    {
+      "schema_id": "SC_002_VENDORMASTER",
+      "class_prompt": "Extract the vendor information.",
+      "four_cs": {
+        "classes": [
+          "Vendor"
+        ],
+        "components": [
+          "Vendor Name",
+          "Vendor Address"
+        ],
+        "criteria": [],
+        "conditions": [
+          "Ignore shipping address"
+        ]
+      }
+    }
+  ]
+}

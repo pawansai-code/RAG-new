@@ -1,0 +1,1 @@
+'Modify #SchemaClass#15 and delete the "#Criteria#1" block that belongs to #Components#1.'

@@ -1,0 +1,66 @@
+Sub-Problem ID: SC00002_SUB_013
+Statement:
+Project Name: Bill Processing System
+Sub-Problem: Support the grouping and settlement of bills by vendor for payment processing.
+
+Top Matching Schema Components:
+----------------------------------------
+Match 1: (ID: schema_classes.csv_22) - Cosine Similarity: 0.7545 (Raw Distance: 0.4910)
+schema_name: TDSAccBill_I\nsource_schema: SC00002\nschema_group_name: Bill Process\ndata_source: Bill_I\ndate_aggregation_on: ForPrdFrom\nsettlement_type: Per SectionName Monthly\noutput_process_code: TT\ncomponent_count: 11\ncondition_count: 15\nhas_getgroupfromschema2: False\nnl_summary: Aggregates and allocates 11 components from Bill_I data source, settling Per SectionName Monthly and feeds 2 downstream classes. Performs arithmetic transformations across 15 field conditions.
+----------------------------------------
+
+Match 2: (ID: schema_classes.csv_28) - Cosine Similarity: 0.7540 (Raw Distance: 0.4920)
+schema_name: BillCostAllocation\nsource_schema: SC00002\nschema_group_name: Bill Process\ndata_source: Bill_I\ndate_aggregation_on: ForPrdFrom\nsettlement_type: Per LOB Monthly\noutput_process_code: TT\ncomponent_count: 7\ncondition_count: 10\nhas_getgroupfromschema2: False\nnl_summary: Aggregates and allocates 7 components from Bill_I data source, settling Per LOB Monthly and feeds 1 downstream classes. Performs arithmetic transformations across 10 field conditions.
+----------------------------------------
+
+Match 3: (ID: schema_classes.csv_20) - Cosine Similarity: 0.7495 (Raw Distance: 0.5010)
+schema_name: GSTAccBill_I\nsource_schema: SC00002\nschema_group_name: Bill Process\ndata_source: Bill_I\ndate_aggregation_on: ForPrdFrom\nsettlement_type: Per ItemID Monthly\noutput_process_code: TT\ncomponent_count: 9\ncondition_count: 11\nhas_getgroupfromschema2: False\nnl_summary: Aggregates and allocates 9 components from Bill_I data source, settling Per ItemID Monthly and feeds 2 downstream classes. Performs arithmetic transformations across 11 field conditions.
+----------------------------------------
+
+Match 4: (ID: schema_classes.csv_27) - Cosine Similarity: 0.7433 (Raw Distance: 0.5134)
+schema_name: ProvisionReversalCostAllocation\nsource_schema: SC00002\nschema_group_name: Bill Process\ndata_source: Bill_I\ndate_aggregation_on: ForPrdFrom\nsettlement_type: Per LOB Monthly\noutput_process_code: TT\ncomponent_count: 4\ncondition_count: 9\nhas_getgroupfromschema2: False\nnl_summary: Aggregates and allocates 4 components from Bill_I data source, settling Per LOB Monthly and feeds 1 downstream classes. Performs arithmetic transformations across 9 field conditions.
+----------------------------------------
+
+Match 5: (ID: schema_classes.csv_5) - Cosine Similarity: 0.7427 (Raw Distance: 0.5145)
+schema_name: Bill_Item\nsource_schema: SC00002\nschema_group_name: Bill Process\ndata_source: Bill_I\ndate_aggregation_on: ForPrdFrom\nsettlement_type: Per Lineid Monthly\noutput_process_code: TT\ncomponent_count: 25\ncondition_count: 31\nhas_getgroupfromschema2: False\nnl_summary: Aggregates and allocates 25 components from Bill_I data source, settling Per Lineid Monthly and feeds 41 downstream classes. Performs arithmetic transformations across 31 field conditions.
+----------------------------------------
+
+Match 6: (ID: schema_classes.csv_29) - Cosine Similarity: 0.7425 (Raw Distance: 0.5149)
+schema_name: AmortizeBill_I\nsource_schema: SC00002\nschema_group_name: Bill Process\ndata_source: Bill_I\ndate_aggregation_on: ForPrdFrom\nsettlement_type: Per Itemid Monthly\noutput_process_code: TT\ncomponent_count: 12\ncondition_count: 13\nhas_getgroupfromschema2: False\nnl_summary: Aggregates and allocates 12 components from Bill_I data source, settling Per Itemid Monthly. Performs arithmetic transformations across 13 field conditions.
+----------------------------------------
+
+Match 7: (ID: schema_classes.csv_7) - Cosine Similarity: 0.7406 (Raw Distance: 0.5188)
+schema_name: BillCostAllocation1\nsource_schema: SC00002\nschema_group_name: Bill Process\ndata_source: Bill_I\ndate_aggregation_on: ForPrdFrom\nsettlement_type: Per LOB Monthly\noutput_process_code: TT\ncomponent_count: 2\ncondition_count: 6\nhas_getgroupfromschema2: False\nnl_summary: Looks up and fetches 2 components from Bill_I data source, settling Per LOB Monthly and feeds 8 downstream classes.
+----------------------------------------
+
+Match 8: (ID: schema_classes.csv_19) - Cosine Similarity: 0.7405 (Raw Distance: 0.5189)
+schema_name: ExpAccBill_I\nsource_schema: SC00002\nschema_group_name: Bill Process\ndata_source: Bill_I\ndate_aggregation_on: ForPrdFrom\nsettlement_type: Per ItemID Monthly\noutput_process_code: TT\ncomponent_count: 5\ncondition_count: 13\nhas_getgroupfromschema2: False\nnl_summary: Aggregates and allocates 5 components from Bill_I data source, settling Per ItemID Monthly and feeds 1 downstream classes. Performs arithmetic transformations across 13 field conditions.
+----------------------------------------
+
+Match 9: (ID: schema_classes.csv_1) - Cosine Similarity: 0.7379 (Raw Distance: 0.5242)
+schema_name: Bill_I\nsource_schema: SC00002\nschema_group_name: Bill Process\ndata_source: Bill_I\ndate_aggregation_on: ForPrdFrom\nsettlement_type: Per Lineid Monthly\noutput_process_code: TT\ncomponent_count: 1\ncondition_count: 31\nhas_getgroupfromschema2: False\nnl_summary: Computes 1 components from Bill_I data source, settling Per Lineid Monthly and feeds 1 downstream classes.
+----------------------------------------
+
+Match 10: (ID: schema_classes.csv_2) - Cosine Similarity: 0.7371 (Raw Distance: 0.5259)
+schema_name: Bill_H\nsource_schema: SC00002\nschema_group_name: Bill Process\ndata_source: Bill_H\ndate_aggregation_on: documentdate\nsettlement_type: Per interimid Monthly\noutput_process_code: TT\ncomponent_count: 3\ncondition_count: 25\nhas_getgroupfromschema2: False\nnl_summary: Computes 3 components from Bill_H data source, settling Per interimid Monthly and feeds 37 downstream classes. Performs arithmetic transformations across 25 field conditions.
+----------------------------------------
+
+Match 11: (ID: schema_classes.csv_21) - Cosine Similarity: 0.7348 (Raw Distance: 0.5304)
+schema_name: ExpAccBill_I_GST\nsource_schema: SC00002\nschema_group_name: Bill Process\ndata_source: Bill_I\ndate_aggregation_on: ForPrdFrom\nsettlement_type: Per ItemID Monthly\noutput_process_code: TT\ncomponent_count: 9\ncondition_count: 15\nhas_getgroupfromschema2: False\nnl_summary: Aggregates and allocates 9 components from Bill_I data source, settling Per ItemID Monthly and feeds 2 downstream classes. Performs arithmetic transformations across 15 field conditions.
+----------------------------------------
+
+Match 12: (ID: schema_classes.csv_8) - Cosine Similarity: 0.7320 (Raw Distance: 0.5360)
+schema_name: TCostAllocationValue\nsource_schema: SC00002\nschema_group_name: Bill Process\ndata_source: Bill_I\ndate_aggregation_on: ForPrdFrom\nsettlement_type: Per CostAllocationMethod Monthly\noutput_process_code: TT\ncomponent_count: 1\ncondition_count: 3\nhas_getgroupfromschema2: False\nnl_summary: Aggregates 3 components from Bill_I data source, settling Per CostAllocationMethod Monthly and feeds 3 downstream classes.
+----------------------------------------
+
+Match 13: (ID: schema_classes.csv_23) - Cosine Similarity: 0.7320 (Raw Distance: 0.5361)
+schema_name: ExpAccBill_I_TDS\nsource_schema: SC00002\nschema_group_name: Bill Process\ndata_source: Bill_I\ndate_aggregation_on: ForPrdFrom\nsettlement_type: Per ItemID Monthly\noutput_process_code: TT\ncomponent_count: 6\ncondition_count: 14\nhas_getgroupfromschema2: False\nnl_summary: Aggregates and allocates 6 components from Bill_I data source, settling Per ItemID Monthly and feeds 2 downstream classes. Performs arithmetic transformations across 14 field conditions.
+----------------------------------------
+
+Match 14: (ID: schema_classes.csv_16) - Cosine Similarity: 0.7301 (Raw Distance: 0.5398)
+schema_name: ReversalProvisionExpAcc\nsource_schema: SC00002\nschema_group_name: Bill Process\ndata_source: Bill_I\ndate_aggregation_on: ForPrdFrom\nsettlement_type: Per ItemID Monthly\noutput_process_code: TT\ncomponent_count: 8\ncondition_count: 13\nhas_getgroupfromschema2: False\nnl_summary: Aggregates and allocates 8 components from Bill_I data source, settling Per ItemID Monthly and feeds 5 downstream classes. Performs arithmetic transformations across 13 field conditions.
+----------------------------------------
+
+Match 15: (ID: schema_classes.csv_30) - Cosine Similarity: 0.7292 (Raw Distance: 0.5415)
+schema_name: PO&IPVsBill\nsource_schema: SC00002\nschema_group_name: Bill Process\ndata_source: PO&IPVsBillRep\ndate_aggregation_on: Date\nsettlement_type: Per Source Monthly\noutput_process_code: TT\ncomponent_count: 36\ncondition_count: 2\nhas_getgroupfromschema2: False\nnl_summary: Aggregates 36 components from PO&IPVsBillRep data source, settling Per Source Monthly. Performs arithmetic transformations across 2 field conditions.
+----------------------------------------

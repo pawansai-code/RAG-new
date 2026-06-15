@@ -1,0 +1,142 @@
+[
+    {
+        "title": "Criteria",
+        "technicalName": "Criteria",
+        "children": [
+            {
+                "title": "#Criteria#1",
+                "technicalName": "#Criteria#1",
+                "children": [
+                    {
+                        "title": "ItemID",
+                        "technicalName": "ItemID",
+                        "val": "*",
+                        "equality": "EQ"
+                    },
+                    {
+                        "title": "ForPrdFrom",
+                        "technicalName": "ForPrdFrom",
+                        "val": "2022-01-01"
+                    },
+                    {
+                        "title": "ForPrdTo",
+                        "technicalName": "ForPrdTo",
+                        "val": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Criteria",
+        "technicalName": "Criteria",
+        "children": [
+            {
+                "title": "#Criteria#1",
+                "technicalName": "#Criteria#1",
+                "children": [
+                    {
+                        "title": "ItemID",
+                        "technicalName": "ItemID",
+                        "val": "*",
+                        "equality": "EQ"
+                    },
+                    {
+                        "title": "ForPrdFrom",
+                        "technicalName": "ForPrdFrom",
+                        "val": "2022-01-01"
+                    },
+                    {
+                        "title": "ForPrdTo",
+                        "technicalName": "ForPrdTo",
+                        "val": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Criteria",
+        "technicalName": "Criteria",
+        "children": [
+            {
+                "title": "#Criteria#1",
+                "technicalName": "#Criteria#1",
+                "children": [
+                    {
+                        "title": "ItemID",
+                        "technicalName": "ItemID",
+                        "val": "*",
+                        "equality": "EQ"
+                    },
+                    {
+                        "title": "ForPrdFrom",
+                        "technicalName": "ForPrdFrom",
+                        "val": "2022-01-01"
+                    },
+                    {
+                        "title": "ForPrdTo",
+                        "technicalName": "ForPrdTo",
+                        "val": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Criteria",
+        "technicalName": "Criteria",
+        "children": [
+            {
+                "title": "#Criteria#1",
+                "technicalName": "#Criteria#1",
+                "children": [
+                    {
+                        "title": "DocumentNumber",
+                        "technicalName": "DocumentNumber",
+                        "val": "*",
+                        "equality": "EQ"
+                    },
+                    {
+                        "title": "ForPrdFrom",
+                        "technicalName": "ForPrdFrom",
+                        "val": "2022-01-01"
+                    },
+                    {
+                        "title": "ForPrdTo",
+                        "technicalName": "ForPrdTo",
+                        "val": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Criteria",
+        "technicalName": "Criteria",
+        "children": [
+            {
+                "title": "#Criteria#1",
+                "technicalName": "#Criteria#1",
+                "children": [
+                    {
+                        "title": "DocumentNumber",
+                        "technicalName": "DocumentNumber",
+                        "val": "*",
+                        "equality": "EQ"
+                    },
+                    {
+                        "title": "ForPrdFrom",
+                        "technicalName": "ForPrdFrom",
+                        "val": "2022-01-01"
+                    },
+                    {
+                        "title": "ForPrdTo",
+                        "technicalName": "ForPrdTo",
+                        "val": ""
+                    }
+                ]
+            }
+        ]
+    }
+]
